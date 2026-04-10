@@ -1,0 +1,15 @@
+# ~/.config/matugen/config.toml
+
+[config]
+wallpaper_tool = 'None'
+
+[templates.waybar]
+input_path  = '~/.config/matugen/templates/waybar-colors-template.css'
+output_path = '~/.config/waybar/colors.css'
+# SIGUSR2 tells waybar to reload CSS styles (not restart the whole bar)
+post_hook   = 'pkill -SIGUSR2 waybar'
+
+[templates.hyprland]
+input_path  = '~/.config/matugen/templates/hyprland-colors-template.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook   = 'bash ~/.config/hypr/scripts/apply-colors.sh'

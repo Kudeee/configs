@@ -1,0 +1,12 @@
+/* ~/.config/matugen/templates/waybar-colors-template.css */
+@define-color base          @{colors.surface};
+@define-color mantle        @{colors.surface_container};
+@define-color crust         @{colors.surface_container_lowest};
+@define-color text          @{colors.on_surface};
+@define-color subtext       @{colors.on_surface_variant};
+@define-color accent        @{colors.primary};
+@define-color accent_on     @{colors.on_primary};
+@define-color accent2       @{colors.secondary};
+@define-color accent3       @{colors.tertiary};
+@define-color warning_color @{colors.error};
+@define-color border_color  @{colors.outline_variant};
