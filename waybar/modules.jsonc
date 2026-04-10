@@ -1,0 +1,160 @@
+{
+  // ── LEFT ──────────────────────────────────────────────────────────
+  "custom/launcher": {
+    "format": "󰀻",
+    "tooltip": false,
+    "on-click": "pkill -x rofi || rofi -show drun"
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": false,
+    "show-special": false,
+    "format": "{icon}",
+    "format-icons": {
+      "active":  "◆",
+      "default": "◇",
+      "urgent":  "▲"
+    },
+    "on-scroll-up":   "hyprctl dispatch workspace m+1 > /dev/null",
+    "on-scroll-down": "hyprctl dispatch workspace m-1 > /dev/null",
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": true,
+    "rewrite": {
+      "^$": "Desktop"
+    }
+  },
+
+  // ── CENTER ────────────────────────────────────────────────────────
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "on-click": "hyprctl switchxkblayout all next"
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "critical-threshold": 85,
+    "format": "{icon} {temperatureC}°C",
+    "format-critical": "! {temperatureC}°C",
+    "interval": 3,
+    "format-icons": ["","","","",""]
+  },
+
+  "memory": {
+    "format": "󰘚 {used}G",
+    "interval": 3,
+    "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
+  },
+
+  "cpu": {
+    "format": "󰍛 {usage}%",
+    "interval": 3,
+    "on-click": "kitty --title=btop btop"
+  },
+
+  "clock#time": {
+    "format": "󱑊 {:%I:%M %p}",
+    "tooltip": false
+  },
+
+  "clock#date": {
+    "format": "󰃭 {:%a %d-%m}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi":"{icon} {signalStrength}%",
+    "format-icons":["󰤭","󰤟","󰤢","󰤥","󰤨"], 
+    "format-ethernet":     "󰈀 ETH",
+    "format-disconnected": "󰤭",
+    "tooltip-format-wifi": "{essid}\n↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format-on":        "β",
+    "format-off":       "",
+    "format-disabled":  "",
+    "format-connected": "β",
+    "tooltip-format":   "{controller_alias}\n{num_connections} connected",
+    "on-click": "blueman-manager"
+  },
+
+  // ── RIGHT ─────────────────────────────────────────────────────────
+
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "pulseaudio#microphone"
+    ]
+  },
+
+  "pulseaudio": {
+    "format":           "♪ {volume}%",
+    "format-muted":     "♪ M",
+    "format-bluetooth": "♪ {volume}%",
+    "scroll-step": 2,
+    "on-click":       "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "pulseaudio#microphone": {
+    "format":              "󰍬 {format_source}",
+    "format-source":       "{volume}%",
+    "format-source-muted": "󰝟",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "scroll-step": 2
+  },
+
+  "backlight": {
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃝",
+      "󰃠"
+    ],
+    "format": "{icon} {percent}%",
+    "scroll-step": 5,
+    "on-scroll-up":   "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+
+  "battery": {
+    "interval": 30,
+    "states": {
+      "warning":  30,
+      "critical": 15
+    },
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁽",
+      "󰂁"
+    ],
+    "format":          "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged":  "󰂄 {capacity}%",
+    "format-full":     "󰁹 FULL",
+    "tooltip-format":  "{timeTo} — {power:.1f}W"
+  },
+
+  "custom/night-mode": {
+    "exec": "bash -c 'pgrep -x hyprsunset > /dev/null && echo ● || echo ○'",
+    "format": "{}",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "bash -c 'pgrep -x hyprsunset > /dev/null && pkill hyprsunset || hyprsunset -t 3500 &'"
+  }
+
+}
