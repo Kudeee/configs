@@ -1,0 +1,113 @@
+/*
+ * Rofi Power Menu Theme
+ * Save to: ~/.config/rofi/powermenu.rasi
+ *
+ * Requires a Nerd Font (e.g. JetBrainsMono Nerd Font) for icons.
+ */
+
+/* ── Palette ─────────────────────────────── */
+* {
+    bg0:     #0d0f18;
+    bg1:     #13151f;
+    bg2:     #1c1f2e;
+    bg3:     #252840;
+    accent:  #7aa2f7;
+    urgent:  #f7768e;
+    fg0:     #cdd6f4;
+    fg1:     #a9b1d6;
+    fg2:     #565f89;
+
+    background-color: transparent;
+    text-color:       @fg0;
+    border-color:     @bg3;
+}
+
+/* ── Window ──────────────────────────────── */
+window {
+    width:            340px;
+    background-color: @bg0;
+    border:           1px;
+    border-color:     @bg3;
+    border-radius:    16px;
+    padding:          0;
+}
+
+/* ── Layout ──────────────────────────────── */
+mainbox {
+    background-color: transparent;
+    spacing:          0;
+    children:         [ inputbar, listview ];
+}
+
+/* ── Header / prompt bar ─────────────────── */
+inputbar {
+    background-color: @bg1;
+    border-radius:    16px 16px 0 0;
+    padding:          18px 20px 16px 20px;
+    spacing:          10px;
+    children:         [ prompt ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    font:             "JetBrainsMono Nerd Font 13";
+    vertical-align:   0.5;
+}
+
+/* hide unused inputbar widgets */
+entry, case-indicator { enabled: false; }
+
+/* ── List ────────────────────────────────── */
+listview {
+    background-color: transparent;
+    padding:          10px 12px 12px 12px;
+    spacing:          4px;
+    lines:            6;
+    fixed-height:     true;
+    scrollbar:        false;
+    layout:           vertical;
+}
+
+/* ── Each row ────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    10px;
+    padding:          11px 16px;
+    spacing:          12px;
+    cursor:           pointer;
+    orientation:      horizontal;
+    children:         [ element-text ];
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       @fg1;
+    font:             "JetBrainsMono Nerd Font 12";
+    vertical-align:   0.5;
+    cursor:           inherit;
+}
+
+/* hover */
+element.normal.normal {
+    background-color: transparent;
+}
+element.normal.normal element-text { text-color: @fg1; }
+
+element.selected.normal {
+    background-color: @bg3;
+}
+element.selected.normal element-text {
+    text-color: @fg0;
+    font:       "JetBrainsMono Nerd Font Bold 12";
+}
+
+/* urgent = shutdown / reboot */
+element.normal.urgent element-text  { text-color: @urgent; }
+element.selected.urgent {
+    background-color: #2e1a21;
+}
+element.selected.urgent element-text {
+    text-color: @urgent;
+    font:       "JetBrainsMono Nerd Font Bold 12";
+}

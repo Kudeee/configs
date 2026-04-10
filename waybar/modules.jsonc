@@ -3,7 +3,7 @@
   "custom/launcher": {
     "format": "󰀻",
     "tooltip": false,
-    "on-click": "pkill -x rofi || rofi -show drun"
+    "on-click": "rofi -show drun",
   },
 
   "hyprland/workspaces": {
@@ -83,11 +83,13 @@
 
   "bluetooth": {
     "format-on":        "β",
-    "format-off":       "",
-    "format-disabled":  "",
+    "format-off":       "β",
+    "format-disabled":  "β",
     "format-connected": "β",
     "tooltip-format":   "{controller_alias}\n{num_connections} connected",
-    "on-click": "blueman-manager"
+    "on-click": "bluetoothctl power on",
+    "on-click-release": "bluetoothctl power off",
+    "on-click-right": "blueman-manager"
   },
 
   // ── RIGHT ─────────────────────────────────────────────────────────
@@ -100,15 +102,6 @@
     ]
   },
 
-  "pulseaudio": {
-    "format":           "♪ {volume}%",
-    "format-muted":     "♪ M",
-    "format-bluetooth": "♪ {volume}%",
-    "scroll-step": 2,
-    "on-click":       "pavucontrol",
-    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-  },
-
   "pulseaudio#microphone": {
     "format":              "󰍬 {format_source}",
     "format-source":       "{volume}%",
@@ -117,6 +110,26 @@
     "scroll-step": 2
   },
 
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "hyprctl dispatch exec 'pavucontrol -t 4'",
+    "format-muted": "<span size='12pt'>󰝟</span>",
+    "scroll-step": 2,
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [
+       "<span size='9pt'>♪</span>",
+      ]
+    }
+  },
+ 
   "backlight": {
     "format-icons": [
       "󰃞",
@@ -136,6 +149,7 @@
       "warning":  30,
       "critical": 15
     },
+    "on-click": "tlpui",
     "format-icons": [
       "󰂎",
       "󰁺",
