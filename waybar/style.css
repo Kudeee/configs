@@ -55,6 +55,7 @@ window#waybar {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 #custom-launcher,
+#custom-powerMenu,
 #workspaces,
 #window,
 #language,
@@ -150,6 +151,10 @@ window#waybar {
 
 #cpu {
   color: @accent2;
+}
+
+#custom-powerMenu {
+  color: @warning_color;
 }
 
 #clock {

@@ -33,6 +33,12 @@
   },
 
   // ── CENTER ────────────────────────────────────────────────────────
+  
+  "custom/powerMenu": {
+    "format": "⏻",
+    "tooltip-format": "Power Menu",
+    "on-click": ".config/rofi/powermenu.sh",
+  },
 
   "hyprland/language": {
     "format": "{}",
