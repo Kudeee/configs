@@ -7,31 +7,66 @@ local map = vim.keymap.set
 -- ─── Insert mode escape ────────────────────────────────────────────────────
 map("i", "jj", "<Esc>", { desc = "Escape insert mode" })
 
--- ─── Compiler plugin keymaps ───────────────────────────────────────────────
--- Requires 'compiler.nvim'. Add it to your plugins list first, then
--- uncomment these. Leaving them active without the plugin causes errors.
---
--- map("n", "<F6>",   "<cmd>CompilerOpen<cr>",                    { silent = true, desc = "Compiler: open" })
--- map("n", "<S-F6>", "<cmd>CompilerStop<cr><cmd>CompilerRedo<cr>", { silent = true, desc = "Compiler: redo" })
--- map("n", "<S-F7>", "<cmd>CompilerToggleResults<cr>",           { silent = true, desc = "Compiler: toggle results" })
+-- ─── Code runner (VSCode-style F5 / <leader>rr) ───────────────────────────
+-- Runs the current file in a Snacks terminal split (bottom, 30% height).
+-- Supports: Python, JS/TS (Node/ts-node), Lua, Shell, Ruby, Go, Rust, C#.
+-- For compiled languages (Go, Rust, C#) it uses their standard run commands.
+local function run_file()
+  local ft = vim.bo.filetype
+  local file = vim.fn.expand("%:p")
+  local fname = vim.fn.shellescape(file)
+  local dir = vim.fn.shellescape(vim.fn.expand("%:p:h"))
+
+  local runners = {
+    python = "python3 " .. fname,
+    javascript = "node " .. fname,
+    typescript = "npx ts-node " .. fname,
+    lua = "lua " .. fname,
+    sh = "bash " .. fname,
+    bash = "bash " .. fname,
+    zsh = "zsh " .. fname,
+    ruby = "ruby " .. fname,
+    go = "cd " .. dir .. " && go run " .. fname,
+    rust = "cd " .. dir .. " && cargo script " .. fname,
+    -- C# via dotnet-script: `dotnet tool install -g dotnet-script`
+    cs = "dotnet script " .. fname,
+  }
+
+  local cmd = runners[ft]
+  if not cmd then
+    vim.notify("No runner configured for filetype: " .. (ft == "" and "(none)" or ft), vim.log.levels.WARN)
+    return
+  end
+
+  vim.cmd("silent! write") -- save before running
+
+  -- Wrap in a shell that prints a separator + exit code, then waits for a
+  -- keypress so the output stays visible (like VSCode's integrated terminal).
+  local wrapped = string.format(
+    'bash -c \'%s; echo; echo "──── Process exited with code $? ────"; read -n1 -p "Press any key to close..."\'',
+    cmd:gsub("'", "'\\''") -- escape any single-quotes in the command
+  )
+
+  Snacks.terminal.open(wrapped, {
+    win = {
+      position = "bottom",
+      height = 0.3,
+    },
+  })
+end
+
+map("n", "<F5>", run_file, { desc = "Run current file" })
+map("n", "<leader>rr", run_file, { desc = "Run current file" })
 
 -- ─── Formatting ────────────────────────────────────────────────────────────
--- Explicit format keymap (conform + LSP fallback).
--- LazyVim already maps <leader>cf but this adds a quick alternative.
 map({ "n", "v" }, "<leader>rf", function()
   require("conform").format({ async = true, lsp_fallback = true })
 end, { desc = "Format file/selection" })
 
--- ─── Python: run current file in terminal ──────────────────────────────────
-map("n", "<leader>rp", function()
-  local file = vim.fn.expand("%:p")
-  -- Uses snacks terminal (available in LazyVim v12+)
-  Snacks.terminal.open("python3 " .. vim.fn.shellescape(file))
-end, { desc = "Run Python file" })
+-- ─── Python: explicit runner (kept for backwards compat; F5 also works) ────
+map("n", "<leader>rp", run_file, { desc = "Run Python file" })
 
 -- ─── Diagnostic navigation ─────────────────────────────────────────────────
--- Neovim 0.11 changed vim.diagnostic.goto_next/prev → vim.diagnostic.jump
--- LazyVim already sets ]d / [d but these add float-showing variants.
 map("n", "<leader>dj", function()
   vim.diagnostic.jump({ count = 1, float = true })
 end, { desc = "Next diagnostic" })
