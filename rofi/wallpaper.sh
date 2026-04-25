@@ -52,13 +52,7 @@ CHOSEN=$(printf "%b" "$ROFI_INPUT" | rofi \
   -dmenu \
   -p "Wallpaper" \
   -show-icons \
-  -theme-str '
-        window { width: 900px; }
-        listview { columns: 4; lines: 3; }
-        element { orientation: vertical; }
-        element-icon { size: 128px; }
-        element-text { horizontal-align: 0.5; }
-    ')
+  -theme ~/.config/rofi/wallpaper.rasi)
 
 [ -z "$CHOSEN" ] && exit 0
 

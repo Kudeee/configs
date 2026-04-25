@@ -1,0 +1,181 @@
+/*
+ * Rofi Wallpaper Picker Theme
+ * Save to: ~/.config/rofi/wallpaper.rasi
+ *
+ * Your wallpaper.sh already uses rofi -dmenu with -show-icons.
+ * This file replaces the inline theme-str block in wallpaper.sh.
+ *
+ * After saving this file, update wallpaper.sh — replace the -theme-str '...'
+ * block with:   -theme ~/.config/rofi/wallpaper.rasi
+ */
+
+/* ── 1. COLOR PALETTE ────────────────────────────────────────────────────── */
+/* Change these and everything updates automatically.                          */
+* {
+    bg0:    #0d0f18;    /* window background (darkest)                        */
+    bg1:    #13151f;    /* inputbar / search bar background                   */
+    bg2:    #1c1f2e;    /* alternate row tint                                 */
+    bg3:    #252840;    /* selected tile background                           */
+    accent: #7986cb;    /* border + selected highlight color                  */
+    fg0:    #cdd6f4;    /* primary text                                       */
+    fg1:    #a9b1d6;    /* secondary text (filenames)                         */
+    fg2:    #565f89;    /* muted text (placeholder, prompt)                   */
+
+    background-color: transparent;
+    text-color:       @fg0;
+    border-color:     @accent;
+}
+
+configuration{
+  font: "Silkscreen 10";
+}
+
+/* ── 2. WINDOW ───────────────────────────────────────────────────────────── */
+window {
+    width:            900px;     /* ← CHANGE: popup width                     */
+    background-color: @bg0;
+    border:           1px;
+    border-color:     @accent;
+    border-radius:    16px;
+    padding:          0px;
+}
+
+/* ── 3. LAYOUT ───────────────────────────────────────────────────────────── */
+mainbox {
+    background-color: transparent;
+    spacing:          0px;
+    children:         [ inputbar, listview ];
+}
+
+/* ── 4. SEARCH BAR ───────────────────────────────────────────────────────── */
+inputbar {
+    background-color: @bg1;
+    border-radius:    16px 16px 0px 0px;
+    padding:          12px 18px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    // font:             "JetBrainsMono Nerd Font 13";
+    vertical-align:   0.5;
+}
+
+entry {
+    background-color:  transparent;
+    text-color:        @fg0;
+    // font:              "JetBrainsMono Nerd Font 12";
+    vertical-align:    0.5;
+    placeholder:       "Search wallpapers...";
+    placeholder-color: @fg2;
+}
+
+case-indicator {
+    visible: false;
+}
+
+/* ── 5. THUMBNAIL GRID ───────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    padding:          12px 10px 12px 10px;
+    spacing:          8px;         /* gap between thumbnails                   */
+
+    columns:  4;                   /* ← CHANGE: thumbnails per row             */
+    lines:    3;                   /* ← CHANGE: rows visible before scrolling  */
+
+    /*
+     * TIP — more thumbnails per screen:
+     *   columns: 5; lines: 3;   → 15 at once (needs wider window)
+     *   columns: 3; lines: 2;   → 6 at once (larger previews)
+     */
+
+    fixed-height: true;
+    scrollbar:    false;
+}
+
+scrollbar {
+    background-color: @bg2;
+    handle-color:     @accent;
+    handle-width:     4px;
+}
+
+/* ── 6. EACH THUMBNAIL TILE ──────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    10px;
+    spacing:          3px;
+    orientation:      vertical;    /* thumbnail on top, filename below         */
+    // children:         [ element-icon, element-text ];
+    children:         [ element-icon];
+}
+
+/* The wallpaper thumbnail */
+element-icon {
+    background-color: transparent;
+    size:             190px;       /* ← CHANGE: thumbnail preview size         */
+    horizontal-align: 0.5;
+}
+
+/* The filename label */
+// element-text {
+//     background-color: transparent;
+//     text-color:       @fg1;
+//     // font:             "JetBrainsMono Nerd Font 9";
+//     horizontal-align: 0.5;
+//     vertical-align:   0.5;
+//     highlight:        bold;
+// }
+
+/* ── 7. STATES ───────────────────────────────────────────────────────────── */
+
+element.normal.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element.alternate.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element.selected.normal {
+    background-color: @bg3;
+    text-color:       @fg0;
+}
+
+/* ── 8. NO RESULTS ───────────────────────────────────────────────────────── */
+message {
+    background-color: transparent;
+    padding:          8px 12px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @fg2;
+    // font:             "JetBrainsMono Nerd Font 11";
+    horizontal-align: 0.5;
+}
+
+/*
+ * ┌─────────────────────────────────────────────────────────────────────┐
+ * │  HOW TO CONNECT THIS TO wallpaper.sh                               │
+ * │                                                                     │
+ * │  In ~/.config/rofi/wallpaper.sh, find the rofi call and replace    │
+ * │  the -theme-str '...' block with just:                             │
+ * │                                                                     │
+ * │    CHOSEN=$(printf "%b" "$ROFI_INPUT" | rofi \                     │
+ * │      -dmenu \                                                       │
+ * │      -p "Wallpaper" \                                               │
+ * │      -show-icons \                                                  │
+ * │      -theme ~/.config/rofi/wallpaper.rasi)                         │
+ * │                                                                     │
+ * │  Common tweaks:                                                     │
+ * │    • More columns    → listview { columns: 5; }                    │
+ * │    • Bigger previews → element-icon { size: 160px; }               │
+ * │    • Wider window    → window { width: 1100px; }                   │
+ * │    • Fewer rows      → listview { lines: 2; }                      │
+ * │    • Hide filenames  → element-text { visible: false; }            │
+ * └─────────────────────────────────────────────────────────────────────┘
+ */
