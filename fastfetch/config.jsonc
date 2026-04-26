@@ -73,11 +73,11 @@
       "key": "║ {#35} memory  {#keys}║",
       "type": "memory"
     },
-    {
-      "key": "║ {#36}󰩟 network {#keys}║",
-      "type": "localip",
-      "format": "{ipv4} ({ifname})"
-    },
+    // {
+    //   "key": "║ {#36}󰩟 network {#keys}║",
+    //   "type": "localip",
+    //   "format": "{ipv4} ({ifname})"
+    // },
     {
       "key": "╠═══════════╣",
       "type": "custom"

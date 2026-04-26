@@ -84,7 +84,7 @@
     "format-ethernet":     "󰈀 ETH",
     "format-disconnected": "󰤭",
     "tooltip-format-wifi": "{essid}\n↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
-    "on-click": "nm-connection-editor"
+    "on-click": "kitty --title=nmtui nmtui"
   },
 
   "bluetooth": {

@@ -1,0 +1,67 @@
+# ~/.config/rofimoji.rc
+# Rofimoji configuration — save here so you don't need CLI flags every time.
+# Full option reference: https://github.com/fdw/rofimoji#options
+#
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  QUICK-CHANGE SECTION — the things you'll actually want to tweak │
+# └──────────────────────────────────────────────────────────────────┘
+
+# ── Theme ──────────────────────────────────────────────────────────────────
+# Points to your rofimoji.rasi (matches the rest of your rofi setup).
+selector-args = -theme ~/.config/rofi/rofimoji.rasi
+
+# ── What action to take after picking an emoji ─────────────────────────────
+# Options: copy  → copy to clipboard only (paste manually with Ctrl+V)
+#          type  → auto-type directly into the focused window
+#          clipboard → copy AND auto-type
+# "copy" is the safest choice; works everywhere without xdotool/wtype.
+action = copy
+
+# ── Clipboard tool ─────────────────────────────────────────────────────────
+# Options: xdotool / wl-copy / cliphist
+# You're on Wayland (Hyprland) → wl-copy or cliphist (you have clipse running)
+clipboarder = cliphist
+
+# ── Typer (only used when action = type or clipboard) ──────────────────────
+# Options: xdotool / wtype / ydotool
+# Wayland → wtype is best (needs wtype installed: sudo pacman -S wtype)
+typer = wtype
+
+# ── Emoji collections to show ─────────────────────────────────────────────
+# Default: built-in emoji collections only
+files = emojis_smileys_emotion emojis_people_body emojis_animals_nature emojis_food_drink emojis_travel_places emojis_activities emojis_objects emojis_symbols emojis_flags
+
+# ── To show ONLY Material Design Icons: ───────────────────────────────────
+# files = ~/.config/rofimoji/material_design.csv
+
+# ── To show ONLY Cozette symbols: ─────────────────────────────────────────
+# files = ~/.config/rofimoji/cozette.csv
+
+# ── To show everything including your custom icons: ───────────────────────
+# files = emojis_smileys_emotion emojis_people_body emojis_animals_nature emojis_food_drink emojis_travel_places emojis_activities emojis_objects emojis_symbols emojis_flags ~/.config/rofimoji/material_design.csv ~/.config/rofimoji/cozette.csv
+
+# ── Recently used ──────────────────────────────────────────────────────────
+# Number of recently used emoji pinned at the top (marked urgent/red).
+# Set to 0 to disable the recent section entirely.
+max-recent = 10
+
+# ── Insert as ─────────────────────────────────────────────────────────────
+# Options: character (🎉)  |  name (:party_popper:)  |  both
+# "character" is almost always what you want.
+# ── Prompt ────────────────────────────────────────────────────────────────
+# The label shown in the search bar inside rofi.
+prompt = Emoji
+
+# ── Multi-select ─────────────────────────────────────────────────────────
+# When True, you can select multiple emoji with Shift+Enter before confirming.
+# They'll be inserted/copied together.
+# Default: False (single pick and close)
+# multi-select = False
+
+# ┌──────────────────────────────────────────────────────────────────────┐
+# │  HYPRLAND KEYBIND (paste into hyprland.conf)                         │
+# │                                                                      │
+# │    bind = $mainMod, period, exec, rofimoji                           │
+# │                                                                      │
+# │  rofimoji.rc is auto-loaded, so no extra flags needed.               │
+# └──────────────────────────────────────────────────────────────────────┘
