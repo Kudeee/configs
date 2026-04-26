@@ -20,7 +20,7 @@ action = copy
 # ── Clipboard tool ─────────────────────────────────────────────────────────
 # Options: xdotool / wl-copy / cliphist
 # You're on Wayland (Hyprland) → wl-copy or cliphist (you have clipse running)
-clipboarder = cliphist
+clipboarder = wl-copy
 
 # ── Typer (only used when action = type or clipboard) ──────────────────────
 # Options: xdotool / wtype / ydotool
