@@ -1,1500 +1,1500 @@
-󰀀,md-android
-󰀁,md-alert-box
-󰀂,md-alert-circle
-󰀃,md-alert-octagon
-󰀄,md-alpha
-󰀅,md-alphabetical
-󰀆,md-altimeter
-󰀇,md-amazon
-󰀈,md-ambulance
-󰀉,md-anchor
-󰀊,md-android-debug-bridge
-󰀋,md-android-studio
-󰀌,md-apple
-󰀍,md-apple-finder
-󰀎,md-apple-ios
-󰀏,md-apple-keyboard-caps
-󰀐,md-apple-keyboard-command
-󰀑,md-apple-keyboard-control
-󰀒,md-apple-keyboard-option
-󰀓,md-apple-keyboard-shift
-󰀔,md-apple-safari
-󰀕,md-apple-xcode
-󰀖,md-application
-󰀗,md-apps
-󰀘,md-archive
-󰀙,md-arrange-bring-forward
-󰀚,md-arrange-bring-to-front
-󰀛,md-arrange-send-backward
-󰀜,md-arrange-send-to-back
-󰀝,md-arrow-all
-󰀞,md-arrow-bottom-left
-󰀟,md-arrow-bottom-right
-󰀠,md-arrow-collapse
-󰀡,md-arrow-down
-󰀢,md-arrow-down-bold
-󰀣,md-arrow-down-bold-circle
-󰀤,md-arrow-down-bold-circle-outline
-󰀥,md-arrow-down-bold-hexagon-outline
-󰀦,md-arrow-down-box
-󰀧,md-arrow-down-drop-circle
-󰀨,md-arrow-down-drop-circle-outline
-󰀩,md-arrow-expand
-󰀪,md-arrow-left
-󰀫,md-arrow-left-bold
-󰀬,md-arrow-left-bold-circle
-󰀭,md-arrow-left-bold-circle-outline
-󰀮,md-arrow-left-bold-hexagon-outline
-󰀯,md-arrow-left-box
-󰀰,md-arrow-left-drop-circle
-󰀱,md-arrow-left-drop-circle-outline
-󰀲,md-arrow-right
-󰀳,md-arrow-right-bold
-󰀴,md-arrow-right-bold-circle
-󰀵,md-arrow-right-bold-circle-outline
-󰀶,md-arrow-right-bold-hexagon-outline
-󰀷,md-arrow-right-box
-󰀸,md-arrow-right-drop-circle
-󰀹,md-arrow-right-drop-circle-outline
-󰀺,md-arrow-top-left
-󰀻,md-arrow-top-right
-󰀼,md-arrow-up
-󰀽,md-arrow-up-bold
-󰀾,md-arrow-up-bold-circle
-󰀿,md-arrow-up-bold-circle-outline
-󰁀,md-arrow-up-bold-hexagon-outline
-󰁁,md-arrow-up-box
-󰁂,md-arrow-up-drop-circle
-󰁃,md-arrow-up-drop-circle-outline
-󰁄,md-assistant
-󰁅,md-at
-󰁆,md-attachment
-󰁇,md-audiobook
-󰁈,md-auto-fix
-󰁉,md-auto-upload
-󰁊,md-baby
-󰁋,md-baby-buggy
-󰁌,md-backburger
-󰁍,md-backspace
-󰁎,md-backup-restore
-󰁏,md-bank
-󰁐,md-barcode
-󰁑,md-barcode-scan
-󰁒,md-barley
-󰁓,md-barrel
-󰁔,md-baseball
-󰁕,md-basket
-󰁖,md-basketball
-󰁗,md-battery
-󰁘,md-battery-10
-󰁙,md-battery-20
-󰁚,md-battery-30
-󰁛,md-battery-40
-󰁜,md-battery-50
-󰁝,md-battery-60
-󰁞,md-battery-70
-󰁟,md-battery-80
-󰁠,md-battery-90
-󰁡,md-battery-alert
-󰁢,md-battery-charging
-󰁣,md-battery-charging-100
-󰁤,md-battery-charging-20
-󰁥,md-battery-charging-30
-󰁦,md-battery-charging-40
-󰁧,md-battery-charging-60
-󰁨,md-battery-charging-80
-󰁩,md-battery-charging-outline
-󰁪,md-battery-minus
-󰁫,md-battery-negative
-󰁬,md-battery-outline
-󰁭,md-battery-plus
-󰁮,md-battery-positive
-󰁯,md-battery-unknown
-󰁰,md-beach
-󰁱,md-beats
-󰁲,md-beer
-󰁳,md-behance
-󰁴,md-bell
-󰁵,md-bell-off
-󰁶,md-bell-outline
-󰁷,md-bell-plus
-󰁸,md-bell-ring
-󰁹,md-bell-ring-outline
-󰁺,md-bell-sleep
-󰁻,md-beta
-󰁼,md-bike
-󰁽,md-binoculars
-󰁾,md-bio
-󰁿,md-biohazard
-󰂀,md-bitbucket
-󰂁,md-black-mesa
-󰂂,md-blackberry
-󰂃,md-blinds
-󰂄,md-block-helper
-󰂅,md-blogger
-󰂆,md-bluetooth
-󰂇,md-bluetooth-audio
-󰂈,md-bluetooth-connect
-󰂉,md-bluetooth-off
-󰂊,md-bluetooth-settings
-󰂋,md-bluetooth-transfer
-󰂌,md-blur
-󰂍,md-blur-linear
-󰂎,md-blur-off
-󰂏,md-blur-radial
-󰂐,md-bomb
-󰂑,md-book
-󰂒,md-book-minus
-󰂓,md-book-multiple
-󰂔,md-book-multiple-variant
-󰂕,md-book-open
-󰂖,md-book-open-page-variant
-󰂗,md-book-open-variant
-󰂘,md-book-plus
-󰂙,md-book-variant
-󰂚,md-bookmark
-󰂛,md-bookmark-check
-󰂜,md-bookmark-music
-󰂝,md-bookmark-outline
-󰂞,md-bookmark-plus
-󰂟,md-bookmark-plus-outline
-󰂠,md-bookmark-remove
-󰂡,md-boombox
-󰂢,md-border-all
-󰂣,md-border-bottom
-󰂤,md-border-color
-󰂥,md-border-horizontal
-󰂦,md-border-inside
-󰂧,md-border-left
-󰂨,md-border-none
-󰂩,md-border-outside
-󰂪,md-border-right
-󰂫,md-border-style
-󰂬,md-border-top
-󰂭,md-border-vertical
-󰂮,md-bowling
-󰂯,md-briefcase
-󰂰,md-briefcase-check
-󰂱,md-briefcase-download
-󰂲,md-briefcase-upload
-󰂳,md-brightness-1
-󰂴,md-brightness-2
-󰂵,md-brightness-3
-󰂶,md-brightness-4
-󰂷,md-brightness-5
-󰂸,md-brightness-6
-󰂹,md-brightness-7
-󰂺,md-brightness-auto
-󰂻,md-broom
-󰂼,md-brush
-󰂽,md-bug
-󰂾,md-bulletin-board
-󰂿,md-bullhorn
-󰃀,md-bullseye
-󰃁,md-bus
-󰃂,md-cached
-󰃃,md-cake
-󰃄,md-cake-layered
-󰃅,md-cake-variant
-󰃆,md-calculator
-󰃇,md-calendar
-󰃈,md-calendar-blank
-󰃉,md-calendar-check
-󰃊,md-calendar-clock
-󰃋,md-calendar-multiple
-󰃌,md-calendar-multiple-check
-󰃍,md-calendar-plus
-󰃎,md-calendar-remove
-󰃏,md-calendar-text
-󰃐,md-calendar-today
-󰃑,md-call-made
-󰃒,md-call-merge
-󰃓,md-call-missed
-󰃔,md-call-received
-󰃕,md-call-split
-󰃖,md-camcorder
-󰃗,md-camcorder-box
-󰃘,md-camcorder-box-off
-󰃙,md-camcorder-off
-󰃚,md-camera
-󰃛,md-camera-burst
-󰃜,md-camera-enhance
-󰃝,md-camera-front
-󰃞,md-camera-front-variant
-󰃟,md-camera-iris
-󰃠,md-camera-off
-󰃡,md-camera-party-mode
-󰃢,md-camera-rear
-󰃣,md-camera-rear-variant
-󰃤,md-camera-switch
-󰃥,md-camera-timer
-󰃦,md-car
-󰃧,md-car-battery
-󰃨,md-car-connected
-󰃩,md-car-wash
-󰃪,md-cards
-󰃫,md-cards-outline
-󰃬,md-cards-playing-outline
-󰃭,md-cart
-󰃮,md-cart-outline
-󰃯,md-cart-plus
-󰃰,md-case-sensitive-alt
-󰃱,md-cast
-󰃲,md-cast-connected
-󰃳,md-castle
-󰃴,md-cat
-󰃵,md-cellphone
-󰃶,md-cellphone-android
-󰃷,md-cellphone-basic
-󰃸,md-cellphone-dock
-󰃹,md-cellphone-iphone
-󰃺,md-cellphone-link
-󰃻,md-cellphone-link-off
-󰃼,md-cellphone-settings
-󰃽,md-certificate
-󰃾,md-chair-school
-󰃿,md-chart-arc
-󰄀,md-chart-areaspline
-󰄁,md-chart-bar
-󰄂,md-chart-donut
-󰄃,md-chart-donut-variant
-󰄄,md-chart-gantt
-󰄅,md-chart-histogram
-󰄆,md-chart-line
-󰄇,md-chart-pie
-󰄈,md-chart-scatterplot-hexbin
-󰄉,md-chart-timeline
-󰄊,md-check
-󰄋,md-check-all
-󰄌,md-check-circle
-󰄍,md-check-circle-outline
-󰄎,md-checkbox-blank
-󰄏,md-checkbox-blank-circle
-󰄐,md-checkbox-blank-circle-outline
-󰄑,md-checkbox-blank-outline
-󰄒,md-checkbox-marked
-󰄓,md-checkbox-marked-circle
-󰄔,md-checkbox-marked-circle-outline
-󰄕,md-checkbox-marked-outline
-󰄖,md-checkbox-multiple-blank
-󰄗,md-checkbox-multiple-blank-outline
-󰄘,md-checkbox-multiple-marked
-󰄙,md-checkbox-multiple-marked-outline
-󰄚,md-checkerboard
-󰄛,md-chemical-weapon
-󰄜,md-chevron-double-down
-󰄝,md-chevron-double-left
-󰄞,md-chevron-double-right
-󰄟,md-chevron-double-up
-󰄠,md-chevron-down
-󰄡,md-chevron-left
-󰄢,md-chevron-right
-󰄣,md-chevron-up
-󰄤,md-chips
-󰄥,md-city
-󰄦,md-clipboard
-󰄧,md-clipboard-account
-󰄨,md-clipboard-alert
-󰄩,md-clipboard-arrow-down
-󰄪,md-clipboard-arrow-left
-󰄫,md-clipboard-check
-󰄬,md-clipboard-outline
-󰄭,md-clipboard-text
-󰄮,md-clippy
-󰄯,md-clock
-󰄰,md-clock-fast
-󰄱,md-close
-󰄲,md-close-box
-󰄳,md-close-box-outline
-󰄴,md-close-circle
-󰄵,md-close-circle-outline
-󰄶,md-close-network
-󰄷,md-close-octagon
-󰄸,md-close-octagon-outline
-󰄹,md-cloud
-󰄺,md-cloud-check
-󰄻,md-cloud-circle
-󰄼,md-cloud-download
-󰄽,md-cloud-outline
-󰄾,md-cloud-outline-off
-󰄿,md-cloud-print
-󰅀,md-cloud-print-outline
-󰅁,md-cloud-upload
-󰅂,md-code-array
-󰅃,md-code-braces
-󰅄,md-code-brackets
-󰅅,md-code-equal
-󰅆,md-code-greater-than
-󰅇,md-code-greater-than-or-equal
-󰅈,md-code-less-than
-󰅉,md-code-less-than-or-equal
-󰅊,md-code-not-equal
-󰅋,md-code-not-equal-variant
-󰅌,md-code-parentheses
-󰅍,md-code-string
-󰅎,md-code-tags
-󰅏,md-codepen
-󰅐,md-coffee
-󰅑,md-coffee-to-go
-󰅒,md-color-helper
-󰅓,md-comment
-󰅔,md-comment-account
-󰅕,md-comment-account-outline
-󰅖,md-comment-alert
-󰅗,md-comment-alert-outline
-󰅘,md-comment-check
-󰅙,md-comment-check-outline
-󰅚,md-comment-multiple-outline
-󰅛,md-comment-outline
-󰅜,md-comment-plus-outline
-󰅝,md-comment-processing
-󰅞,md-comment-processing-outline
-󰅟,md-comment-remove-outline
-󰅠,md-comment-text
-󰅡,md-comment-text-outline
-󰅢,md-compare
-󰅣,md-compass
-󰅤,md-compass-outline
-󰅥,md-console
-󰅦,md-contact-mail
-󰅧,md-content-copy
-󰅨,md-content-cut
-󰅩,md-content-duplicate
-󰅪,md-content-paste
-󰅫,md-content-save
-󰅬,md-content-save-all
-󰅭,md-content-save-settings
-󰅮,md-contrast
-󰅯,md-contrast-box
-󰅰,md-contrast-circle
-󰅱,md-cookie
-󰅲,md-counter
-󰅳,md-cow
-󰅴,md-credit-card
-󰅵,md-credit-card-multiple
-󰅶,md-credit-card-plus
-󰅷,md-credit-card-scan
-󰅸,md-crop
-󰅹,md-crop-free
-󰅺,md-crop-landscape
-󰅻,md-crop-portrait
-󰅼,md-crop-rotate
-󰅽,md-crop-square
-󰅾,md-crosshairs
-󰅿,md-crosshairs-gps
-󰆀,md-crown
-󰆁,md-cube
-󰆂,md-cube-outline
-󰆃,md-cube-send
-󰆄,md-cube-unfolded
-󰆅,md-cup
-󰆆,md-cup-water
-󰆇,md-currency-btc
-󰆈,md-currency-eur
-󰆉,md-currency-gbp
-󰆊,md-currency-inr
-󰆋,md-currency-ngn
-󰆌,md-currency-rub
-󰆍,md-currency-try
-󰆎,md-currency-usd
-󰆏,md-cursor-default
-󰆐,md-cursor-default-outline
-󰆑,md-cursor-move
-󰆒,md-cursor-pointer
-󰆓,md-database
-󰆔,md-database-minus
-󰆕,md-database-plus
-󰆖,md-debug-step-into
-󰆗,md-debug-step-out
-󰆘,md-debug-step-over
-󰆙,md-decimal-decrease
-󰆚,md-decimal-increase
-󰆛,md-delete
-󰆜,md-delete-forever
-󰆝,md-delete-sweep
-󰆞,md-delete-variant
-󰆟,md-delta
-󰆠,md-deskphone
-󰆡,md-desktop-mac
-󰆢,md-desktop-tower
-󰆣,md-details
-󰆤,md-deviantart
-󰆥,md-diamond
-󰆦,md-dice-1
-󰆧,md-dice-2
-󰆨,md-dice-3
-󰆩,md-dice-4
-󰆪,md-dice-5
-󰆫,md-dice-6
-󰆬,md-directions
-󰆭,md-directions-fork
-󰆮,md-disk-alert
-󰆯,md-disqus
-󰆰,md-division
-󰆱,md-division-box
-󰆲,md-dns
-󰆳,md-document
-󰆴,md-domain
-󰆵,md-dots-horizontal
-󰆶,md-dots-vertical
-󰆷,md-download
-󰆸,md-drag
-󰆹,md-drag-horizontal
-󰆺,md-drag-vertical
-󰆻,md-drawing
-󰆼,md-drawing-box
-󰆽,md-dropbox
-󰆾,md-drupal
-󰆿,md-duck
-󰇀,md-dumbbell
-󰇁,md-earth
-󰇂,md-earth-off
-󰇃,md-edge
-󰇄,md-eject
-󰇅,md-elevation-decline
-󰇆,md-elevation-rise
-󰇇,md-elevator
-󰇈,md-email
-󰇉,md-email-open
-󰇊,md-email-open-outline
-󰇋,md-email-outline
-󰇌,md-email-secure
-󰇍,md-email-variant
-󰇎,md-emoticon
-󰇏,md-emoticon-cool
-󰇐,md-emoticon-devil
-󰇑,md-emoticon-happy
-󰇒,md-emoticon-neutral
-󰇓,md-emoticon-poop
-󰇔,md-emoticon-sad
-󰇕,md-emoticon-tongue
-󰇖,md-equal
-󰇗,md-equal-box
-󰇘,md-eraser
-󰇙,md-eraser-variant
-󰇚,md-escalator
-󰇛,md-ethernet
-󰇜,md-ethernet-cable
-󰇝,md-ethernet-cable-off
-󰇞,md-etsy
-󰇟,md-ev-station
-󰇠,md-evernote
-󰇡,md-exclamation
-󰇢,md-exit-to-app
-󰇣,md-export
-󰇤,md-eye
-󰇥,md-eye-off
-󰇦,md-eyedropper
-󰇧,md-eyedropper-variant
-󰇨,md-face
-󰇩,md-face-profile
-󰇪,md-factory
-󰇫,md-fan
-󰇬,md-fast-forward
-󰇭,md-fast-forward-outline
-󰇮,md-fax
-󰇯,md-ferry
-󰇰,md-file
-󰇱,md-file-chart
-󰇲,md-file-check
-󰇳,md-file-cloud
-󰇴,md-file-delimited
-󰇵,md-file-document
-󰇶,md-file-document-box
-󰇷,md-file-excel
-󰇸,md-file-excel-box
-󰇹,md-file-export
-󰇺,md-file-find
-󰇻,md-file-image
-󰇼,md-file-import
-󰇽,md-file-lock
-󰇾,md-file-multiple
-󰇿,md-file-music
-󰈀,md-file-outline
-󰈁,md-file-pdf
-󰈂,md-file-pdf-box
-󰈃,md-file-powerpoint
-󰈄,md-file-powerpoint-box
-󰈅,md-file-presentation-box
-󰈆,md-file-send
-󰈇,md-file-tree
-󰈈,md-file-video
-󰈉,md-file-word
-󰈊,md-file-word-box
-󰈋,md-film
-󰈌,md-filmstrip
-󰈍,md-filmstrip-off
-󰈎,md-filter
-󰈏,md-filter-outline
-󰈐,md-filter-remove
-󰈑,md-filter-remove-outline
-󰈒,md-filter-variant
-󰈓,md-fingerprint
-󰈔,md-fire
-󰈕,md-firefox
-󰈖,md-fish
-󰈗,md-flag
-󰈘,md-flag-checkered
-󰈙,md-flag-outline
-󰈚,md-flag-outline-variant
-󰈛,md-flag-triangle
-󰈜,md-flag-variant
-󰈝,md-flash
-󰈞,md-flash-auto
-󰈟,md-flash-off
-󰈠,md-flash-outline
-󰈡,md-flash-red-eye
-󰈢,md-flashlight
-󰈣,md-flashlight-off
-󰈤,md-flask
-󰈥,md-flask-empty
-󰈦,md-flask-empty-outline
-󰈧,md-flask-outline
-󰈨,md-flip-to-back
-󰈩,md-flip-to-front
-󰈪,md-floppy
-󰈫,md-flower
-󰈬,md-folder
-󰈭,md-folder-account
-󰈮,md-folder-download
-󰈯,md-folder-google-drive
-󰈰,md-folder-image
-󰈱,md-folder-lock
-󰈲,md-folder-lock-open
-󰈳,md-folder-move
-󰈴,md-folder-multiple
-󰈵,md-folder-multiple-image
-󰈶,md-folder-multiple-outline
-󰈷,md-folder-open
-󰈸,md-folder-outline
-󰈹,md-folder-plus
-󰈺,md-folder-remove
-󰈻,md-folder-star
-󰈼,md-folder-upload
-󰈽,md-food
-󰈾,md-food-apple
-󰈿,md-food-fork-drink
-󰉀,md-food-off
-󰉁,md-food-variant
-󰉂,md-football
-󰉃,md-football-australian
-󰉄,md-football-helmet
-󰉅,md-format-align-bottom
-󰉆,md-format-align-center
-󰉇,md-format-align-justify
-󰉈,md-format-align-left
-󰉉,md-format-align-middle
-󰉊,md-format-align-right
-󰉋,md-format-align-top
-󰉌,md-format-bold
-󰉍,md-format-clear
-󰉎,md-format-color-fill
-󰉏,md-format-color-text
-󰉐,md-format-float-center
-󰉑,md-format-float-left
-󰉒,md-format-float-none
-󰉓,md-format-float-right
-󰉔,md-format-header-1
-󰉕,md-format-header-2
-󰉖,md-format-header-3
-󰉗,md-format-header-4
-󰉘,md-format-header-5
-󰉙,md-format-header-6
-󰉚,md-format-header-decrease
-󰉛,md-format-header-equal
-󰉜,md-format-header-increase
-󰉝,md-format-header-pound
-󰉞,md-format-horizontal-align-center
-󰉟,md-format-horizontal-align-left
-󰉠,md-format-horizontal-align-right
-󰉡,md-format-indent-decrease
-󰉢,md-format-indent-increase
-󰉣,md-format-italic
-󰉤,md-format-line-spacing
-󰉥,md-format-line-style
-󰉦,md-format-line-weight
-󰉧,md-format-list-bulleted
-󰉨,md-format-list-bulleted-type
-󰉩,md-format-list-numbers
-󰉪,md-format-paint
-󰉫,md-format-paragraph
-󰉬,md-format-pilcrow
-󰉭,md-format-quote
-󰉮,md-format-rotate-90
-󰉯,md-format-section
-󰉰,md-format-size
-󰉱,md-format-strikethrough
-󰉲,md-format-strikethrough-variant
-󰉳,md-format-subscript
-󰉴,md-format-superscript
-󰉵,md-format-text
-󰉶,md-format-textdirection-l-to-r
-󰉷,md-format-textdirection-r-to-l
-󰉸,md-format-title
-󰉹,md-format-underline
-󰉺,md-format-vertical-align-bottom
-󰉻,md-format-vertical-align-center
-󰉼,md-format-vertical-align-top
-󰉽,md-format-wrap-inline
-󰉾,md-format-wrap-square
-󰉿,md-format-wrap-tight
-󰊀,md-format-wrap-top-bottom
-󰊁,md-forum
-󰊂,md-forward
-󰊃,md-fridge
-󰊄,md-fridge-filled
-󰊅,md-fridge-filled-bottom
-󰊆,md-fridge-filled-top
-󰊇,md-fullscreen
-󰊈,md-fullscreen-exit
-󰊉,md-function
-󰊊,md-gamepad
-󰊋,md-gamepad-variant
-󰊌,md-gas-station
-󰊍,md-gate
-󰊎,md-gauge
-󰊏,md-gavel
-󰊐,md-gender-female
-󰊑,md-gender-male
-󰊒,md-gender-male-female
-󰊓,md-gender-transgender
-󰊔,md-ghost
-󰊕,md-gift
-󰊖,md-git
-󰊗,md-github-box
-󰊘,md-github-circle
-󰊙,md-glass-flute
-󰊚,md-glass-mug
-󰊛,md-glass-stange
-󰊜,md-glass-tulip
-󰊝,md-glasses
-󰊞,md-gmail
-󰊟,md-google
-󰊠,md-google-cardboard
-󰊡,md-google-chrome
-󰊢,md-google-circles
-󰊣,md-google-circles-communities
-󰊤,md-google-circles-extended
-󰊥,md-google-circles-group
-󰊦,md-google-controller
-󰊧,md-google-controller-off
-󰊨,md-google-drive
-󰊩,md-google-earth
-󰊪,md-google-glass
-󰊫,md-google-maps
-󰊬,md-google-nearby
-󰊭,md-google-pages
-󰊮,md-google-physical-web
-󰊯,md-google-play
-󰊰,md-google-plus
-󰊱,md-google-plus-box
-󰊲,md-google-translate
-󰊳,md-google-wallet
-󰊴,md-grid
-󰊵,md-grid-off
-󰊶,md-group
-󰊷,md-guitar-acoustic
-󰊸,md-guitar-electric
-󰊹,md-hand-pointing-right
-󰊺,md-hanger
-󰊻,md-harddisk
-󰊼,md-headphones
-󰊽,md-headphones-box
-󰊾,md-headphones-settings
-󰊿,md-headset
-󰋀,md-headset-dock
-󰋁,md-headset-off
-󰋂,md-heart
-󰋃,md-heart-box
-󰋄,md-heart-box-outline
-󰋅,md-heart-broken
-󰋆,md-heart-outline
-󰋇,md-heart-pulse
-󰋈,md-help
-󰋉,md-help-box
-󰋊,md-help-circle
-󰋋,md-help-circle-outline
-󰋌,md-help-network
-󰋍,md-hexagon
-󰋎,md-hexagon-multiple
-󰋏,md-hexagon-outline
-󰋐,md-history
-󰋑,md-home
-󰋒,md-home-map-marker
-󰋓,md-home-modern
-󰋔,md-home-outline
-󰋕,md-home-variant
-󰋖,md-hops
-󰋗,md-hospital
-󰋘,md-hospital-building
-󰋙,md-hospital-marker
-󰋚,md-hotel
-󰋛,md-houzz
-󰋜,md-houzz-box
-󰋝,md-human
-󰋞,md-human-child
-󰋟,md-human-female
-󰋠,md-human-greeting
-󰋡,md-human-handsdown
-󰋢,md-human-handsup
-󰋣,md-human-male
-󰋤,md-human-male-female
-󰋥,md-human-pregnant
-󰋦,md-image
-󰋧,md-image-album
-󰋨,md-image-area
-󰋩,md-image-area-close
-󰋪,md-image-broken
-󰋫,md-image-broken-variant
-󰋬,md-image-filter
-󰋭,md-image-filter-black-white
-󰋮,md-image-filter-center-focus
-󰋯,md-image-filter-center-focus-weak
-󰋰,md-image-filter-drama
-󰋱,md-image-filter-frames
-󰋲,md-image-filter-hdr
-󰋳,md-image-filter-none
-󰋴,md-image-filter-tilt-shift
-󰋵,md-image-filter-vintage
-󰋶,md-image-multiple
-󰋷,md-import
-󰋸,md-inbox
-󰋹,md-inbox-arrow-down
-󰋺,md-inbox-arrow-up
-󰋻,md-incognito
-󰋼,md-infinity
-󰋽,md-information
-󰋾,md-information-outline
-󰋿,md-information-variant
-󰌀,md-instagram
-󰌁,md-internet-explorer
-󰌂,md-invert-colors
-󰌃,md-jeepney
-󰌄,md-jira
-󰌅,md-jsfiddle
-󰌆,md-json
-󰌇,md-keg
-󰌈,md-kettle
-󰌉,md-key
-󰌊,md-key-change
-󰌋,md-key-minus
-󰌌,md-key-plus
-󰌍,md-key-remove
-󰌎,md-key-variant
-󰌏,md-keyboard
-󰌐,md-keyboard-backspace
-󰌑,md-keyboard-caps
-󰌒,md-keyboard-close
-󰌓,md-keyboard-off
-󰌔,md-keyboard-return
-󰌕,md-keyboard-tab
-󰌖,md-keyboard-variant
-󰌗,md-label
-󰌘,md-label-outline
-󰌙,md-lambda
-󰌚,md-lamp
-󰌛,md-lan
-󰌜,md-lan-connect
-󰌝,md-lan-disconnect
-󰌞,md-lan-pending
-󰌟,md-language-c
-󰌠,md-language-cpp
-󰌡,md-language-csharp
-󰌢,md-language-css3
-󰌣,md-language-go
-󰌤,md-language-html5
-󰌥,md-language-javascript
-󰌦,md-language-php
-󰌧,md-language-python
-󰌨,md-language-python-text
-󰌩,md-language-r
-󰌪,md-language-swift
-󰌫,md-language-typescript
-󰌬,md-laptop
-󰌭,md-laptop-chromebook
-󰌮,md-laptop-mac
-󰌯,md-laptop-off
-󰌰,md-laptop-windows
-󰌱,md-lastfm
-󰌲,md-launch
-󰌳,md-layers
-󰌴,md-layers-off
-󰌵,md-leaf
-󰌶,md-led-off
-󰌷,md-led-on
-󰌸,md-led-outline
-󰌹,md-led-variant-off
-󰌺,md-led-variant-on
-󰌻,md-led-variant-outline
-󰌼,md-library-books
-󰌽,md-library-music
-󰌾,md-library-plus
-󰌿,md-lightbulb
-󰍀,md-lightbulb-outline
-󰍁,md-link
-󰍂,md-link-off
-󰍃,md-link-variant
-󰍄,md-link-variant-off
-󰍅,md-linkedin
-󰍆,md-linkedin-box
-󰍇,md-linux
-󰍈,md-lock
-󰍉,md-lock-open
-󰍊,md-lock-open-outline
-󰍋,md-lock-outline
-󰍌,md-lock-plus
-󰍍,md-login
-󰍎,md-login-variant
-󰍏,md-logout
-󰍐,md-logout-variant
-󰍑,md-looks
-󰍒,md-loupe
-󰍓,md-lumx
-󰍔,md-magnet
-󰍕,md-magnet-on
-󰍖,md-magnify
-󰍗,md-magnify-minus
-󰍘,md-magnify-plus
-󰍙,md-map
-󰍚,md-map-marker
-󰍛,md-map-marker-circle
-󰍜,md-map-marker-minus
-󰍝,md-map-marker-multiple
-󰍞,md-map-marker-off
-󰍟,md-map-marker-outline
-󰍠,md-map-marker-plus
-󰍡,md-map-marker-radius
-󰍢,md-margin
-󰍣,md-markdown
-󰍤,md-marker
-󰍥,md-marker-check
-󰍦,md-martini
-󰍧,md-material-ui
-󰍨,md-math-compass
-󰍩,md-matrix
-󰍪,md-maxcdn
-󰍫,md-medical-bag
-󰍬,md-memory
-󰍭,md-menu
-󰍮,md-menu-down
-󰍯,md-menu-down-outline
-󰍰,md-menu-left
-󰍱,md-menu-right
-󰍲,md-menu-up
-󰍳,md-menu-up-outline
-󰍴,md-message
-󰍵,md-message-alert
-󰍶,md-message-draw
-󰍷,md-message-image
-󰍸,md-message-outline
-󰍹,md-message-plus
-󰍺,md-message-processing
-󰍻,md-message-reply
-󰍼,md-message-reply-text
-󰍽,md-message-text
-󰍾,md-message-text-outline
-󰍿,md-message-video
-󰎀,md-meteor
-󰎁,md-microphone
-󰎂,md-microphone-off
-󰎃,md-microphone-outline
-󰎄,md-microphone-settings
-󰎅,md-microphone-variant
-󰎆,md-microphone-variant-off
-󰎇,md-microscope
-󰎈,md-microsoft
-󰎉,md-minus
-󰎊,md-minus-box
-󰎋,md-minus-circle
-󰎌,md-minus-circle-outline
-󰎍,md-minus-network
-󰎎,md-monitor
-󰎏,md-monitor-multiple
-󰎐,md-more
-󰎑,md-motorbike
-󰎒,md-mouse
-󰎓,md-mouse-off
-󰎔,md-mouse-variant
-󰎕,md-mouse-variant-off
-󰎖,md-move-resize
-󰎗,md-move-resize-variant
-󰎘,md-movie
-󰎙,md-multiplication
-󰎚,md-multiplication-box
-󰎛,md-music-box
-󰎜,md-music-box-outline
-󰎝,md-music-circle
-󰎞,md-music-note
-󰎟,md-music-note-bluetooth
-󰎠,md-music-note-bluetooth-off
-󰎡,md-music-note-eighth
-󰎢,md-music-note-half
-󰎣,md-music-note-off
-󰎤,md-music-note-quarter
-󰎥,md-music-note-sixteenth
-󰎦,md-music-note-whole
-󰎧,md-nature
-󰎨,md-nature-people
-󰎩,md-navigation
-󰎪,md-needle
-󰎫,md-network
-󰎬,md-new-box
-󰎭,md-newspaper
-󰎮,md-nfc
-󰎯,md-nfc-tap
-󰎰,md-nfc-variant
-󰎱,md-nodejs
-󰎲,md-note
-󰎳,md-note-multiple
-󰎴,md-note-multiple-outline
-󰎵,md-note-outline
-󰎶,md-note-plus
-󰎷,md-note-plus-outline
-󰎸,md-note-text
-󰎹,md-notification-clear-all
-󰎺,md-npm
-󰎻,md-nuke
-󰎼,md-numeric-0-box
-󰎽,md-numeric-0-box-multiple-outline
-󰎾,md-numeric-0-box-outline
-󰎿,md-numeric-1-box
-󰏀,md-numeric-1-box-multiple-outline
-󰏁,md-numeric-1-box-outline
-󰏂,md-numeric-2-box
-󰏃,md-numeric-2-box-multiple-outline
-󰏄,md-numeric-2-box-outline
-󰏅,md-numeric-3-box
-󰏆,md-numeric-3-box-multiple-outline
-󰏇,md-numeric-3-box-outline
-󰏈,md-numeric-4-box
-󰏉,md-numeric-4-box-multiple-outline
-󰏊,md-numeric-4-box-outline
-󰏋,md-numeric-5-box
-󰏌,md-numeric-5-box-multiple-outline
-󰏍,md-numeric-5-box-outline
-󰏎,md-numeric-6-box
-󰏏,md-numeric-6-box-multiple-outline
-󰏐,md-numeric-6-box-outline
-󰏑,md-numeric-7-box
-󰏒,md-numeric-7-box-multiple-outline
-󰏓,md-numeric-7-box-outline
-󰏔,md-numeric-8-box
-󰏕,md-numeric-8-box-multiple-outline
-󰏖,md-numeric-8-box-outline
-󰏗,md-numeric-9-box
-󰏘,md-numeric-9-box-multiple-outline
-󰏙,md-numeric-9-box-outline
-󰏚,md-numeric-9-plus-box
-󰏛,md-numeric-9-plus-box-multiple-outline
-󰏜,md-numeric-9-plus-box-outline
-󰏝,md-office
-󰏞,md-oil
-󰏟,md-oil-temperature
-󰏠,md-omega
-󰏡,md-open-in-app
-󰏢,md-open-in-new
-󰏣,md-open-with
-󰏤,md-ornament
-󰏥,md-ornament-variant
-󰏦,md-outdoors
-󰏧,md-package
-󰏨,md-package-down
-󰏩,md-package-up
-󰏪,md-package-variant
-󰏫,md-package-variant-closed
-󰏬,md-page-first
-󰏭,md-page-last
-󰏮,md-palette
-󰏯,md-palette-advanced
-󰏰,md-panda
-󰏱,md-panorama
-󰏲,md-panorama-fisheye
-󰏳,md-panorama-horizontal
-󰏴,md-panorama-vertical
-󰏵,md-panorama-wide-angle
-󰏶,md-paper-cut-vertical
-󰏷,md-paperclip
-󰏸,md-parking
-󰏹,md-pause
-󰏺,md-pause-circle
-󰏻,md-pause-circle-outline
-󰏼,md-pause-octagon
-󰏽,md-pause-octagon-outline
-󰏾,md-pen
-󰏿,md-pencil
-󰐀,md-pencil-box
-󰐁,md-pencil-box-outline
-󰐂,md-pencil-lock
-󰐃,md-pencil-off
-󰐄,md-percent
-󰐅,md-pharmacy
-󰐆,md-phone
-󰐇,md-phone-bluetooth
-󰐈,md-phone-classic
-󰐉,md-phone-forward
-󰐊,md-phone-hangup
-󰐋,md-phone-in-talk
-󰐌,md-phone-incoming
-󰐍,md-phone-locked
-󰐎,md-phone-log
-󰐏,md-phone-minus
-󰐐,md-phone-missed
-󰐑,md-phone-outgoing
-󰐒,md-phone-paused
-󰐓,md-phone-plus
-󰐔,md-phone-settings
-󰐕,md-pi
-󰐖,md-pi-box
-󰐗,md-pig
-󰐘,md-pill
-󰐙,md-pin
-󰐚,md-pin-off
-󰐛,md-pine-tree
-󰐜,md-pine-tree-box
-󰐝,md-pinterest
-󰐞,md-pinterest-box
-󰐟,md-pizza
-󰐠,md-play
-󰐡,md-play-box-outline
-󰐢,md-play-circle
-󰐣,md-play-circle-outline
-󰐤,md-play-pause
-󰐥,md-play-protected-content
-󰐦,md-playlist-check
-󰐧,md-playlist-minus
-󰐨,md-playlist-play
-󰐩,md-playlist-plus
-󰐪,md-playlist-remove
-󰐫,md-plus
-󰐬,md-plus-box
-󰐭,md-plus-circle
-󰐮,md-plus-circle-multiple-outline
-󰐯,md-plus-circle-outline
-󰐰,md-plus-network
-󰐱,md-plus-one
-󰐲,md-plus-outline
-󰐳,md-pocket
-󰐴,md-poll
-󰐵,md-poll-box
-󰐶,md-polymer
-󰐷,md-pool
-󰐸,md-popcorn
-󰐹,md-pot
-󰐺,md-pot-mix
-󰐻,md-pound
-󰐼,md-pound-box
-󰐽,md-power
-󰐾,md-power-plug
-󰐿,md-power-plug-off
-󰑀,md-power-settings
-󰑁,md-power-sleep
-󰑂,md-presentation
-󰑃,md-presentation-play
-󰑄,md-printer
-󰑅,md-printer-3d
-󰑆,md-printer-alert
-󰑇,md-priority-high
-󰑈,md-priority-low
-󰑉,md-professional-hexagon
-󰑊,md-progress-clock
-󰑋,md-progress-download
-󰑌,md-progress-upload
-󰑍,md-projector
-󰑎,md-projector-screen
-󰑏,md-publish
-󰑐,md-puzzle
-󰑑,md-qqchat
-󰑒,md-qrcode
-󰑓,md-qrcode-scan
-󰑔,md-quadcopter
-󰑕,md-quality-high
-󰑖,md-radar
-󰑗,md-radiator
-󰑘,md-radio
-󰑙,md-radio-handheld
-󰑚,md-radio-tower
-󰑛,md-radioactive
-󰑜,md-radiobox-blank
-󰑝,md-radiobox-marked
-󰑞,md-raspberrypi
-󰑟,md-ray-end
-󰑠,md-ray-end-arrow
-󰑡,md-ray-start
-󰑢,md-ray-start-arrow
-󰑣,md-ray-start-end
-󰑤,md-ray-vertex
-󰑥,md-rdio
-󰑦,md-read
-󰑧,md-receipt
-󰑨,md-record
-󰑩,md-record-rec
-󰑪,md-recycle
-󰑫,md-reddit
-󰑬,md-redo
-󰑭,md-redo-variant
-󰑮,md-refresh
-󰑯,md-regex
-󰑰,md-relative-scale
-󰑱,md-reload
-󰑲,md-remote
-󰑳,md-rename-box
-󰑴,md-reorder-horizontal
-󰑵,md-reorder-vertical
-󰑶,md-repeat
-󰑷,md-repeat-off
-󰑸,md-repeat-once
-󰑹,md-replay
-󰑺,md-reply
-󰑻,md-reply-all
-󰑼,md-reproduction
-󰑽,md-resize-bottom-right
-󰑾,md-restore
-󰑿,md-rewind
-󰒀,md-rewind-outline
-󰒁,md-ribbon
-󰒂,md-rocket
-󰒃,md-rotate-3d
-󰒄,md-rotate-left
-󰒅,md-rotate-left-variant
-󰒆,md-rotate-right
-󰒇,md-rotate-right-variant
-󰒈,md-rounded-corner
-󰒉,md-router-wireless
-󰒊,md-routes
-󰒋,md-rowing
-󰒌,md-rss
-󰒍,md-rss-box
-󰒎,md-ruler
-󰒏,md-run
-󰒐,md-satellite
-󰒑,md-satellite-variant
-󰒒,md-school
-󰒓,md-screen-rotation
-󰒔,md-screen-rotation-lock
-󰒕,md-sd
-󰒖,md-select-all
-󰒗,md-send
-󰒘,md-serial-port
-󰒙,md-server
-󰒚,md-server-minus
-󰒛,md-server-network
-󰒜,md-server-network-off
-󰒝,md-server-off
-󰒞,md-server-plus
-󰒟,md-server-remove
-󰒠,md-server-security
-󰒡,md-settings
-󰒢,md-settings-box
-󰒣,md-shape-circle-plus
-󰒤,md-share
-󰒥,md-share-variant
-󰒦,md-shield
-󰒧,md-shield-half-full
-󰒨,md-shield-outline
-󰒩,md-shopping
-󰒪,md-shopping-music
-󰒫,md-sigma
-󰒬,md-sigma-lower
-󰒭,md-signal
-󰒮,md-signal-2g
-󰒯,md-signal-3g
-󰒰,md-signal-4g
-󰒱,md-signal-hspa
-󰒲,md-signal-hspa-plus
-󰒳,md-signal-off
-󰒴,md-signal-variant
-󰒵,md-sim
-󰒶,md-sim-alert
-󰒷,md-sim-off
-󰒸,md-sitemap
-󰒹,md-skip-next
-󰒺,md-skip-next-circle
-󰒻,md-skip-next-circle-outline
-󰒼,md-skip-previous
-󰒽,md-skip-previous-circle
-󰒾,md-skip-previous-circle-outline
-󰒿,md-skull
-󰓀,md-skype
-󰓁,md-skype-business
-󰓂,md-sleep
-󰓃,md-sleep-off
-󰓄,md-smoking
-󰓅,md-smoking-off
-󰓆,md-snapchat
-󰓇,md-snowflake
-󰓈,md-snowman
-󰓉,md-soccer
-󰓊,md-sort
-󰓋,md-sort-alphabetical
-󰓌,md-sort-ascending
-󰓍,md-sort-descending
-󰓎,md-sort-numeric
-󰓏,md-sort-variant
-󰓐,md-soundcloud
-󰓑,md-source-branch
-󰓒,md-source-fork
-󰓓,md-source-merge
-󰓔,md-source-pull
-󰓕,md-speaker
-󰓖,md-speaker-off
-󰓗,md-speedometer
-󰓘,md-spellcheck
-󰓙,md-spotify
-󰓚,md-stackoverflow
-󰓛,md-star
-󰓜,md-star-circle
-󰓝,md-star-half
-󰓞,md-star-outline
-󰓟,md-star-off
-󰓠,md-steam
-󰓡,md-steering
-󰓢,md-step-backward
-󰓣,md-step-backward-2
-󰓤,md-step-forward
-󰓥,md-step-forward-2
-󰓦,md-stethoscope
-󰓧,md-stop
-󰓨,md-stop-circle
-󰓩,md-stop-circle-outline
-󰓪,md-store
-󰓫,md-store-24-hour
-󰓬,md-stove
-󰓭,md-subdirectory-arrow-left
-󰓮,md-subdirectory-arrow-right
-󰓯,md-subway
-󰓰,md-subway-variant
-󰓱,md-sunglasses
-󰓲,md-swap-horizontal
-󰓳,md-swap-vertical
-󰓴,md-swim
-󰓵,md-switch
-󰓶,md-sword
-󰓷,md-sync
-󰓸,md-sync-alert
-󰓹,md-sync-off
-󰓺,md-tab
-󰓻,md-tab-unselected
-󰓼,md-table
-󰓽,md-table-column-plus-after
-󰓾,md-table-column-plus-before
-󰓿,md-table-column-remove
-󰔀,md-table-column-width
-󰔁,md-table-edit
-󰔂,md-table-large
-󰔃,md-table-row-height
-󰔄,md-table-row-plus-after
-󰔅,md-table-row-plus-before
-󰔆,md-table-row-remove
-󰔇,md-tag
-󰔈,md-tag-faces
-󰔉,md-tag-heart
-󰔊,md-tag-multiple
-󰔋,md-tag-outline
-󰔌,md-tag-text-outline
-󰔍,md-target
-󰔎,md-taxi
-󰔏,md-teamviewer
-󰔐,md-telegram
-󰔑,md-television
-󰔒,md-television-guide
-󰔓,md-temperature-celsius
-󰔔,md-temperature-fahrenheit
-󰔕,md-temperature-kelvin
-󰔖,md-tent
-󰔗,md-terminal
-󰔘,md-test-tube
-󰔙,md-text-shadow
-󰔚,md-text-to-speech
-󰔛,md-text-to-speech-off
-󰔜,md-textbox
-󰔝,md-textbox-password
-󰔞,md-texture
-󰔟,md-theater
-󰔠,md-theme-light-dark
-󰔡,md-thermometer
-󰔢,md-thermometer-lines
-󰔣,md-thumb-down
-󰔤,md-thumb-down-outline
-󰔥,md-thumb-up
-󰔦,md-thumb-up-outline
-󰔧,md-thumbs-up-down
-󰔨,md-ticket
-󰔩,md-ticket-account
-󰔪,md-ticket-confirmation
-󰔫,md-tie
-󰔬,md-timelapse
-󰔭,md-timer
-󰔮,md-timer-10
-󰔯,md-timer-3
-󰔰,md-timer-off
-󰔱,md-timer-sand
-󰔲,md-timer-sand-empty
-󰔳,md-timetable
-󰔴,md-toggle-switch
-󰔵,md-toggle-switch-off
-󰔶,md-tooltip
-󰔷,md-tooltip-edit
-󰔸,md-tooltip-image
-󰔹,md-tooltip-outline
-󰔺,md-tooltip-outline-plus
-󰔻,md-tooltip-text
-󰔼,md-tor
-󰔽,md-traffic-light
-󰔾,md-train
-󰔿,md-tram
-󰕀,md-transcribe
-󰕁,md-transcribe-close
-󰕂,md-transfer
-󰕃,md-translate
-󰕄,md-tree
-󰕅,md-trello
-󰕆,md-trending-down
-󰕇,md-trending-neutral
-󰕈,md-trending-up
-󰕉,md-trophy
-󰕊,md-trophy-award
-󰕋,md-trophy-outline
-󰕌,md-trophy-variant
-󰕍,md-trophy-variant-outline
-󰕎,md-truck
-󰕏,md-truck-delivery
-󰕐,md-tshirt-crew
-󰕑,md-tshirt-v
-󰕒,md-tumblr
-󰕓,md-tumblr-reblog
-󰕔,md-tune
-󰕕,md-tune-vertical
-󰕖,md-twitter
-󰕗,md-twitter-box
-󰕘,md-twitter-circle
-󰕙,md-twitter-retweet
-󰕚,md-ubuntu
-󰕛,md-undo
-󰕜,md-undo-variant
-󰕝,md-unfold-less
-󰕞,md-unfold-more
-󰕟,md-ungroup
-󰕠,md-untappd
-󰕡,md-update
-󰕢,md-upload
-󰕣,md-usb
-󰕤,md-vector-arrange-above
-󰕥,md-vector-arrange-below
-󰕦,md-vector-circle
-󰕧,md-vector-circle-variant
-󰕨,md-vector-combine
-󰕩,md-vector-curve
-󰕪,md-vector-difference
-󰕫,md-vector-difference-ab
-󰕬,md-vector-difference-ba
-󰕭,md-vector-intersection
-󰕮,md-vector-line
-󰕯,md-vector-point
-󰕰,md-vector-polygon
-󰕱,md-vector-polyline
-󰕲,md-vector-radius
-󰕳,md-vector-rectangle
-󰕴,md-vector-selection
-󰕵,md-vector-square
-󰕶,md-vector-triangle
-󰕷,md-vector-union
-󰕸,md-verified
-󰕹,md-video
-󰕺,md-video-off
-󰕻,md-video-switch
-󰕼,md-view-agenda
-󰕽,md-view-array
-󰕾,md-view-carousel
-󰕿,md-view-column
-󰖀,md-view-dashboard
-󰖁,md-view-day
-󰖂,md-view-grid
-󰖃,md-view-headline
-󰖄,md-view-list
-󰖅,md-view-module
-󰖆,md-view-quilt
-󰖇,md-view-sequential
-󰖈,md-view-stream
-󰖉,md-view-week
-󰖊,md-vimeo
-󰖋,md-vine
-󰖌,md-violin
-󰖍,md-visualstudio
-󰖎,md-vk
-󰖏,md-vk-box
-󰖐,md-vk-circle
-󰖑,md-vlc
-󰖒,md-voice
-󰖓,md-voicemail
-󰖔,md-volume-high
-󰖕,md-volume-low
-󰖖,md-volume-medium
-󰖗,md-volume-minus
-󰖘,md-volume-mute
-󰖙,md-volume-off
-󰖚,md-volume-plus
-󰖛,md-vpn
-󰖜,md-walk
-󰖝,md-wallet
-󰖞,md-wallet-giftcard
-󰖟,md-wallet-membership
-󰖠,md-wallet-travel
-󰖡,md-wan
-󰖢,md-watch
-󰖣,md-watch-export
-󰖤,md-watch-import
-󰖥,md-watch-vibrate
-󰖦,md-water
-󰖧,md-water-off
-󰖨,md-water-percent
-󰖩,md-water-pump
-󰖪,md-weather-cloudy
-󰖫,md-weather-fog
-󰖬,md-weather-hail
-󰖭,md-weather-lightning
-󰖮,md-weather-lightning-rainy
-󰖯,md-weather-night
-󰖰,md-weather-partlycloudy
-󰖱,md-weather-pouring
-󰖲,md-weather-rainy
-󰖳,md-weather-snowy
-󰖴,md-weather-snowy-rainy
-󰖵,md-weather-sunny
-󰖶,md-weather-sunset
-󰖷,md-weather-sunset-down
-󰖸,md-weather-sunset-up
-󰖹,md-weather-windy
-󰖺,md-weather-windy-variant
-󰖻,md-web
-󰖼,md-webcam
-󰖽,md-webhook
-󰖾,md-webpack
-󰖿,md-whatsapp
-󰗀,md-wheelchair-accessibility
-󰗁,md-white-balance-auto
-󰗂,md-white-balance-incandescent
-󰗃,md-white-balance-iridescent
-󰗄,md-white-balance-sunny
-󰗅,md-widgets
-󰗆,md-wifi
-󰗇,md-wifi-off
-󰗈,md-wikipedia
-󰗉,md-window-close
-󰗊,md-window-closed
-󰗋,md-window-maximize
-󰗌,md-window-minimize
-󰗍,md-window-open
-󰗎,md-window-restore
-󰗏,md-windows
-󰗐,md-wordpress
-󰗑,md-wrap
-󰗒,md-wrench
-󰗓,md-xbox
-󰗔,md-xbox-controller
-󰗕,md-xbox-controller-off
-󰗖,md-xda
-󰗗,md-xml
-󰗘,md-yeast
-󰗙,md-yelp
-󰗚,md-youtube-play
-󰗛,md-zip-box
+󰀀 md-android
+󰀁 md-alert-box
+󰀂 md-alert-circle
+󰀃 md-alert-octagon
+󰀄 md-alpha
+󰀅 md-alphabetical
+󰀆 md-altimeter
+󰀇 md-amazon
+󰀈 md-ambulance
+󰀉 md-anchor
+󰀊 md-android-debug-bridge
+󰀋 md-android-studio
+󰀌 md-apple
+󰀍 md-apple-finder
+󰀎 md-apple-ios
+󰀏 md-apple-keyboard-caps
+󰀐 md-apple-keyboard-command
+󰀑 md-apple-keyboard-control
+󰀒 md-apple-keyboard-option
+󰀓 md-apple-keyboard-shift
+󰀔 md-apple-safari
+󰀕 md-apple-xcode
+󰀖 md-application
+󰀗 md-apps
+󰀘 md-archive
+󰀙 md-arrange-bring-forward
+󰀚 md-arrange-bring-to-front
+󰀛 md-arrange-send-backward
+󰀜 md-arrange-send-to-back
+󰀝 md-arrow-all
+󰀞 md-arrow-bottom-left
+󰀟 md-arrow-bottom-right
+󰀠 md-arrow-collapse
+󰀡 md-arrow-down
+󰀢 md-arrow-down-bold
+󰀣 md-arrow-down-bold-circle
+󰀤 md-arrow-down-bold-circle-outline
+󰀥 md-arrow-down-bold-hexagon-outline
+󰀦 md-arrow-down-box
+󰀧 md-arrow-down-drop-circle
+󰀨 md-arrow-down-drop-circle-outline
+󰀩 md-arrow-expand
+󰀪 md-arrow-left
+󰀫 md-arrow-left-bold
+󰀬 md-arrow-left-bold-circle
+󰀭 md-arrow-left-bold-circle-outline
+󰀮 md-arrow-left-bold-hexagon-outline
+󰀯 md-arrow-left-box
+󰀰 md-arrow-left-drop-circle
+󰀱 md-arrow-left-drop-circle-outline
+󰀲 md-arrow-right
+󰀳 md-arrow-right-bold
+󰀴 md-arrow-right-bold-circle
+󰀵 md-arrow-right-bold-circle-outline
+󰀶 md-arrow-right-bold-hexagon-outline
+󰀷 md-arrow-right-box
+󰀸 md-arrow-right-drop-circle
+󰀹 md-arrow-right-drop-circle-outline
+󰀺 md-arrow-top-left
+󰀻 md-arrow-top-right
+󰀼 md-arrow-up
+󰀽 md-arrow-up-bold
+󰀾 md-arrow-up-bold-circle
+󰀿 md-arrow-up-bold-circle-outline
+󰁀 md-arrow-up-bold-hexagon-outline
+󰁁 md-arrow-up-box
+󰁂 md-arrow-up-drop-circle
+󰁃 md-arrow-up-drop-circle-outline
+󰁄 md-assistant
+󰁅 md-at
+󰁆 md-attachment
+󰁇 md-audiobook
+󰁈 md-auto-fix
+󰁉 md-auto-upload
+󰁊 md-baby
+󰁋 md-baby-buggy
+󰁌 md-backburger
+󰁍 md-backspace
+󰁎 md-backup-restore
+󰁏 md-bank
+󰁐 md-barcode
+󰁑 md-barcode-scan
+󰁒 md-barley
+󰁓 md-barrel
+󰁔 md-baseball
+󰁕 md-basket
+󰁖 md-basketball
+󰁗 md-battery
+󰁘 md-battery-10
+󰁙 md-battery-20
+󰁚 md-battery-30
+󰁛 md-battery-40
+󰁜 md-battery-50
+󰁝 md-battery-60
+󰁞 md-battery-70
+󰁟 md-battery-80
+󰁠 md-battery-90
+󰁡 md-battery-alert
+󰁢 md-battery-charging
+󰁣 md-battery-charging-100
+󰁤 md-battery-charging-20
+󰁥 md-battery-charging-30
+󰁦 md-battery-charging-40
+󰁧 md-battery-charging-60
+󰁨 md-battery-charging-80
+󰁩 md-battery-charging-outline
+󰁪 md-battery-minus
+󰁫 md-battery-negative
+󰁬 md-battery-outline
+󰁭 md-battery-plus
+󰁮 md-battery-positive
+󰁯 md-battery-unknown
+󰁰 md-beach
+󰁱 md-beats
+󰁲 md-beer
+󰁳 md-behance
+󰁴 md-bell
+󰁵 md-bell-off
+󰁶 md-bell-outline
+󰁷 md-bell-plus
+󰁸 md-bell-ring
+󰁹 md-bell-ring-outline
+󰁺 md-bell-sleep
+󰁻 md-beta
+󰁼 md-bike
+󰁽 md-binoculars
+󰁾 md-bio
+󰁿 md-biohazard
+󰂀 md-bitbucket
+󰂁 md-black-mesa
+󰂂 md-blackberry
+󰂃 md-blinds
+󰂄 md-block-helper
+󰂅 md-blogger
+󰂆 md-bluetooth
+󰂇 md-bluetooth-audio
+󰂈 md-bluetooth-connect
+󰂉 md-bluetooth-off
+󰂊 md-bluetooth-settings
+󰂋 md-bluetooth-transfer
+󰂌 md-blur
+󰂍 md-blur-linear
+󰂎 md-blur-off
+󰂏 md-blur-radial
+󰂐 md-bomb
+󰂑 md-book
+󰂒 md-book-minus
+󰂓 md-book-multiple
+󰂔 md-book-multiple-variant
+󰂕 md-book-open
+󰂖 md-book-open-page-variant
+󰂗 md-book-open-variant
+󰂘 md-book-plus
+󰂙 md-book-variant
+󰂚 md-bookmark
+󰂛 md-bookmark-check
+󰂜 md-bookmark-music
+󰂝 md-bookmark-outline
+󰂞 md-bookmark-plus
+󰂟 md-bookmark-plus-outline
+󰂠 md-bookmark-remove
+󰂡 md-boombox
+󰂢 md-border-all
+󰂣 md-border-bottom
+󰂤 md-border-color
+󰂥 md-border-horizontal
+󰂦 md-border-inside
+󰂧 md-border-left
+󰂨 md-border-none
+󰂩 md-border-outside
+󰂪 md-border-right
+󰂫 md-border-style
+󰂬 md-border-top
+󰂭 md-border-vertical
+󰂮 md-bowling
+󰂯 md-briefcase
+󰂰 md-briefcase-check
+󰂱 md-briefcase-download
+󰂲 md-briefcase-upload
+󰂳 md-brightness-1
+󰂴 md-brightness-2
+󰂵 md-brightness-3
+󰂶 md-brightness-4
+󰂷 md-brightness-5
+󰂸 md-brightness-6
+󰂹 md-brightness-7
+󰂺 md-brightness-auto
+󰂻 md-broom
+󰂼 md-brush
+󰂽 md-bug
+󰂾 md-bulletin-board
+󰂿 md-bullhorn
+󰃀 md-bullseye
+󰃁 md-bus
+󰃂 md-cached
+󰃃 md-cake
+󰃄 md-cake-layered
+󰃅 md-cake-variant
+󰃆 md-calculator
+󰃇 md-calendar
+󰃈 md-calendar-blank
+󰃉 md-calendar-check
+󰃊 md-calendar-clock
+󰃋 md-calendar-multiple
+󰃌 md-calendar-multiple-check
+󰃍 md-calendar-plus
+󰃎 md-calendar-remove
+󰃏 md-calendar-text
+󰃐 md-calendar-today
+󰃑 md-call-made
+󰃒 md-call-merge
+󰃓 md-call-missed
+󰃔 md-call-received
+󰃕 md-call-split
+󰃖 md-camcorder
+󰃗 md-camcorder-box
+󰃘 md-camcorder-box-off
+󰃙 md-camcorder-off
+󰃚 md-camera
+󰃛 md-camera-burst
+󰃜 md-camera-enhance
+󰃝 md-camera-front
+󰃞 md-camera-front-variant
+󰃟 md-camera-iris
+󰃠 md-camera-off
+󰃡 md-camera-party-mode
+󰃢 md-camera-rear
+󰃣 md-camera-rear-variant
+󰃤 md-camera-switch
+󰃥 md-camera-timer
+󰃦 md-car
+󰃧 md-car-battery
+󰃨 md-car-connected
+󰃩 md-car-wash
+󰃪 md-cards
+󰃫 md-cards-outline
+󰃬 md-cards-playing-outline
+󰃭 md-cart
+󰃮 md-cart-outline
+󰃯 md-cart-plus
+󰃰 md-case-sensitive-alt
+󰃱 md-cast
+󰃲 md-cast-connected
+󰃳 md-castle
+󰃴 md-cat
+󰃵 md-cellphone
+󰃶 md-cellphone-android
+󰃷 md-cellphone-basic
+󰃸 md-cellphone-dock
+󰃹 md-cellphone-iphone
+󰃺 md-cellphone-link
+󰃻 md-cellphone-link-off
+󰃼 md-cellphone-settings
+󰃽 md-certificate
+󰃾 md-chair-school
+󰃿 md-chart-arc
+󰄀 md-chart-areaspline
+󰄁 md-chart-bar
+󰄂 md-chart-donut
+󰄃 md-chart-donut-variant
+󰄄 md-chart-gantt
+󰄅 md-chart-histogram
+󰄆 md-chart-line
+󰄇 md-chart-pie
+󰄈 md-chart-scatterplot-hexbin
+󰄉 md-chart-timeline
+󰄊 md-check
+󰄋 md-check-all
+󰄌 md-check-circle
+󰄍 md-check-circle-outline
+󰄎 md-checkbox-blank
+󰄏 md-checkbox-blank-circle
+󰄐 md-checkbox-blank-circle-outline
+󰄑 md-checkbox-blank-outline
+󰄒 md-checkbox-marked
+󰄓 md-checkbox-marked-circle
+󰄔 md-checkbox-marked-circle-outline
+󰄕 md-checkbox-marked-outline
+󰄖 md-checkbox-multiple-blank
+󰄗 md-checkbox-multiple-blank-outline
+󰄘 md-checkbox-multiple-marked
+󰄙 md-checkbox-multiple-marked-outline
+󰄚 md-checkerboard
+󰄛 md-chemical-weapon
+󰄜 md-chevron-double-down
+󰄝 md-chevron-double-left
+󰄞 md-chevron-double-right
+󰄟 md-chevron-double-up
+󰄠 md-chevron-down
+󰄡 md-chevron-left
+󰄢 md-chevron-right
+󰄣 md-chevron-up
+󰄤 md-chips
+󰄥 md-city
+󰄦 md-clipboard
+󰄧 md-clipboard-account
+󰄨 md-clipboard-alert
+󰄩 md-clipboard-arrow-down
+󰄪 md-clipboard-arrow-left
+󰄫 md-clipboard-check
+󰄬 md-clipboard-outline
+󰄭 md-clipboard-text
+󰄮 md-clippy
+󰄯 md-clock
+󰄰 md-clock-fast
+󰄱 md-close
+󰄲 md-close-box
+󰄳 md-close-box-outline
+󰄴 md-close-circle
+󰄵 md-close-circle-outline
+󰄶 md-close-network
+󰄷 md-close-octagon
+󰄸 md-close-octagon-outline
+󰄹 md-cloud
+󰄺 md-cloud-check
+󰄻 md-cloud-circle
+󰄼 md-cloud-download
+󰄽 md-cloud-outline
+󰄾 md-cloud-outline-off
+󰄿 md-cloud-print
+󰅀 md-cloud-print-outline
+󰅁 md-cloud-upload
+󰅂 md-code-array
+󰅃 md-code-braces
+󰅄 md-code-brackets
+󰅅 md-code-equal
+󰅆 md-code-greater-than
+󰅇 md-code-greater-than-or-equal
+󰅈 md-code-less-than
+󰅉 md-code-less-than-or-equal
+󰅊 md-code-not-equal
+󰅋 md-code-not-equal-variant
+󰅌 md-code-parentheses
+󰅍 md-code-string
+󰅎 md-code-tags
+󰅏 md-codepen
+󰅐 md-coffee
+󰅑 md-coffee-to-go
+󰅒 md-color-helper
+󰅓 md-comment
+󰅔 md-comment-account
+󰅕 md-comment-account-outline
+󰅖 md-comment-alert
+󰅗 md-comment-alert-outline
+󰅘 md-comment-check
+󰅙 md-comment-check-outline
+󰅚 md-comment-multiple-outline
+󰅛 md-comment-outline
+󰅜 md-comment-plus-outline
+󰅝 md-comment-processing
+󰅞 md-comment-processing-outline
+󰅟 md-comment-remove-outline
+󰅠 md-comment-text
+󰅡 md-comment-text-outline
+󰅢 md-compare
+󰅣 md-compass
+󰅤 md-compass-outline
+󰅥 md-console
+󰅦 md-contact-mail
+󰅧 md-content-copy
+󰅨 md-content-cut
+󰅩 md-content-duplicate
+󰅪 md-content-paste
+󰅫 md-content-save
+󰅬 md-content-save-all
+󰅭 md-content-save-settings
+󰅮 md-contrast
+󰅯 md-contrast-box
+󰅰 md-contrast-circle
+󰅱 md-cookie
+󰅲 md-counter
+󰅳 md-cow
+󰅴 md-credit-card
+󰅵 md-credit-card-multiple
+󰅶 md-credit-card-plus
+󰅷 md-credit-card-scan
+󰅸 md-crop
+󰅹 md-crop-free
+󰅺 md-crop-landscape
+󰅻 md-crop-portrait
+󰅼 md-crop-rotate
+󰅽 md-crop-square
+󰅾 md-crosshairs
+󰅿 md-crosshairs-gps
+󰆀 md-crown
+󰆁 md-cube
+󰆂 md-cube-outline
+󰆃 md-cube-send
+󰆄 md-cube-unfolded
+󰆅 md-cup
+󰆆 md-cup-water
+󰆇 md-currency-btc
+󰆈 md-currency-eur
+󰆉 md-currency-gbp
+󰆊 md-currency-inr
+󰆋 md-currency-ngn
+󰆌 md-currency-rub
+󰆍 md-currency-try
+󰆎 md-currency-usd
+󰆏 md-cursor-default
+󰆐 md-cursor-default-outline
+󰆑 md-cursor-move
+󰆒 md-cursor-pointer
+󰆓 md-database
+󰆔 md-database-minus
+󰆕 md-database-plus
+󰆖 md-debug-step-into
+󰆗 md-debug-step-out
+󰆘 md-debug-step-over
+󰆙 md-decimal-decrease
+󰆚 md-decimal-increase
+󰆛 md-delete
+󰆜 md-delete-forever
+󰆝 md-delete-sweep
+󰆞 md-delete-variant
+󰆟 md-delta
+󰆠 md-deskphone
+󰆡 md-desktop-mac
+󰆢 md-desktop-tower
+󰆣 md-details
+󰆤 md-deviantart
+󰆥 md-diamond
+󰆦 md-dice-1
+󰆧 md-dice-2
+󰆨 md-dice-3
+󰆩 md-dice-4
+󰆪 md-dice-5
+󰆫 md-dice-6
+󰆬 md-directions
+󰆭 md-directions-fork
+󰆮 md-disk-alert
+󰆯 md-disqus
+󰆰 md-division
+󰆱 md-division-box
+󰆲 md-dns
+󰆳 md-document
+󰆴 md-domain
+󰆵 md-dots-horizontal
+󰆶 md-dots-vertical
+󰆷 md-download
+󰆸 md-drag
+󰆹 md-drag-horizontal
+󰆺 md-drag-vertical
+󰆻 md-drawing
+󰆼 md-drawing-box
+󰆽 md-dropbox
+󰆾 md-drupal
+󰆿 md-duck
+󰇀 md-dumbbell
+󰇁 md-earth
+󰇂 md-earth-off
+󰇃 md-edge
+󰇄 md-eject
+󰇅 md-elevation-decline
+󰇆 md-elevation-rise
+󰇇 md-elevator
+󰇈 md-email
+󰇉 md-email-open
+󰇊 md-email-open-outline
+󰇋 md-email-outline
+󰇌 md-email-secure
+󰇍 md-email-variant
+󰇎 md-emoticon
+󰇏 md-emoticon-cool
+󰇐 md-emoticon-devil
+󰇑 md-emoticon-happy
+󰇒 md-emoticon-neutral
+󰇓 md-emoticon-poop
+󰇔 md-emoticon-sad
+󰇕 md-emoticon-tongue
+󰇖 md-equal
+󰇗 md-equal-box
+󰇘 md-eraser
+󰇙 md-eraser-variant
+󰇚 md-escalator
+󰇛 md-ethernet
+󰇜 md-ethernet-cable
+󰇝 md-ethernet-cable-off
+󰇞 md-etsy
+󰇟 md-ev-station
+󰇠 md-evernote
+󰇡 md-exclamation
+󰇢 md-exit-to-app
+󰇣 md-export
+󰇤 md-eye
+󰇥 md-eye-off
+󰇦 md-eyedropper
+󰇧 md-eyedropper-variant
+󰇨 md-face
+󰇩 md-face-profile
+󰇪 md-factory
+󰇫 md-fan
+󰇬 md-fast-forward
+󰇭 md-fast-forward-outline
+󰇮 md-fax
+󰇯 md-ferry
+󰇰 md-file
+󰇱 md-file-chart
+󰇲 md-file-check
+󰇳 md-file-cloud
+󰇴 md-file-delimited
+󰇵 md-file-document
+󰇶 md-file-document-box
+󰇷 md-file-excel
+󰇸 md-file-excel-box
+󰇹 md-file-export
+󰇺 md-file-find
+󰇻 md-file-image
+󰇼 md-file-import
+󰇽 md-file-lock
+󰇾 md-file-multiple
+󰇿 md-file-music
+󰈀 md-file-outline
+󰈁 md-file-pdf
+󰈂 md-file-pdf-box
+󰈃 md-file-powerpoint
+󰈄 md-file-powerpoint-box
+󰈅 md-file-presentation-box
+󰈆 md-file-send
+󰈇 md-file-tree
+󰈈 md-file-video
+󰈉 md-file-word
+󰈊 md-file-word-box
+󰈋 md-film
+󰈌 md-filmstrip
+󰈍 md-filmstrip-off
+󰈎 md-filter
+󰈏 md-filter-outline
+󰈐 md-filter-remove
+󰈑 md-filter-remove-outline
+󰈒 md-filter-variant
+󰈓 md-fingerprint
+󰈔 md-fire
+󰈕 md-firefox
+󰈖 md-fish
+󰈗 md-flag
+󰈘 md-flag-checkered
+󰈙 md-flag-outline
+󰈚 md-flag-outline-variant
+󰈛 md-flag-triangle
+󰈜 md-flag-variant
+󰈝 md-flash
+󰈞 md-flash-auto
+󰈟 md-flash-off
+󰈠 md-flash-outline
+󰈡 md-flash-red-eye
+󰈢 md-flashlight
+󰈣 md-flashlight-off
+󰈤 md-flask
+󰈥 md-flask-empty
+󰈦 md-flask-empty-outline
+󰈧 md-flask-outline
+󰈨 md-flip-to-back
+󰈩 md-flip-to-front
+󰈪 md-floppy
+󰈫 md-flower
+󰈬 md-folder
+󰈭 md-folder-account
+󰈮 md-folder-download
+󰈯 md-folder-google-drive
+󰈰 md-folder-image
+󰈱 md-folder-lock
+󰈲 md-folder-lock-open
+󰈳 md-folder-move
+󰈴 md-folder-multiple
+󰈵 md-folder-multiple-image
+󰈶 md-folder-multiple-outline
+󰈷 md-folder-open
+󰈸 md-folder-outline
+󰈹 md-folder-plus
+󰈺 md-folder-remove
+󰈻 md-folder-star
+󰈼 md-folder-upload
+󰈽 md-food
+󰈾 md-food-apple
+󰈿 md-food-fork-drink
+󰉀 md-food-off
+󰉁 md-food-variant
+󰉂 md-football
+󰉃 md-football-australian
+󰉄 md-football-helmet
+󰉅 md-format-align-bottom
+󰉆 md-format-align-center
+󰉇 md-format-align-justify
+󰉈 md-format-align-left
+󰉉 md-format-align-middle
+󰉊 md-format-align-right
+󰉋 md-format-align-top
+󰉌 md-format-bold
+󰉍 md-format-clear
+󰉎 md-format-color-fill
+󰉏 md-format-color-text
+󰉐 md-format-float-center
+󰉑 md-format-float-left
+󰉒 md-format-float-none
+󰉓 md-format-float-right
+󰉔 md-format-header-1
+󰉕 md-format-header-2
+󰉖 md-format-header-3
+󰉗 md-format-header-4
+󰉘 md-format-header-5
+󰉙 md-format-header-6
+󰉚 md-format-header-decrease
+󰉛 md-format-header-equal
+󰉜 md-format-header-increase
+󰉝 md-format-header-pound
+󰉞 md-format-horizontal-align-center
+󰉟 md-format-horizontal-align-left
+󰉠 md-format-horizontal-align-right
+󰉡 md-format-indent-decrease
+󰉢 md-format-indent-increase
+󰉣 md-format-italic
+󰉤 md-format-line-spacing
+󰉥 md-format-line-style
+󰉦 md-format-line-weight
+󰉧 md-format-list-bulleted
+󰉨 md-format-list-bulleted-type
+󰉩 md-format-list-numbers
+󰉪 md-format-paint
+󰉫 md-format-paragraph
+󰉬 md-format-pilcrow
+󰉭 md-format-quote
+󰉮 md-format-rotate-90
+󰉯 md-format-section
+󰉰 md-format-size
+󰉱 md-format-strikethrough
+󰉲 md-format-strikethrough-variant
+󰉳 md-format-subscript
+󰉴 md-format-superscript
+󰉵 md-format-text
+󰉶 md-format-textdirection-l-to-r
+󰉷 md-format-textdirection-r-to-l
+󰉸 md-format-title
+󰉹 md-format-underline
+󰉺 md-format-vertical-align-bottom
+󰉻 md-format-vertical-align-center
+󰉼 md-format-vertical-align-top
+󰉽 md-format-wrap-inline
+󰉾 md-format-wrap-square
+󰉿 md-format-wrap-tight
+󰊀 md-format-wrap-top-bottom
+󰊁 md-forum
+󰊂 md-forward
+󰊃 md-fridge
+󰊄 md-fridge-filled
+󰊅 md-fridge-filled-bottom
+󰊆 md-fridge-filled-top
+󰊇 md-fullscreen
+󰊈 md-fullscreen-exit
+󰊉 md-function
+󰊊 md-gamepad
+󰊋 md-gamepad-variant
+󰊌 md-gas-station
+󰊍 md-gate
+󰊎 md-gauge
+󰊏 md-gavel
+󰊐 md-gender-female
+󰊑 md-gender-male
+󰊒 md-gender-male-female
+󰊓 md-gender-transgender
+󰊔 md-ghost
+󰊕 md-gift
+󰊖 md-git
+󰊗 md-github-box
+󰊘 md-github-circle
+󰊙 md-glass-flute
+󰊚 md-glass-mug
+󰊛 md-glass-stange
+󰊜 md-glass-tulip
+󰊝 md-glasses
+󰊞 md-gmail
+󰊟 md-google
+󰊠 md-google-cardboard
+󰊡 md-google-chrome
+󰊢 md-google-circles
+󰊣 md-google-circles-communities
+󰊤 md-google-circles-extended
+󰊥 md-google-circles-group
+󰊦 md-google-controller
+󰊧 md-google-controller-off
+󰊨 md-google-drive
+󰊩 md-google-earth
+󰊪 md-google-glass
+󰊫 md-google-maps
+󰊬 md-google-nearby
+󰊭 md-google-pages
+󰊮 md-google-physical-web
+󰊯 md-google-play
+󰊰 md-google-plus
+󰊱 md-google-plus-box
+󰊲 md-google-translate
+󰊳 md-google-wallet
+󰊴 md-grid
+󰊵 md-grid-off
+󰊶 md-group
+󰊷 md-guitar-acoustic
+󰊸 md-guitar-electric
+󰊹 md-hand-pointing-right
+󰊺 md-hanger
+󰊻 md-harddisk
+󰊼 md-headphones
+󰊽 md-headphones-box
+󰊾 md-headphones-settings
+󰊿 md-headset
+󰋀 md-headset-dock
+󰋁 md-headset-off
+󰋂 md-heart
+󰋃 md-heart-box
+󰋄 md-heart-box-outline
+󰋅 md-heart-broken
+󰋆 md-heart-outline
+󰋇 md-heart-pulse
+󰋈 md-help
+󰋉 md-help-box
+󰋊 md-help-circle
+󰋋 md-help-circle-outline
+󰋌 md-help-network
+󰋍 md-hexagon
+󰋎 md-hexagon-multiple
+󰋏 md-hexagon-outline
+󰋐 md-history
+󰋑 md-home
+󰋒 md-home-map-marker
+󰋓 md-home-modern
+󰋔 md-home-outline
+󰋕 md-home-variant
+󰋖 md-hops
+󰋗 md-hospital
+󰋘 md-hospital-building
+󰋙 md-hospital-marker
+󰋚 md-hotel
+󰋛 md-houzz
+󰋜 md-houzz-box
+󰋝 md-human
+󰋞 md-human-child
+󰋟 md-human-female
+󰋠 md-human-greeting
+󰋡 md-human-handsdown
+󰋢 md-human-handsup
+󰋣 md-human-male
+󰋤 md-human-male-female
+󰋥 md-human-pregnant
+󰋦 md-image
+󰋧 md-image-album
+󰋨 md-image-area
+󰋩 md-image-area-close
+󰋪 md-image-broken
+󰋫 md-image-broken-variant
+󰋬 md-image-filter
+󰋭 md-image-filter-black-white
+󰋮 md-image-filter-center-focus
+󰋯 md-image-filter-center-focus-weak
+󰋰 md-image-filter-drama
+󰋱 md-image-filter-frames
+󰋲 md-image-filter-hdr
+󰋳 md-image-filter-none
+󰋴 md-image-filter-tilt-shift
+󰋵 md-image-filter-vintage
+󰋶 md-image-multiple
+󰋷 md-import
+󰋸 md-inbox
+󰋹 md-inbox-arrow-down
+󰋺 md-inbox-arrow-up
+󰋻 md-incognito
+󰋼 md-infinity
+󰋽 md-information
+󰋾 md-information-outline
+󰋿 md-information-variant
+󰌀 md-instagram
+󰌁 md-internet-explorer
+󰌂 md-invert-colors
+󰌃 md-jeepney
+󰌄 md-jira
+󰌅 md-jsfiddle
+󰌆 md-json
+󰌇 md-keg
+󰌈 md-kettle
+󰌉 md-key
+󰌊 md-key-change
+󰌋 md-key-minus
+󰌌 md-key-plus
+󰌍 md-key-remove
+󰌎 md-key-variant
+󰌏 md-keyboard
+󰌐 md-keyboard-backspace
+󰌑 md-keyboard-caps
+󰌒 md-keyboard-close
+󰌓 md-keyboard-off
+󰌔 md-keyboard-return
+󰌕 md-keyboard-tab
+󰌖 md-keyboard-variant
+󰌗 md-label
+󰌘 md-label-outline
+󰌙 md-lambda
+󰌚 md-lamp
+󰌛 md-lan
+󰌜 md-lan-connect
+󰌝 md-lan-disconnect
+󰌞 md-lan-pending
+󰌟 md-language-c
+󰌠 md-language-cpp
+󰌡 md-language-csharp
+󰌢 md-language-css3
+󰌣 md-language-go
+󰌤 md-language-html5
+󰌥 md-language-javascript
+󰌦 md-language-php
+󰌧 md-language-python
+󰌨 md-language-python-text
+󰌩 md-language-r
+󰌪 md-language-swift
+󰌫 md-language-typescript
+󰌬 md-laptop
+󰌭 md-laptop-chromebook
+󰌮 md-laptop-mac
+󰌯 md-laptop-off
+󰌰 md-laptop-windows
+󰌱 md-lastfm
+󰌲 md-launch
+󰌳 md-layers
+󰌴 md-layers-off
+󰌵 md-leaf
+󰌶 md-led-off
+󰌷 md-led-on
+󰌸 md-led-outline
+󰌹 md-led-variant-off
+󰌺 md-led-variant-on
+󰌻 md-led-variant-outline
+󰌼 md-library-books
+󰌽 md-library-music
+󰌾 md-library-plus
+󰌿 md-lightbulb
+󰍀 md-lightbulb-outline
+󰍁 md-link
+󰍂 md-link-off
+󰍃 md-link-variant
+󰍄 md-link-variant-off
+󰍅 md-linkedin
+󰍆 md-linkedin-box
+󰍇 md-linux
+󰍈 md-lock
+󰍉 md-lock-open
+󰍊 md-lock-open-outline
+󰍋 md-lock-outline
+󰍌 md-lock-plus
+󰍍 md-login
+󰍎 md-login-variant
+󰍏 md-logout
+󰍐 md-logout-variant
+󰍑 md-looks
+󰍒 md-loupe
+󰍓 md-lumx
+󰍔 md-magnet
+󰍕 md-magnet-on
+󰍖 md-magnify
+󰍗 md-magnify-minus
+󰍘 md-magnify-plus
+󰍙 md-map
+󰍚 md-map-marker
+󰍛 md-map-marker-circle
+󰍜 md-map-marker-minus
+󰍝 md-map-marker-multiple
+󰍞 md-map-marker-off
+󰍟 md-map-marker-outline
+󰍠 md-map-marker-plus
+󰍡 md-map-marker-radius
+󰍢 md-margin
+󰍣 md-markdown
+󰍤 md-marker
+󰍥 md-marker-check
+󰍦 md-martini
+󰍧 md-material-ui
+󰍨 md-math-compass
+󰍩 md-matrix
+󰍪 md-maxcdn
+󰍫 md-medical-bag
+󰍬 md-memory
+󰍭 md-menu
+󰍮 md-menu-down
+󰍯 md-menu-down-outline
+󰍰 md-menu-left
+󰍱 md-menu-right
+󰍲 md-menu-up
+󰍳 md-menu-up-outline
+󰍴 md-message
+󰍵 md-message-alert
+󰍶 md-message-draw
+󰍷 md-message-image
+󰍸 md-message-outline
+󰍹 md-message-plus
+󰍺 md-message-processing
+󰍻 md-message-reply
+󰍼 md-message-reply-text
+󰍽 md-message-text
+󰍾 md-message-text-outline
+󰍿 md-message-video
+󰎀 md-meteor
+󰎁 md-microphone
+󰎂 md-microphone-off
+󰎃 md-microphone-outline
+󰎄 md-microphone-settings
+󰎅 md-microphone-variant
+󰎆 md-microphone-variant-off
+󰎇 md-microscope
+󰎈 md-microsoft
+󰎉 md-minus
+󰎊 md-minus-box
+󰎋 md-minus-circle
+󰎌 md-minus-circle-outline
+󰎍 md-minus-network
+󰎎 md-monitor
+󰎏 md-monitor-multiple
+󰎐 md-more
+󰎑 md-motorbike
+󰎒 md-mouse
+󰎓 md-mouse-off
+󰎔 md-mouse-variant
+󰎕 md-mouse-variant-off
+󰎖 md-move-resize
+󰎗 md-move-resize-variant
+󰎘 md-movie
+󰎙 md-multiplication
+󰎚 md-multiplication-box
+󰎛 md-music-box
+󰎜 md-music-box-outline
+󰎝 md-music-circle
+󰎞 md-music-note
+󰎟 md-music-note-bluetooth
+󰎠 md-music-note-bluetooth-off
+󰎡 md-music-note-eighth
+󰎢 md-music-note-half
+󰎣 md-music-note-off
+󰎤 md-music-note-quarter
+󰎥 md-music-note-sixteenth
+󰎦 md-music-note-whole
+󰎧 md-nature
+󰎨 md-nature-people
+󰎩 md-navigation
+󰎪 md-needle
+󰎫 md-network
+󰎬 md-new-box
+󰎭 md-newspaper
+󰎮 md-nfc
+󰎯 md-nfc-tap
+󰎰 md-nfc-variant
+󰎱 md-nodejs
+󰎲 md-note
+󰎳 md-note-multiple
+󰎴 md-note-multiple-outline
+󰎵 md-note-outline
+󰎶 md-note-plus
+󰎷 md-note-plus-outline
+󰎸 md-note-text
+󰎹 md-notification-clear-all
+󰎺 md-npm
+󰎻 md-nuke
+󰎼 md-numeric-0-box
+󰎽 md-numeric-0-box-multiple-outline
+󰎾 md-numeric-0-box-outline
+󰎿 md-numeric-1-box
+󰏀 md-numeric-1-box-multiple-outline
+󰏁 md-numeric-1-box-outline
+󰏂 md-numeric-2-box
+󰏃 md-numeric-2-box-multiple-outline
+󰏄 md-numeric-2-box-outline
+󰏅 md-numeric-3-box
+󰏆 md-numeric-3-box-multiple-outline
+󰏇 md-numeric-3-box-outline
+󰏈 md-numeric-4-box
+󰏉 md-numeric-4-box-multiple-outline
+󰏊 md-numeric-4-box-outline
+󰏋 md-numeric-5-box
+󰏌 md-numeric-5-box-multiple-outline
+󰏍 md-numeric-5-box-outline
+󰏎 md-numeric-6-box
+󰏏 md-numeric-6-box-multiple-outline
+󰏐 md-numeric-6-box-outline
+󰏑 md-numeric-7-box
+󰏒 md-numeric-7-box-multiple-outline
+󰏓 md-numeric-7-box-outline
+󰏔 md-numeric-8-box
+󰏕 md-numeric-8-box-multiple-outline
+󰏖 md-numeric-8-box-outline
+󰏗 md-numeric-9-box
+󰏘 md-numeric-9-box-multiple-outline
+󰏙 md-numeric-9-box-outline
+󰏚 md-numeric-9-plus-box
+󰏛 md-numeric-9-plus-box-multiple-outline
+󰏜 md-numeric-9-plus-box-outline
+󰏝 md-office
+󰏞 md-oil
+󰏟 md-oil-temperature
+󰏠 md-omega
+󰏡 md-open-in-app
+󰏢 md-open-in-new
+󰏣 md-open-with
+󰏤 md-ornament
+󰏥 md-ornament-variant
+󰏦 md-outdoors
+󰏧 md-package
+󰏨 md-package-down
+󰏩 md-package-up
+󰏪 md-package-variant
+󰏫 md-package-variant-closed
+󰏬 md-page-first
+󰏭 md-page-last
+󰏮 md-palette
+󰏯 md-palette-advanced
+󰏰 md-panda
+󰏱 md-panorama
+󰏲 md-panorama-fisheye
+󰏳 md-panorama-horizontal
+󰏴 md-panorama-vertical
+󰏵 md-panorama-wide-angle
+󰏶 md-paper-cut-vertical
+󰏷 md-paperclip
+󰏸 md-parking
+󰏹 md-pause
+󰏺 md-pause-circle
+󰏻 md-pause-circle-outline
+󰏼 md-pause-octagon
+󰏽 md-pause-octagon-outline
+󰏾 md-pen
+󰏿 md-pencil
+󰐀 md-pencil-box
+󰐁 md-pencil-box-outline
+󰐂 md-pencil-lock
+󰐃 md-pencil-off
+󰐄 md-percent
+󰐅 md-pharmacy
+󰐆 md-phone
+󰐇 md-phone-bluetooth
+󰐈 md-phone-classic
+󰐉 md-phone-forward
+󰐊 md-phone-hangup
+󰐋 md-phone-in-talk
+󰐌 md-phone-incoming
+󰐍 md-phone-locked
+󰐎 md-phone-log
+󰐏 md-phone-minus
+󰐐 md-phone-missed
+󰐑 md-phone-outgoing
+󰐒 md-phone-paused
+󰐓 md-phone-plus
+󰐔 md-phone-settings
+󰐕 md-pi
+󰐖 md-pi-box
+󰐗 md-pig
+󰐘 md-pill
+󰐙 md-pin
+󰐚 md-pin-off
+󰐛 md-pine-tree
+󰐜 md-pine-tree-box
+󰐝 md-pinterest
+󰐞 md-pinterest-box
+󰐟 md-pizza
+󰐠 md-play
+󰐡 md-play-box-outline
+󰐢 md-play-circle
+󰐣 md-play-circle-outline
+󰐤 md-play-pause
+󰐥 md-play-protected-content
+󰐦 md-playlist-check
+󰐧 md-playlist-minus
+󰐨 md-playlist-play
+󰐩 md-playlist-plus
+󰐪 md-playlist-remove
+󰐫 md-plus
+󰐬 md-plus-box
+󰐭 md-plus-circle
+󰐮 md-plus-circle-multiple-outline
+󰐯 md-plus-circle-outline
+󰐰 md-plus-network
+󰐱 md-plus-one
+󰐲 md-plus-outline
+󰐳 md-pocket
+󰐴 md-poll
+󰐵 md-poll-box
+󰐶 md-polymer
+󰐷 md-pool
+󰐸 md-popcorn
+󰐹 md-pot
+󰐺 md-pot-mix
+󰐻 md-pound
+󰐼 md-pound-box
+󰐽 md-power
+󰐾 md-power-plug
+󰐿 md-power-plug-off
+󰑀 md-power-settings
+󰑁 md-power-sleep
+󰑂 md-presentation
+󰑃 md-presentation-play
+󰑄 md-printer
+󰑅 md-printer-3d
+󰑆 md-printer-alert
+󰑇 md-priority-high
+󰑈 md-priority-low
+󰑉 md-professional-hexagon
+󰑊 md-progress-clock
+󰑋 md-progress-download
+󰑌 md-progress-upload
+󰑍 md-projector
+󰑎 md-projector-screen
+󰑏 md-publish
+󰑐 md-puzzle
+󰑑 md-qqchat
+󰑒 md-qrcode
+󰑓 md-qrcode-scan
+󰑔 md-quadcopter
+󰑕 md-quality-high
+󰑖 md-radar
+󰑗 md-radiator
+󰑘 md-radio
+󰑙 md-radio-handheld
+󰑚 md-radio-tower
+󰑛 md-radioactive
+󰑜 md-radiobox-blank
+󰑝 md-radiobox-marked
+󰑞 md-raspberrypi
+󰑟 md-ray-end
+󰑠 md-ray-end-arrow
+󰑡 md-ray-start
+󰑢 md-ray-start-arrow
+󰑣 md-ray-start-end
+󰑤 md-ray-vertex
+󰑥 md-rdio
+󰑦 md-read
+󰑧 md-receipt
+󰑨 md-record
+󰑩 md-record-rec
+󰑪 md-recycle
+󰑫 md-reddit
+󰑬 md-redo
+󰑭 md-redo-variant
+󰑮 md-refresh
+󰑯 md-regex
+󰑰 md-relative-scale
+󰑱 md-reload
+󰑲 md-remote
+󰑳 md-rename-box
+󰑴 md-reorder-horizontal
+󰑵 md-reorder-vertical
+󰑶 md-repeat
+󰑷 md-repeat-off
+󰑸 md-repeat-once
+󰑹 md-replay
+󰑺 md-reply
+󰑻 md-reply-all
+󰑼 md-reproduction
+󰑽 md-resize-bottom-right
+󰑾 md-restore
+󰑿 md-rewind
+󰒀 md-rewind-outline
+󰒁 md-ribbon
+󰒂 md-rocket
+󰒃 md-rotate-3d
+󰒄 md-rotate-left
+󰒅 md-rotate-left-variant
+󰒆 md-rotate-right
+󰒇 md-rotate-right-variant
+󰒈 md-rounded-corner
+󰒉 md-router-wireless
+󰒊 md-routes
+󰒋 md-rowing
+󰒌 md-rss
+󰒍 md-rss-box
+󰒎 md-ruler
+󰒏 md-run
+󰒐 md-satellite
+󰒑 md-satellite-variant
+󰒒 md-school
+󰒓 md-screen-rotation
+󰒔 md-screen-rotation-lock
+󰒕 md-sd
+󰒖 md-select-all
+󰒗 md-send
+󰒘 md-serial-port
+󰒙 md-server
+󰒚 md-server-minus
+󰒛 md-server-network
+󰒜 md-server-network-off
+󰒝 md-server-off
+󰒞 md-server-plus
+󰒟 md-server-remove
+󰒠 md-server-security
+󰒡 md-settings
+󰒢 md-settings-box
+󰒣 md-shape-circle-plus
+󰒤 md-share
+󰒥 md-share-variant
+󰒦 md-shield
+󰒧 md-shield-half-full
+󰒨 md-shield-outline
+󰒩 md-shopping
+󰒪 md-shopping-music
+󰒫 md-sigma
+󰒬 md-sigma-lower
+󰒭 md-signal
+󰒮 md-signal-2g
+󰒯 md-signal-3g
+󰒰 md-signal-4g
+󰒱 md-signal-hspa
+󰒲 md-signal-hspa-plus
+󰒳 md-signal-off
+󰒴 md-signal-variant
+󰒵 md-sim
+󰒶 md-sim-alert
+󰒷 md-sim-off
+󰒸 md-sitemap
+󰒹 md-skip-next
+󰒺 md-skip-next-circle
+󰒻 md-skip-next-circle-outline
+󰒼 md-skip-previous
+󰒽 md-skip-previous-circle
+󰒾 md-skip-previous-circle-outline
+󰒿 md-skull
+󰓀 md-skype
+󰓁 md-skype-business
+󰓂 md-sleep
+󰓃 md-sleep-off
+󰓄 md-smoking
+󰓅 md-smoking-off
+󰓆 md-snapchat
+󰓇 md-snowflake
+󰓈 md-snowman
+󰓉 md-soccer
+󰓊 md-sort
+󰓋 md-sort-alphabetical
+󰓌 md-sort-ascending
+󰓍 md-sort-descending
+󰓎 md-sort-numeric
+󰓏 md-sort-variant
+󰓐 md-soundcloud
+󰓑 md-source-branch
+󰓒 md-source-fork
+󰓓 md-source-merge
+󰓔 md-source-pull
+󰓕 md-speaker
+󰓖 md-speaker-off
+󰓗 md-speedometer
+󰓘 md-spellcheck
+󰓙 md-spotify
+󰓚 md-stackoverflow
+󰓛 md-star
+󰓜 md-star-circle
+󰓝 md-star-half
+󰓞 md-star-outline
+󰓟 md-star-off
+󰓠 md-steam
+󰓡 md-steering
+󰓢 md-step-backward
+󰓣 md-step-backward-2
+󰓤 md-step-forward
+󰓥 md-step-forward-2
+󰓦 md-stethoscope
+󰓧 md-stop
+󰓨 md-stop-circle
+󰓩 md-stop-circle-outline
+󰓪 md-store
+󰓫 md-store-24-hour
+󰓬 md-stove
+󰓭 md-subdirectory-arrow-left
+󰓮 md-subdirectory-arrow-right
+󰓯 md-subway
+󰓰 md-subway-variant
+󰓱 md-sunglasses
+󰓲 md-swap-horizontal
+󰓳 md-swap-vertical
+󰓴 md-swim
+󰓵 md-switch
+󰓶 md-sword
+󰓷 md-sync
+󰓸 md-sync-alert
+󰓹 md-sync-off
+󰓺 md-tab
+󰓻 md-tab-unselected
+󰓼 md-table
+󰓽 md-table-column-plus-after
+󰓾 md-table-column-plus-before
+󰓿 md-table-column-remove
+󰔀 md-table-column-width
+󰔁 md-table-edit
+󰔂 md-table-large
+󰔃 md-table-row-height
+󰔄 md-table-row-plus-after
+󰔅 md-table-row-plus-before
+󰔆 md-table-row-remove
+󰔇 md-tag
+󰔈 md-tag-faces
+󰔉 md-tag-heart
+󰔊 md-tag-multiple
+󰔋 md-tag-outline
+󰔌 md-tag-text-outline
+󰔍 md-target
+󰔎 md-taxi
+󰔏 md-teamviewer
+󰔐 md-telegram
+󰔑 md-television
+󰔒 md-television-guide
+󰔓 md-temperature-celsius
+󰔔 md-temperature-fahrenheit
+󰔕 md-temperature-kelvin
+󰔖 md-tent
+󰔗 md-terminal
+󰔘 md-test-tube
+󰔙 md-text-shadow
+󰔚 md-text-to-speech
+󰔛 md-text-to-speech-off
+󰔜 md-textbox
+󰔝 md-textbox-password
+󰔞 md-texture
+󰔟 md-theater
+󰔠 md-theme-light-dark
+󰔡 md-thermometer
+󰔢 md-thermometer-lines
+󰔣 md-thumb-down
+󰔤 md-thumb-down-outline
+󰔥 md-thumb-up
+󰔦 md-thumb-up-outline
+󰔧 md-thumbs-up-down
+󰔨 md-ticket
+󰔩 md-ticket-account
+󰔪 md-ticket-confirmation
+󰔫 md-tie
+󰔬 md-timelapse
+󰔭 md-timer
+󰔮 md-timer-10
+󰔯 md-timer-3
+󰔰 md-timer-off
+󰔱 md-timer-sand
+󰔲 md-timer-sand-empty
+󰔳 md-timetable
+󰔴 md-toggle-switch
+󰔵 md-toggle-switch-off
+󰔶 md-tooltip
+󰔷 md-tooltip-edit
+󰔸 md-tooltip-image
+󰔹 md-tooltip-outline
+󰔺 md-tooltip-outline-plus
+󰔻 md-tooltip-text
+󰔼 md-tor
+󰔽 md-traffic-light
+󰔾 md-train
+󰔿 md-tram
+󰕀 md-transcribe
+󰕁 md-transcribe-close
+󰕂 md-transfer
+󰕃 md-translate
+󰕄 md-tree
+󰕅 md-trello
+󰕆 md-trending-down
+󰕇 md-trending-neutral
+󰕈 md-trending-up
+󰕉 md-trophy
+󰕊 md-trophy-award
+󰕋 md-trophy-outline
+󰕌 md-trophy-variant
+󰕍 md-trophy-variant-outline
+󰕎 md-truck
+󰕏 md-truck-delivery
+󰕐 md-tshirt-crew
+󰕑 md-tshirt-v
+󰕒 md-tumblr
+󰕓 md-tumblr-reblog
+󰕔 md-tune
+󰕕 md-tune-vertical
+󰕖 md-twitter
+󰕗 md-twitter-box
+󰕘 md-twitter-circle
+󰕙 md-twitter-retweet
+󰕚 md-ubuntu
+󰕛 md-undo
+󰕜 md-undo-variant
+󰕝 md-unfold-less
+󰕞 md-unfold-more
+󰕟 md-ungroup
+󰕠 md-untappd
+󰕡 md-update
+󰕢 md-upload
+󰕣 md-usb
+󰕤 md-vector-arrange-above
+󰕥 md-vector-arrange-below
+󰕦 md-vector-circle
+󰕧 md-vector-circle-variant
+󰕨 md-vector-combine
+󰕩 md-vector-curve
+󰕪 md-vector-difference
+󰕫 md-vector-difference-ab
+󰕬 md-vector-difference-ba
+󰕭 md-vector-intersection
+󰕮 md-vector-line
+󰕯 md-vector-point
+󰕰 md-vector-polygon
+󰕱 md-vector-polyline
+󰕲 md-vector-radius
+󰕳 md-vector-rectangle
+󰕴 md-vector-selection
+󰕵 md-vector-square
+󰕶 md-vector-triangle
+󰕷 md-vector-union
+󰕸 md-verified
+󰕹 md-video
+󰕺 md-video-off
+󰕻 md-video-switch
+󰕼 md-view-agenda
+󰕽 md-view-array
+󰕾 md-view-carousel
+󰕿 md-view-column
+󰖀 md-view-dashboard
+󰖁 md-view-day
+󰖂 md-view-grid
+󰖃 md-view-headline
+󰖄 md-view-list
+󰖅 md-view-module
+󰖆 md-view-quilt
+󰖇 md-view-sequential
+󰖈 md-view-stream
+󰖉 md-view-week
+󰖊 md-vimeo
+󰖋 md-vine
+󰖌 md-violin
+󰖍 md-visualstudio
+󰖎 md-vk
+󰖏 md-vk-box
+󰖐 md-vk-circle
+󰖑 md-vlc
+󰖒 md-voice
+󰖓 md-voicemail
+󰖔 md-volume-high
+󰖕 md-volume-low
+󰖖 md-volume-medium
+󰖗 md-volume-minus
+󰖘 md-volume-mute
+󰖙 md-volume-off
+󰖚 md-volume-plus
+󰖛 md-vpn
+󰖜 md-walk
+󰖝 md-wallet
+󰖞 md-wallet-giftcard
+󰖟 md-wallet-membership
+󰖠 md-wallet-travel
+󰖡 md-wan
+󰖢 md-watch
+󰖣 md-watch-export
+󰖤 md-watch-import
+󰖥 md-watch-vibrate
+󰖦 md-water
+󰖧 md-water-off
+󰖨 md-water-percent
+󰖩 md-water-pump
+󰖪 md-weather-cloudy
+󰖫 md-weather-fog
+󰖬 md-weather-hail
+󰖭 md-weather-lightning
+󰖮 md-weather-lightning-rainy
+󰖯 md-weather-night
+󰖰 md-weather-partlycloudy
+󰖱 md-weather-pouring
+󰖲 md-weather-rainy
+󰖳 md-weather-snowy
+󰖴 md-weather-snowy-rainy
+󰖵 md-weather-sunny
+󰖶 md-weather-sunset
+󰖷 md-weather-sunset-down
+󰖸 md-weather-sunset-up
+󰖹 md-weather-windy
+󰖺 md-weather-windy-variant
+󰖻 md-web
+󰖼 md-webcam
+󰖽 md-webhook
+󰖾 md-webpack
+󰖿 md-whatsapp
+󰗀 md-wheelchair-accessibility
+󰗁 md-white-balance-auto
+󰗂 md-white-balance-incandescent
+󰗃 md-white-balance-iridescent
+󰗄 md-white-balance-sunny
+󰗅 md-widgets
+󰗆 md-wifi
+󰗇 md-wifi-off
+󰗈 md-wikipedia
+󰗉 md-window-close
+󰗊 md-window-closed
+󰗋 md-window-maximize
+󰗌 md-window-minimize
+󰗍 md-window-open
+󰗎 md-window-restore
+󰗏 md-windows
+󰗐 md-wordpress
+󰗑 md-wrap
+󰗒 md-wrench
+󰗓 md-xbox
+󰗔 md-xbox-controller
+󰗕 md-xbox-controller-off
+󰗖 md-xda
+󰗗 md-xml
+󰗘 md-yeast
+󰗙 md-yelp
+󰗚 md-youtube-play
+󰗛 md-zip-box
