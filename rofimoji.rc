@@ -29,7 +29,6 @@ typer = wtype
 
 # ── Emoji collections to show ─────────────────────────────────────────────
 # Default: built-in emoji collections only
-files = emojis_smileys_emotion emojis_people_body emojis_animals_nature emojis_food_drink emojis_travel_places emojis_activities emojis_objects emojis_symbols emojis_flags
 
 # ── To show ONLY Material Design Icons: ───────────────────────────────────
 # files = ~/.config/rofimoji/material_design.csv
