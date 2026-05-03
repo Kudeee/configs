@@ -55,8 +55,8 @@ listview {
     background-color: transparent;
     padding:          12px 10px 14px 10px;
     spacing:          10px;
-    columns:          3;
-    lines:            3;
+    columns:          1;
+    lines:            5;
     fixed-height:     true;
     scrollbar:        false;
 }
@@ -73,7 +73,7 @@ element {
     border-radius:    10px;
     padding:          10px 10px;
     spacing:          6px;
-    orientation:      vertical;
+    orientation:      horizontal;
     children:         [ element-icon, element-text ];
 }
 
