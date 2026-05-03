@@ -1,180 +1,128 @@
-/*
- * Rofi App Menu Theme — annotated template
- * Save to: ~/.config/rofi/appmenu.rasi
- * Use with: rofi -show drun -theme ~/.config/rofi/appmenu.rasi
- *
- * Requires a Nerd Font for icons (e.g. JetBrainsMono Nerd Font).
- *
- * ┌─────────────────────────────────────────────────┐
- * │  QUICK-CHANGE SECTION — edit only these vars    │
- * └─────────────────────────────────────────────────┘
- */
-
-/* ── 1. COLOR PALETTE ────────────────────────────────────────────────────── */
-/* Change these and everything updates automatically.                          */
-* {
-    bg0:     #0d0f18;     /* window background (darkest)                      */
-    bg1:     #13151f;     /* inputbar / search bar background                  */
-    bg2:     #1c1f2e;     /* element hover background                         */
-    bg3:     #252840;     /* element selected background                       */
-    accent:  #7986cb;     /* selected text + border highlight color            */
-    fg0:     #cdd6f4;     /* primary text (app names)                         */
-    fg1:     #a9b1d6;     /* secondary text (normal state)                    */
-    fg2:     #565f89;     /* muted text (placeholder, prompt)                 */
-
-    /* Leave these as-is — rofi uses them internally */
-    background-color: transparent;
-    text-color:       @fg0;
-    border-color:     @accent;
-}
+@import "colors.rasi"
 
 configuration {
-    display-drun: "";
-   font: "Silkscreen 10";
+    display-drun: "";
+    font: "Silkscreen 10";
 }
 
-/* ── 2. WINDOW ───────────────────────────────────────────────────────────── */
-/* The outer popup box.                                                         */
+/* ── WINDOW ───────────────────────────────────────────────────────────────── */
 window {
-    width:            740px;     /* total popup width                          */
+    width:            740px;
     background-color: @bg0;
-    border:           1px;       /* border thickness (set 0 to remove)         */
+    border:           1px;
     border-color:     @accent;
-    border-radius:    16px;      /* outer corner rounding                      */
+    border-radius:    16px;
     padding:          0px;
 }
 
-/* ── 3. LAYOUT SKELETON ──────────────────────────────────────────────────── */
-/* mainbox stacks inputbar on top, listview below.                             */
+/* ── LAYOUT SKELETON ──────────────────────────────────────────────────────── */
 mainbox {
     background-color: transparent;
     spacing:          0px;
     children:         [ inputbar, listview ];
 }
 
-/* ── 4. SEARCH BAR (inputbar) ────────────────────────────────────────────── */
+/* ── SEARCH BAR ───────────────────────────────────────────────────────────── */
 inputbar {
     background-color: @bg1;
-    border-radius:    16px 16px 0px 0px;  /* only round the TOP corners       */
+    border-radius:    16px 16px 0px 0px;
     padding:          14px 18px;
     spacing:          10px;
     children:         [ prompt, entry ];
 }
 
-/* The icon/label before the search box */
 prompt {
     background-color: transparent;
-    font: "Cozette 13";
+    font:             "Cozette 13";
     text-color:       @accent;
     vertical-align:   0.5;
 }
 
-/* The text you type */
 entry {
     background-color:  transparent;
     text-color:        @fg0;
-    // font:              "Cozette 13";
     vertical-align:    0.5;
     placeholder:       "Search apps...";
     placeholder-color: @fg2;
 }
 
-/* Hide the case-sensitivity indicator */
 case-indicator {
     visible: false;
 }
 
-/* ── 5. RESULTS GRID (listview) ──────────────────────────────────────────── */
+/* ── RESULTS GRID ─────────────────────────────────────────────────────────── */
 listview {
     background-color: transparent;
     padding:          12px 10px 14px 10px;
-    spacing:          10px;        /* gap between elements                      */
-
-    columns:      3;              /* ← CHANGE THIS: number of columns          */
-    lines:        3;              /* ← CHANGE THIS: number of visible rows     */
-
-    /*
-     * TIP — layout modes:
-     *   grid of icons  → columns: 5; lines: 3;
-     *   tall list      → columns: 1; lines: 8;
-     *   wide 2-column  → columns: 2; lines: 6;
-     */
-
-    fixed-height: true;
-    scrollbar:    false;
+    spacing:          10px;
+    columns:          3;
+    lines:            3;
+    fixed-height:     true;
+    scrollbar:        false;
 }
 
-/* Optional scrollbar (only shown when scrollbar: true above) */
 scrollbar {
     background-color: @bg2;
     handle-color:     @accent;
     handle-width:     4px;
 }
 
-/* ── 6. EACH APP TILE (element) ──────────────────────────────────────────── */
+/* ── EACH APP TILE ────────────────────────────────────────────────────────── */
 element {
-  background-color: transparent;
-  border-radius:    10px;
-  padding:          10px 10px;
-  spacing:          6px;
-  orientation: vertical;   /* icon on top, text below                  */
-  children:         [ element-icon, element-text ];
+    background-color: transparent;
+    border-radius:    10px;
+    padding:          10px 10px;
+    spacing:          6px;
+    orientation:      vertical;
+    children:         [ element-icon, element-text ];
 }
 
-/* The app icon */
 element-icon {
     background-color: transparent;
-    size:             52px;       /* ← CHANGE THIS: icon size                 */
+    size:             52px;
     horizontal-align: 0.5;
 }
 
-/* The app name label */
 element-text {
     background-color: transparent;
     text-color:       @fg1;
-    // font:             "JetBrainsMono Nerd Font 10";
     horizontal-align: 0.5;
     vertical-align:   0.5;
-    highlight:        bold;       /* matched search chars highlighted bold     */
+    highlight:        bold;
 }
 
-/* ── 7. ELEMENT STATES ───────────────────────────────────────────────────── */
-
-/* Normal (not selected) */
+/* ── ELEMENT STATES ───────────────────────────────────────────────────────── */
 element.normal.normal {
     background-color: transparent;
     text-color:       @fg1;
 }
 
-/* Alternate rows (even-numbered) — set to @bg2 for zebra striping            */
 element.alternate.normal {
     background-color: transparent;
     text-color:       @fg1;
 }
 
-/* Selected (keyboard focus) */
 element.selected.normal {
     background-color: @bg3;
     text-color:       @fg0;
 }
 
-/* Urgent entries (rarely triggered in drun mode) */
 element.normal.urgent {
     background-color: transparent;
-    text-color:       #f7768e;
+    text-color:       @urgent;
 }
 
 element.selected.urgent {
-    background-color: #2e1a21;
-    text-color:       #f7768e;
+    background-color: @bg2;
+    text-color:       @urgent;
 }
 
 element.alternate.urgent {
     background-color: transparent;
-    text-color:       #f7768e;
+    text-color:       @urgent;
 }
 
-/* ── 8. MESSAGE / NO RESULTS ────────────────────────────────────────────── */
+/* ── MESSAGE ──────────────────────────────────────────────────────────────── */
 message {
     background-color: transparent;
     padding:          8px 12px;
@@ -183,27 +131,5 @@ message {
 textbox {
     background-color: transparent;
     text-color:       @fg2;
-    // font:             "JetBrainsMono Nerd Font 11";
     horizontal-align: 0.5;
 }
-
-/*
- * ┌─────────────────────────────────────────────────────────────────────┐
- * │  HOW TO USE                                                         │
- * │                                                                     │
- * │  Launch:  rofi -show drun -theme ~/.config/rofi/appmenu.rasi       │
- * │                                                                     │
- * │  In hyprland.conf, replace the bind for $menu with:                │
- * │    bind = $mainMod, R, exec, rofi -show drun \                     │
- * │             -theme ~/.config/rofi/appmenu.rasi                     │
- * │                                                                     │
- * │  Common tweaks:                                                     │
- * │    • Bigger popup   → window { width: 900px; }                     │
- * │    • More columns   → listview { columns: 6; }                     │
- * │    • List view      → listview { columns: 1; lines: 8; }           │
- * │                        element { orientation: horizontal; }        │
- * │    • Bigger icons   → element-icon { size: 64px; }                 │
- * │    • Remove border  → window { border: 0px; }                      │
- * │    • No radius      → window { border-radius: 0px; }               │
- * └─────────────────────────────────────────────────────────────────────┘
- */

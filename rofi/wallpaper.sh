@@ -72,7 +72,7 @@ awww img "$SELECTED" \
   --transition-fps 60
 
 if command -v matugen &>/dev/null; then
-  matugen image "$SELECTED"
+  matugen image "$SELECTED" --prefer darkness
 fi
 
 echo "$SELECTED" >"$HOME/.cache/current_wallpaper"

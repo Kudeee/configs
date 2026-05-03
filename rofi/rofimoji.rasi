@@ -1,75 +1,42 @@
-/*
- * Rofimoji Theme — matches your rofi appmenu / powermenu palette
- * Save to: ~/.config/rofi/rofimoji.rasi
- *
- * Use with: rofimoji --rofi-args="-theme ~/.config/rofi/rofimoji.rasi"
- * Or set it permanently in ~/.config/rofimoji.rc (see rofimoji.rc)
- *
- */
+@import "colors.rasi"
 
-/* ── 1. COLOR PALETTE ─────────────────────────────────────────────────────── */
-/* Identical to your appmenu.rasi / powermenu.rasi palette.                    */
-/* Change a value here and every widget below updates automatically.            */
-* {
-    bg0:    #0d0f18;    /* window background (darkest)              */
-    bg1:    #13151f;    /* inputbar / search bar background          */
-    bg2:    #1c1f2e;    /* hover background                         */
-    bg3:    #252840;    /* selected tile background                  */
-    accent: #7986cb;    /* border + selected highlight (blue)       */
-    fg0:    #cdd6f4;    /* primary text                             */
-    fg1:    #a9b1d6;    /* secondary text (emoji labels)            */
-    fg2:    #565f89;    /* muted text (placeholder, prompt)         */
-    urgent: #f7768e;    /* error / recently used indicator          */
-
-    /* rofi internals — leave as-is */
-    background-color: transparent;
-    text-color:       @fg0;
-    border-color:     @accent;
-}
-
-/* ── 2. FONT ─────────────────────────────────────────────────────────────── */
-/* Matches your waybar / appmenu font stack.                                    */
-/* Change the font name or size here only.                                      */
 configuration {
-    font:           "Silkscreen 11";       /* ← change font/size here          */
-    display-emoji:  "Emoji";               /* label for the picker prompt       */
+    font:           "Silkscreen 11";
+    display-emoji:  "Emoji";
 }
 
-/* ── 3. WINDOW ───────────────────────────────────────────────────────────── */
-/* The outer popup box.                                                         */
+/* ── WINDOW ───────────────────────────────────────────────────────────────── */
 window {
-    width:            680px;     /* ← total popup width                        */
+    width:            680px;
     background-color: @bg0;
-    border:           1px;       /* ← set 0 to remove border                  */
+    border:           1px;
     border-color:     @accent;
-    border-radius:    16px;      /* ← outer corner rounding                   */
+    border-radius:    16px;
     padding:          0px;
 }
 
-/* ── 4. LAYOUT SKELETON ──────────────────────────────────────────────────── */
+/* ── LAYOUT ───────────────────────────────────────────────────────────────── */
 mainbox {
     background-color: transparent;
     spacing:          0px;
     children:         [ inputbar, message, listview ];
 }
 
-/* ── 5. SEARCH BAR ───────────────────────────────────────────────────────── */
+/* ── SEARCH BAR ───────────────────────────────────────────────────────────── */
 inputbar {
     background-color: @bg1;
-    border-radius:    16px 16px 0px 0px;  /* only round the TOP corners        */
+    border-radius:    16px 16px 0px 0px;
     padding:          14px 18px;
     spacing:          10px;
     children:         [ prompt, entry ];
 }
 
-/* Icon/label before the search box */
 prompt {
     background-color: transparent;
     text-color:       @accent;
     vertical-align:   0.5;
 }
 
-/* The text you type */
 entry {
     background-color:  transparent;
     text-color:        @fg0;
@@ -80,9 +47,7 @@ entry {
 
 case-indicator { visible: false; }
 
-/* ── 6. RECENTLY USED MESSAGE BAR ────────────────────────────────────────── */
-/* Rofimoji shows a small bar when --max-recent > 0.                           */
-/* Set visible: false below to hide it.                                         */
+/* ── RECENTLY USED BAR ────────────────────────────────────────────────────── */
 message {
     background-color: transparent;
     padding:          4px 14px 0px 14px;
@@ -95,24 +60,15 @@ textbox {
     vertical-align:   0.5;
 }
 
-/* ── 7. EMOJI GRID ───────────────────────────────────────────────────────── */
+/* ── EMOJI GRID ───────────────────────────────────────────────────────────── */
 listview {
     background-color: transparent;
     padding:          10px 10px 12px 10px;
-    spacing:          6px;          /* gap between tiles                       */
-
-    columns:  3;                    /* ← emoji tiles per row                   */
-    lines:    3;                    /* ← rows visible before scrolling         */
-
-    /*
-     * Layout tips:
-     *   Compact grid    → columns: 10; lines: 3;
-     *   Wide list       → columns: 1;  lines: 10;  (shows full :name:)
-     *   Balanced        → columns: 6;  lines: 5;
-     */
-
-    fixed-height: true;
-    scrollbar:    false;
+    spacing:          6px;
+    columns:          3;
+    lines:            3;
+    fixed-height:     true;
+    scrollbar:        false;
 }
 
 scrollbar {
@@ -121,34 +77,31 @@ scrollbar {
     handle-width:     4px;
 }
 
-/* ── 8. EACH EMOJI TILE ──────────────────────────────────────────────────── */
+/* ── EACH EMOJI TILE ──────────────────────────────────────────────────────── */
 element {
     background-color: transparent;
     border-radius:    10px;
     padding:          8px 6px;
     spacing:          4px;
-    orientation:      vertical;     /* emoji on top, name label below          */
+    orientation:      vertical;
     children:         [ element-icon, element-text ];
 }
 
-/* The emoji glyph itself */
 element-icon {
     background-color: transparent;
-    size:             28px;         /* ← emoji display size                   */
+    size:             28px;
     horizontal-align: 0.5;
 }
 
-/* The :shortcode: label under each emoji */
 element-text {
     background-color: transparent;
-    text-color:       @fg2;         /* muted by default — brightens on select */
+    text-color:       @fg2;
     horizontal-align: 0.5;
     vertical-align:   0.5;
     highlight:        bold;
 }
 
-/* ── 9. ELEMENT STATES ───────────────────────────────────────────────────── */
-
+/* ── ELEMENT STATES ───────────────────────────────────────────────────────── */
 element.normal.normal {
     background-color: transparent;
     text-color:       @fg1;
@@ -168,7 +121,6 @@ element.selected.normal element-text {
     text-color: @fg0;
 }
 
-/* Urgent = recently used emoji (when --max-recent > 0) */
 element.normal.urgent,
 element.alternate.urgent {
     background-color: transparent;
@@ -176,30 +128,6 @@ element.alternate.urgent {
 }
 
 element.selected.urgent {
-    background-color: #2e1a21;
+    background-color: @bg2;
     text-color:       @urgent;
 }
-
-/*
- * ┌──────────────────────────────────────────────────────────────────────┐
- * │  HOW TO USE                                                          │
- * │                                                                      │
- * │  One-off:                                                            │
- * │    rofimoji --rofi-args="-theme ~/.config/rofi/rofimoji.rasi"        │
- * │                                                                      │
- * │  Permanent (set in ~/.config/rofimoji.rc):                           │
- * │    rofi-args = --theme ~/.config/rofi/rofimoji.rasi                  │
- * │                                                                      │
- * │  Hyprland keybind (hyprland.conf):                                   │
- * │    bind = $mainMod, period, exec, rofimoji \                         │
- * │             --rofi-args="-theme ~/.config/rofi/rofimoji.rasi"        │
- * │                                                                      │
- * │  Common tweaks:                                                       │
- * │    • Bigger popup     → window  { width: 900px; }                   │
- * │    • More per row     → listview { columns: 12; }                   │
- * │    • Bigger glyphs    → element-icon { size: 40px; }                │
- * │    • Hide shortcodes  → element-text { visible: false; }            │
- * │    • Remove border    → window { border: 0px; }                     │
- * │    • Show scrollbar   → listview { scrollbar: true; }               │
- * └──────────────────────────────────────────────────────────────────────┘
- */

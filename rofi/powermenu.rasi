@@ -1,28 +1,6 @@
-/*
- * Rofi Power Menu Theme
- * Save to: ~/.config/rofi/powermenu.rasi
- *
- * Requires a Nerd Font (e.g. JetBrainsMono Nerd Font) for icons.
- */
+@import "colors.rasi"
 
-/* ── Palette ─────────────────────────────── */
-* {
-    bg0:     #0d0f18;
-    bg1:     #13151f;
-    bg2:     #1c1f2e;
-    bg3:     #252840;
-    accent:  #7aa2f7;
-    urgent:  #f7768e;
-    fg0:     #cdd6f4;
-    fg1:     #a9b1d6;
-    fg2:     #565f89;
-
-    background-color: transparent;
-    text-color:       @fg0;
-    border-color:     @bg3;
-}
-
-/* ── Window ──────────────────────────────── */
+/* ── WINDOW ──────────────────────────────── */
 window {
     width:            340px;
     background-color: @bg0;
@@ -32,14 +10,14 @@ window {
     padding:          0;
 }
 
-/* ── Layout ──────────────────────────────── */
+/* ── LAYOUT ──────────────────────────────── */
 mainbox {
     background-color: transparent;
     spacing:          0;
     children:         [ inputbar, listview ];
 }
 
-/* ── Header / prompt bar ─────────────────── */
+/* ── HEADER ──────────────────────────────── */
 inputbar {
     background-color: @bg1;
     border-radius:    16px 16px 0 0;
@@ -55,10 +33,9 @@ prompt {
     vertical-align:   0.5;
 }
 
-/* hide unused inputbar widgets */
 entry, case-indicator { enabled: false; }
 
-/* ── List ────────────────────────────────── */
+/* ── LIST ────────────────────────────────── */
 listview {
     background-color: transparent;
     padding:          10px 12px 12px 12px;
@@ -69,7 +46,7 @@ listview {
     layout:           vertical;
 }
 
-/* ── Each row ────────────────────────────── */
+/* ── EACH ROW ────────────────────────────── */
 element {
     background-color: transparent;
     border-radius:    10px;
@@ -88,7 +65,6 @@ element-text {
     cursor:           inherit;
 }
 
-/* hover */
 element.normal.normal {
     background-color: transparent;
 }
@@ -102,10 +78,9 @@ element.selected.normal element-text {
     font:       "JetBrainsMono Nerd Font Bold 12";
 }
 
-/* urgent = shutdown / reboot */
 element.normal.urgent element-text  { text-color: @urgent; }
 element.selected.urgent {
-    background-color: #2e1a21;
+    background-color: @bg2;
 }
 element.selected.urgent element-text {
     text-color: @urgent;

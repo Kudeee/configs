@@ -13,3 +13,7 @@ post_hook   = 'pkill -SIGUSR2 waybar'
 input_path  = '~/.config/matugen/templates/hyprland-colors-template.conf'
 output_path = '~/.config/hypr/colors.conf'
 post_hook   = 'bash ~/.config/hypr/scripts/apply-colors.sh'
+
+[templates.rofi]
+input_path  = '~/.config/matugen/templates/rofi-colors-template.rasi'
+output_path = '~/.config/rofi/colors.rasi'
