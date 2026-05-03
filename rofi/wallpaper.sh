@@ -73,15 +73,17 @@ awww img "$SELECTED" \
 
 if command -v matugen &>/dev/null; then
   # matugen image "$SELECTED" --prefer darkness
-  BRIGHTNESS=$(convert "$SELECTED" -colorspace Gray -format "$[fx:mean*255]" info: 2>/dev/null | cut -d. -f1)
+  BRIGHTNESS=$(magick "$SELECTED" -colorspace Gray -format '%[fx:mean*255]' info: 2>/dev/null | cut -d. -f1)
 
-  if [ -z "$BRIGHTNESS"] || ["$BRIGHTNESS" -lt 128]; then
+  if [ -z "$BRIGHTNESS" ] || [ "$BRIGHTNESS" -lt 128 ]; then
     MATUGEN_MODE="dark"
+    PREFER="darkness"
   else
     MATUGEN_MODE="light"
+    PREFER="lightness"
   fi
 
-  matugen image "$SELECTED" -m "$MATUGEN_MODE"
+  matugen image "$SELECTED" --prefer "$PREFER" -m "$MATUGEN_MODE"
 fi
 
 echo "$SELECTED" >"$HOME/.cache/current_wallpaper"
