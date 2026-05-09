@@ -72,19 +72,18 @@ awww img "$SELECTED" \
   --transition-fps 60
 
 if command -v matugen &>/dev/null; then
-  # matugen image "$SELECTED" --prefer darkness
-  BRIGHTNESS=$(magick "$SELECTED" -colorspace Gray -format '%[fx:mean*255]' info: 2>/dev/null | cut -d. -f1)
+  BRIGHTNESS=$(magick identify -format '%[fx:mean*255]' "$SELECTED" 2>/dev/null | cut -d. -f1)
 
   if [ -z "$BRIGHTNESS" ] || [ "$BRIGHTNESS" -lt 128 ]; then
     MATUGEN_MODE="dark"
-    PREFER="darkness"
   else
     MATUGEN_MODE="light"
-    PREFER="lightness"
   fi
 
-  matugen image "$SELECTED" --prefer "$PREFER" -m "$MATUGEN_MODE"
+  matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE"
 fi
+
+# matugen image "$SELECTED" --source-color-index 0
 
 echo "$SELECTED" >"$HOME/.cache/current_wallpaper"
 notify-send "Wallpaper" "$(basename "$SELECTED")" --icon="$SELECTED"
