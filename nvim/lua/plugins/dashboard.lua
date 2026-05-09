@@ -2,6 +2,7 @@ return {
   "snacks.nvim",
   opts = {
     dashboard = {
+      -- In your dashboard.lua or autocmds.lua
       preset = {
         pick = function(cmd, opts)
           return LazyVim.pick(cmd, opts)()
@@ -28,8 +29,8 @@ return {
               ⠀⠀⠀⠀⠈⢷⡀⠀⠙⡿⢧⡈⢆⠀⠀⠀⠀⢀⣀⡀⠀⢀⣀⡀⢀⡇⠈⢳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
               ⠀⠀⠀⠀⠀⣠⣗⣀⢀⣧⠀⠉⠑⠒⠛⠛⣻⠏⣀⣀⡀⢈⣠⠼⠽⠑⠚⠛⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
               ⠀⠀⠀⠀⢰⣉⢁⣭⡱⠞⠀⠀⠀⠀⠀⢾⡏⡍⡏⡅⣟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-     ⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠓⠚⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
- ]],
+             ⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠓⠚⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+         ]],
       },
     },
   },
