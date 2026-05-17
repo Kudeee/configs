@@ -39,9 +39,6 @@ local mainMod     = "SUPER"
 ---- AUTOSTART ----
 -------------------
 
--- NOTE: uwsm users should use ~/.config/uwsm/env (and env-hyprland) for
--- environment variables instead of hl.env() in this file.
-
 hl.on("hyprland.start", function()
   hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
   hl.exec_cmd("waybar")
@@ -55,7 +52,6 @@ end)
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
--- NOTE: If you use uwsm, move these to ~/.config/uwsm/env instead.
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
@@ -75,7 +71,6 @@ hl.config({
 
     border_size      = 2,
 
-    -- Fallback colors used on first boot before colors.conf/matugen exists.
     col              = {
       active_border   = { colors = { "rgba(7986CBee)", "rgba(4DB6ACee)" }, angle = 45 },
       inactive_border = "rgba(37474Faa)",
@@ -98,7 +93,7 @@ hl.config({
       range        = 18,
       render_power = 3,
       color        = "rgba(00000060)",
-      offset       = { x = 0, y = 4 },
+      offset       = { 0, 4 },
     },
 
     blur             = {
@@ -117,7 +112,6 @@ hl.config({
   },
 
   dwindle = {
-    pseudotile     = true,
     preserve_split = true,
     smart_split    = true,
   },
@@ -131,7 +125,8 @@ hl.config({
     disable_hyprland_logo        = false,
     animate_manual_resizes       = true,
     animate_mouse_windowdragging = true,
-    vfr                          = true, -- variable framerate — saves battery
+    -- FIX: vfr was removed; use render_ahead_of_time or just drop it
+    -- vfr = true,
   },
 })
 
@@ -147,7 +142,7 @@ hl.curve("easeInOutSine", { type = "bezier", points = { { 0.37, 0 }, { 0.63, 1 }
 hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
 hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
--- Windows — pop open with spring, fade out quickly
+-- Windows
 hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "easeOutBack" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 4, bezier = "easeOutBack", style = "popin 75%" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "easeInOutSine", style = "popin 80%" })
@@ -156,18 +151,18 @@ hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "easeInO
 hl.animation({ leaf = "fadeIn", enabled = true, speed = 3, bezier = "easeOutExpo" })
 hl.animation({ leaf = "fadeOut", enabled = true, speed = 2, bezier = "easeInOutSine" })
 
--- Border — smooth color transitions when matugen reloads colors
+-- Border
 hl.animation({ leaf = "border", enabled = true, speed = 8, bezier = "easeOutExpo" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 80, bezier = "linear", style = "loop" })
 
--- Layers (waybar, swaync, rofi)
+-- Layers
 hl.animation({ leaf = "layers", enabled = true, speed = 3, bezier = "easeOutExpo" })
 hl.animation({ leaf = "layersIn", enabled = true, speed = 3, bezier = "easeOutExpo", style = "fade" })
 hl.animation({ leaf = "layersOut", enabled = true, speed = 2, bezier = "easeInOutSine", style = "fade" })
 hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 2, bezier = "easeOutExpo" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.5, bezier = "linear" })
 
--- Workspaces — slide + fade
+-- Workspaces
 hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "easeOutExpo", style = "slidefade 20%" })
 hl.animation({ leaf = "workspacesIn", enabled = true, speed = 4, bezier = "easeOutExpo", style = "slidefade 20%" })
 hl.animation({ leaf = "workspacesOut", enabled = true, speed = 3, bezier = "easeInOutSine", style = "slidefade 20%" })
@@ -236,10 +231,11 @@ hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("rofimoji"))
 hl.bind(mainMod .. " + SHIFT + period", hl.dsp.exec_cmd("rofimoji --files ~/.config/rofimoji/material_design.csv"))
 hl.bind(mainMod .. " + CTRL + period", hl.dsp.exec_cmd("rofimoji --files ~/.config/rofimoji/cozette.csv"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + J", hl.dsp.layout_msg("togglesplit"))
+
+hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
-
 
 -- Wallpaper picker
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
@@ -261,10 +257,10 @@ hl.bind(mainMod .. " + CTRL + Print",
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("pkill waybar && waybar &"))
 
 -- Focus movement
-hl.bind(mainMod .. " + left", hl.dsp.focus.window("l"))
-hl.bind(mainMod .. " + right", hl.dsp.focus.window("r"))
-hl.bind(mainMod .. " + up", hl.dsp.focus.window("u"))
-hl.bind(mainMod .. " + down", hl.dsp.focus.window("d"))
+hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
 -- Move windows
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "l" }))
@@ -279,24 +275,23 @@ hl.bind(mainMod .. " + CTRL + up", hl.dsp.window.resize({ x = 0, y = -40, relati
 hl.bind(mainMod .. " + CTRL + down", hl.dsp.window.resize({ x = 0, y = 40, relative = true }), { repeating = true })
 
 -- Workspaces
-for i = 1, 9 do
-  hl.bind(mainMod .. " + " .. i, hl.dsp.workspace(i))
-  hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
+for i = 1, 10 do
+  local key = i % 10
+  hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+  hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
-hl.bind(mainMod .. " + 0", hl.dsp.workspace(10))
-hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 
 -- Scratchpad (special workspace)
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through workspaces with mouse wheel
-hl.bind(mainMod .. " + mouse_down", hl.dsp.workspace("e+1"))
-hl.bind(mainMod .. " + mouse_up", hl.dsp.workspace("e-1"))
+hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move/resize windows with mouse
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.move_mouse(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize_mouse(), { mouse = true })
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Volume (locked = works on lockscreen)
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
@@ -353,7 +348,8 @@ hl.window_rule({
 -- Float common utility apps
 hl.window_rule({
   name         = "float-utilities",
-  match        = { class = "^(org%.pulseaudio%.pavucontrol|clipse|blueman%-manager|tlpui|nm%-connection%-editor|lxappearance|qt5ct|nwg%-look)$" },
+  match        = { class = "^(org%.pulseaudio%.pavucontrol|bluetui|clipse|blueman-manager|tlpui|nmtui|lxappearance|qt5ct|nwg%-look)$" },
+
   float        = true,
   size         = { 800, 652 },
   center       = true,
@@ -368,7 +364,7 @@ hl.window_rule({
   center = true,
 })
 
--- Picture-in-picture — float, pin, stick to bottom-right
+-- Picture-in-picture
 hl.window_rule({
   name  = "pip",
   match = { title = "^(Picture in picture)$" },
@@ -383,4 +379,11 @@ hl.window_rule({
   name    = "kitty-opacity",
   match   = { class = "^(kitty)$" },
   opacity = "0.95 0.88",
+})
+
+hl.window_rule({
+  name = "move-kitty",
+  match = { class = "kitty" },
+  move = { 100, 100 },
+  animation = "popin"
 })
