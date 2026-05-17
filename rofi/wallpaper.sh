@@ -39,16 +39,18 @@ generate_thumbnail() {
   echo "$thumb"
 }
 
-# Build rofi input: "filename \0icon\x1fthumbnail"
+# Build rofi input array safely
 ROFI_INPUT=""
 while IFS= read -r img; do
   name=$(basename "$img")
   thumb=$(generate_thumbnail "$img")
-  ROFI_INPUT+="$name\0icon\x1f$thumb\n"
+
+  # Append entry name, a null byte (\x00), the icon field identifier (\x1f), and the path
+  ROFI_INPUT+="${name}\x00icon\x1f${thumb}\n"
 done <<<"$IMAGES"
 
-# Show rofi picker
-CHOSEN=$(printf "%b" "$ROFI_INPUT" | rofi \
+# Show rofi picker using printf to guarantee control characters are parsed
+CHOSEN=$(printf "$ROFI_INPUT" | rofi \
   -dmenu \
   -p "Wallpaper" \
   -show-icons \

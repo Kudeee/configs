@@ -12,75 +12,59 @@ window {
     border-color:     @accent;
     border-radius:    16px;
     padding:          0px;
-    margin: 0px;
+    margin:           0px;
 }
 
 /* ── LAYOUT ───────────────────────────────────────────────────────────────── */
 mainbox {
     background-color: transparent;
     spacing:          0px;
-    // children:         [ inputbar, listview ];
-    children:         [prompt, listview];
+    children:         [ prompt, listview ];
 }
 
-/* ── SEARCH BAR ───────────────────────────────────────────────────────────── */
-// inputbar {
-//     background-color: @bg1;
-//     border-radius:    16px 16px 0px 0px;
-//     padding:          12px 18px;
-//     spacing:          10px;
-//     children:         [ prompt, entry ];
-// }
-//
 prompt {
     padding:          12px 18px;
     background-color: transparent;
     text-color:       @accent;
     vertical-align:   0.5;
 }
-//
-// entry {
-//     background-color:  transparent;
-//     text-color:        @fg0;
-//     vertical-align:    0.5;
-//     placeholder:       "Search wallpapers...";
-//     placeholder-color: @fg2;
-// }
-//
-// case-indicator {
-//     visible: false;
-// }
 
 /* ── THUMBNAIL GRID ───────────────────────────────────────────────────────── */
 listview {
     background-color: transparent;
     padding:          12px 10px 12px 10px;
-    spacing:          8px;
+    spacing:          12px;
     columns:          4;
     lines:            1;
-    fixed-height:     true;
+    fixed-height:     false;  /* Dynamic sizing based on content */
     scrollbar:        false;
-}
-
-scrollbar {
-    background-color: @bg2;
-    handle-color:     @accent;
-    handle-width:     4px;
+    cycle:            true;
 }
 
 /* ── EACH THUMBNAIL TILE ──────────────────────────────────────────────────── */
 element {
     background-color: transparent;
     border-radius:    10px;
-    spacing:          3px;
+    spacing:          6px;
+    padding:          8px;
     orientation:      vertical;
-    children:         [ element-icon ];
+    /* CRITICAL: element-text MUST be present for dmenu script indexing to work */
+    children:         [ element-icon, element-text ];
 }
 
 element-icon {
     background-color: transparent;
-    size: 390px;
+    /* Calculated fit: (900px - paddings - gaps) / 4 cols ≈ 180px - 200px width */
+    size:             200px;
     horizontal-align: 0.5;
+    vertical-align:   0.5;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
 }
 
 /* ── STATES ───────────────────────────────────────────────────────────────── */
@@ -98,15 +82,3 @@ element.selected.normal {
     background-color: @bg3;
     text-color:       @fg0;
 }
-
-/* ── NO RESULTS ───────────────────────────────────────────────────────────── */
-// message {
-//     background-color: transparent;
-//     padding:          8px 12px;
-// }
-//
-// textbox {
-//     background-color: transparent;
-//     text-color:       @fg2;
-//     horizontal-align: 0.5;
-// }

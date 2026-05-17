@@ -121,12 +121,10 @@ hl.config({
   },
 
   misc = {
-    force_default_wallpaper      = -1,
-    disable_hyprland_logo        = false,
+    force_default_wallpaper      = 0,
+    disable_hyprland_logo        = true,
     animate_manual_resizes       = true,
     animate_mouse_windowdragging = true,
-    -- FIX: vfr was removed; use render_ahead_of_time or just drop it
-    -- vfr = true,
   },
 })
 
