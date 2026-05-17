@@ -95,7 +95,7 @@
     "tooltip-format":   "{controller_alias}\n{num_connections} connected",
     "on-click": "bluetoothctl power on",
     "on-click-release": "bluetoothctl power off",
-    "on-click-right": "blueman-manager"
+    "on-click-right": "kitty --title=bluetui bluetui"
   },
 
   // ── RIGHT ─────────────────────────────────────────────────────────
