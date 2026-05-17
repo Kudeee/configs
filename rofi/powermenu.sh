@@ -49,7 +49,7 @@ case "$chosen" in
   #   GNOME  → gnome-session-quit --no-prompt
   #   KDE    → qdbus org.kde.ksmserver /KSMServer logout 0 0 0
   #   i3     → i3-msg exit
-  hyprctl dispatch exit
+  hyprctl dispatch 'hl.dsp.exit()'
   ;;
   #   XFCE   → xfce4-session-logout --logout
   #   generic → loginctl terminate-session "$XDG_SESSION_ID"
