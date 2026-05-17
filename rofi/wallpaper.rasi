@@ -11,32 +11,48 @@ window {
     border:           1px;
     border-color:     @accent;
     border-radius:    16px;
-    padding:          0px;
-    margin:           0px;
+    padding:          12px;
 }
 
 /* ── LAYOUT ───────────────────────────────────────────────────────────────── */
 mainbox {
     background-color: transparent;
     spacing:          0px;
-    children:         [ prompt, listview ];
+    children:         [ inputbar, listview ];
+}
+
+/* ── HEADER / SEARCH BAR ──────────────────────────────────────────────────── */
+inputbar {
+    background-color: transparent;
+    padding:          4px 8px 10px 8px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
 }
 
 prompt {
-    padding:          12px 18px;
     background-color: transparent;
     text-color:       @accent;
     vertical-align:   0.5;
 }
 
+entry {
+    background-color:  transparent;
+    text-color:        @fg0;
+    vertical-align:    0.5;
+    placeholder:       "Search...";
+    placeholder-color: @fg2;
+}
+
+case-indicator { enabled: false; }
+
 /* ── THUMBNAIL GRID ───────────────────────────────────────────────────────── */
 listview {
     background-color: transparent;
-    padding:          12px 10px 12px 10px;
-    spacing:          12px;
+    padding:          4px 0px 0px 0px;
+    spacing:          10px;
     columns:          4;
-    lines:            1;
-    fixed-height:     false;  /* Dynamic sizing based on content */
+    lines:            2;
+    fixed-height:     false;
     scrollbar:        false;
     cycle:            true;
 }
@@ -45,26 +61,25 @@ listview {
 element {
     background-color: transparent;
     border-radius:    10px;
-    spacing:          6px;
-    padding:          8px;
+    spacing:          4px;
+    padding:          6px;
     orientation:      vertical;
-    /* CRITICAL: element-text MUST be present for dmenu script indexing to work */
     children:         [ element-icon, element-text ];
 }
 
 element-icon {
     background-color: transparent;
-    /* Calculated fit: (900px - paddings - gaps) / 4 cols ≈ 180px - 200px width */
-    size:             200px;
+    size:             190px;
     horizontal-align: 0.5;
     vertical-align:   0.5;
 }
 
 element-text {
     background-color: transparent;
-    text-color:       inherit;
+    text-color:       @fg1;
     horizontal-align: 0.5;
     vertical-align:   0.5;
+    highlight:        bold;
 }
 
 /* ── STATES ───────────────────────────────────────────────────────────────── */

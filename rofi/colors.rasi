@@ -1,13 +1,13 @@
 * {
-    bg0:     #fbf8ff;
-    bg1:     #efedf4;
-    bg2:     #e9e7ef;
-    bg3:     #e4e1e9;
-    accent:  #525a92;
+    bg0:     #fff9eb;
+    bg1:     #f3ede0;
+    bg2:     #ede8da;
+    bg3:     #e8e2d5;
+    accent:  #695f11;
     urgent:  #ba1a1a;
-    fg0:     #1b1b21;
-    fg1:     #46464f;
-    fg2:     #767680;
+    fg0:     #1d1c13;
+    fg1:     #4a4739;
+    fg2:     #7b7768;
 
     background-color: transparent;
     text-color:       @fg0;

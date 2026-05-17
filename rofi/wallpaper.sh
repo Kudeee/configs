@@ -3,89 +3,98 @@
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 CACHE_DIR="$HOME/.cache/wallpaper-picker"
+ENTRIES_FILE=$(mktemp /tmp/rofi-wallpaper-XXXXXX)
+trap 'rm -f "$ENTRIES_FILE"' EXIT
+
 mkdir -p "$CACHE_DIR"
 
-# Start daemon only if not already running
+# ── Daemon ────────────────────────────────────────────────────────────────────
 if ! pgrep -x awww-daemon >/dev/null; then
   awww-daemon &
 fi
-
-# Wait until awww is ready (up to 5 seconds)
 for i in $(seq 1 10); do
   awww query &>/dev/null && break
   sleep 0.5
 done
 
-# Collect supported image formats
-IMAGES=$(find "$WALLPAPER_DIR" -type f \( \
+# ── Find images ───────────────────────────────────────────────────────────────
+readarray -t IMAGES < <(find "$WALLPAPER_DIR" -type f \( \
   -iname "*.jpg" -o -iname "*.jpeg" -o \
   -iname "*.png" -o -iname "*.webp" -o \
   -iname "*.gif" \) | sort)
 
-if [ -z "$IMAGES" ]; then
+if [ ${#IMAGES[@]} -eq 0 ]; then
   notify-send "Wallpaper Picker" "No images found in $WALLPAPER_DIR" --icon=dialog-error
   exit 1
 fi
 
-# Generate thumbnails for rofi preview
-generate_thumbnail() {
-  local img="$1"
-  local thumb="$CACHE_DIR/$(echo "$img" | md5sum | cut -d' ' -f1).png"
-  if [ ! -f "$thumb" ]; then
-    ffmpeg -i "$img" -vf "scale=512:288:force_original_aspect_ratio=increase,crop=512:288" \
-      -frames:v 1 "$thumb" -y -loglevel quiet 2>/dev/null ||
-      convert "$img" -resize 512x288^ -gravity center -extent 512x288 "$thumb" 2>/dev/null
-  fi
-  echo "$thumb"
-}
+# ── Generate thumbnails + build entries file ──────────────────────────────────
+for img in "${IMAGES[@]}"; do
+  [ -f "$img" ] || continue
 
-# Build rofi input array safely
-ROFI_INPUT=""
-while IFS= read -r img; do
   name=$(basename "$img")
-  thumb=$(generate_thumbnail "$img")
+  hash=$(printf '%s' "$img" | md5sum | cut -d' ' -f1)
+  thumb="$CACHE_DIR/${hash}.png"
 
-  # Append entry name, a null byte (\x00), the icon field identifier (\x1f), and the path
-  ROFI_INPUT+="${name}\x00icon\x1f${thumb}\n"
-done <<<"$IMAGES"
+  if [ ! -f "$thumb" ]; then
+    if command -v ffmpeg &>/dev/null; then
+      ffmpeg -y -i "$img" \
+        -vf "scale=200:200:force_original_aspect_ratio=increase,crop=200:200" \
+        -frames:v 1 "$thumb" -loglevel quiet 2>/dev/null
+    fi
+    if [ ! -f "$thumb" ] && command -v magick &>/dev/null; then
+      magick "$img" -resize 200x200^ -gravity center -extent 200x200 "$thumb" 2>/dev/null
+    fi
+    if [ ! -f "$thumb" ] && command -v convert &>/dev/null; then
+      convert "$img" -resize 200x200^ -gravity center -extent 200x200 "$thumb" 2>/dev/null
+    fi
+  fi
 
-# Show rofi picker using printf to guarantee control characters are parsed
-CHOSEN=$(printf "$ROFI_INPUT" | rofi \
+  # Write entry: name + NUL + icon metadata
+  # \0 = field separator within entry; \037 = unit separator (0x1f), octal-safe
+  if [ -f "$thumb" ]; then
+    printf '%s\0icon\037%s\n' "$name" "$thumb" >>"$ENTRIES_FILE"
+  else
+    printf '%s\n' "$name" >>"$ENTRIES_FILE"
+  fi
+done
+
+# Bail if nothing was written (shouldn't happen but just in case)
+if [ ! -s "$ENTRIES_FILE" ]; then
+  notify-send "Wallpaper Picker" "Failed to build entry list" --icon=dialog-error
+  exit 1
+fi
+
+# ── Show picker ───────────────────────────────────────────────────────────────
+CHOSEN=$(rofi \
   -dmenu \
   -p "Wallpaper" \
   -show-icons \
-  -theme ~/.config/rofi/wallpaper.rasi)
+  -theme ~/.config/rofi/wallpaper.rasi \
+  <"$ENTRIES_FILE")
 
 [ -z "$CHOSEN" ] && exit 0
 
-# Resolve full path from filename
 SELECTED=$(find "$WALLPAPER_DIR" -type f -name "$CHOSEN" | head -1)
 [ -z "$SELECTED" ] && exit 0
 
-# IMPORTANT ORDER:
-# 1. Set wallpaper with awww ourselves (matugen's Swww driver calls 'swww' which
-#    doesn't exist on CachyOS — it's 'awww'. wallpaper_tool = 'None' in config.toml)
-# 2. Then run matugen purely for color generation
-
+# ── Set wallpaper ─────────────────────────────────────────────────────────────
 awww img "$SELECTED" \
   --transition-type grow \
   --transition-pos center \
   --transition-duration 1.5 \
   --transition-fps 60
 
+# ── Regenerate colors ─────────────────────────────────────────────────────────
 if command -v matugen &>/dev/null; then
   BRIGHTNESS=$(magick identify -format '%[fx:mean*255]' "$SELECTED" 2>/dev/null | cut -d. -f1)
-
   if [ -z "$BRIGHTNESS" ] || [ "$BRIGHTNESS" -lt 128 ]; then
     MATUGEN_MODE="dark"
   else
     MATUGEN_MODE="light"
   fi
-
   matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE"
 fi
-
-# matugen image "$SELECTED" --source-color-index 0
 
 echo "$SELECTED" >"$HOME/.cache/current_wallpaper"
 notify-send "Wallpaper" "$(basename "$SELECTED")" --icon="$SELECTED"
