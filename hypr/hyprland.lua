@@ -2,7 +2,6 @@
 -- hyprland.lua — converted from hyprland.conf (hyprlang → Lua, Hyprland ≥0.55)
 -- =============================================================================
 
-
 --------------------
 ---- MONITORS ----
 --------------------
@@ -128,8 +127,8 @@ hl.config({
   },
 
   misc = {
-    force_default_wallpaper      = 0,
-    disable_hyprland_logo        = true,
+    force_default_wallpaper      = -1,
+    disable_hyprland_logo        = false,
     animate_manual_resizes       = true,
     animate_mouse_windowdragging = true,
     vfr                          = true, -- variable framerate — saves battery
@@ -241,6 +240,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout_msg("togglesplit"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 
+
 -- Wallpaper picker
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
 
@@ -248,7 +248,7 @@ hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))
 
 -- Power menu
-hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("~/.config/rofi/powermenu.sh"))
+hl.bind(mainMod .. " + escape", hl.dsp.exec_cmd("~/.config/rofi/powermenu.sh"))
 
 -- Screenshots
 hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | satty --filename -'))
