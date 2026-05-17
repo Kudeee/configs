@@ -40,7 +40,7 @@ awww img "$WALLPAPER" \
   --transition-fps 60
 
 if command -v matugen &>/dev/null; then
-  BRIGHTNESS=$(magick identify -format '%[fx:mean*255]' "$SELECTED" 2>/dev/null | cut -d. -f1)
+  BRIGHTNESS=$(magick identify -format '%[fx:mean*255]' "$WALLPAPER" 2>/dev/null | cut -d. -f1)
 
   if [ -z "$BRIGHTNESS" ] || [ "$BRIGHTNESS" -lt 128 ]; then
     MATUGEN_MODE="dark"
@@ -48,5 +48,5 @@ if command -v matugen &>/dev/null; then
     MATUGEN_MODE="light"
   fi
 
-  matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE"
+  matugen image "$WALLPAPER" --source-color-index 0 -m "$MATUGEN_MODE"
 fi
