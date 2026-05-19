@@ -1,6 +1,4 @@
--- =============================================================================
--- hyprland.lua — converted from hyprland.conf (hyprlang → Lua, Hyprland ≥0.55)
--- =============================================================================
+require("colors")
 
 --------------------
 ---- MONITORS ----
@@ -73,8 +71,8 @@ hl.config({
     border_size      = 2,
 
     col              = {
-      active_border   = { colors = { "rgba(7986CBee)", "rgba(4DB6ACee)" }, angle = 45 },
-      inactive_border = "rgba(37474Faa)",
+      active_border   = { colors = { primary, inverse_primary }, angle = 45 },
+      inactive_border = outline_variant,
     },
 
     resize_on_border = true,
@@ -93,7 +91,7 @@ hl.config({
       enabled      = true,
       range        = 18,
       render_power = 3,
-      color        = "rgba(00000060)",
+      color        = shadow,
       offset       = { 0, 4 },
     },
 

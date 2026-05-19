@@ -10,9 +10,9 @@ output_path = '~/.config/waybar/colors.css'
 post_hook   = 'pkill -SIGUSR2 waybar'
 
 [templates.hyprland]
-input_path  = '~/.config/matugen/templates/hyprland-colors-template.conf'
-output_path = '~/.config/hypr/colors.conf'
-post_hook   = 'bash ~/.config/hypr/scripts/apply-colors.sh'
+input_path  = '~/.config/matugen/templates/hyprland-colors-template.lua'
+output_path = '~/.config/hypr/colors.lua'
+post_hook   = 'hyprctl reload'
 
 [templates.rofi]
 input_path  = '~/.config/matugen/templates/rofi-colors-template.rasi'
