@@ -111,12 +111,17 @@ hl.config({
   },
 
   dwindle = {
-    preserve_split = true,
-    smart_split    = true,
-  },
-
-  master = {
-    new_status = "master",
+    force_split                  = 2,
+    preserve_split               = true,
+    smart_split                  = false,
+    smart_resizing               = true,
+    permanent_direction_override = false,
+    special_scale_factor         = 1,
+    split_width_multiplier       = 1.0,
+    use_active_for_splits        = true,
+    default_split_ratio          = 1.0,
+    split_bias                   = 1,
+    precise_mouse_move           = false,
   },
 
   misc = {
@@ -229,7 +234,7 @@ hl.bind(mainMod .. " + SHIFT + period", hl.dsp.exec_cmd("rofimoji --files ~/.con
 hl.bind(mainMod .. " + CTRL + period", hl.dsp.exec_cmd("rofimoji --files ~/.config/rofimoji/cozette.csv"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + A", hl.dsp.layout("togglesplit"))
 
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
