@@ -28,7 +28,7 @@
 
 window#waybar {
   background-color: transparent;
-  color: @text;
+  color: @on_surface;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -51,20 +51,20 @@ window#waybar {
 #backlight,
 #battery,
 #custom-night-mode {
-  background-color: alpha(@mantle, 0.55);
-  color: alpha(@text, 1);
+  background-color: alpha(@background, 0.55);
+  color: alpha(@primary_container, 1);
   padding: 2px 10px;
   margin: 3px 2px;
   border-radius: 6px;
-  border: 1px solid alpha(@accent2, 0.25);
+  border: 1px solid alpha(@primary, 0.25);
 }
 
 #center {
-  background-color: alpha(@base, 0.25);
+  background-color: alpha(@surface, 0.25);
   padding: 2px 15px;
   margin: 5px 0 0 0;
   border-radius: 9px;
-  border: 1px solid alpha(@accent2, 0.25);
+  border: 1px solid alpha(@secondary, 0.25);
 }
 
 #left,
@@ -79,8 +79,8 @@ window#waybar {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 #custom-launcher {
-  background-color: @accent;
-  color: @accent_on;
+  background-color: @primary;
+  color: @on_primary;
   font-size: 16px;
   padding: 4px 12px;
   border: none;
@@ -91,7 +91,7 @@ window#waybar {
 }
 
 #workspaces button {
-  color: @subtext;
+  color: @on_primary_container;
   background: transparent;
   padding: 0 6px;
   border-radius: 4px;
@@ -99,20 +99,20 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: @accent;
+  color: @tertiary;
 }
 
 #workspaces button.urgent {
-  color: @warning_color;
+  color: @error;
 }
 
 #workspaces button:hover {
-  background-color: alpha(@accent, 0.2);
-  color: @text;
+  background-color: alpha(@primary, 0.2);
+  color: @on_surface;
 }
 
 #window {
-  color: @subtext;
+  color: @on_surface_variant;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -120,49 +120,49 @@ window#waybar {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 #language {
-  color: @accent;
+  color: @primary;
 }
 
 #temperature {
-  color: @accent2;
+  color: @primary;
 }
 
 #temperature.critical {
-  color: @warning_color;
+  color: @error;
 }
 
 #memory {
-  color: @accent2;
+  color: @primary;
 }
 
 #cpu {
-  color: @accent2;
+  color: @primary;
 }
 
 #custom-powerMenu {
-  color: @warning_color;
+  color: @error;
   font-size: 18px;
 }
 
 #clock {
-  color: @accent;
+  color: @primary;
 }
 
 #network {
-  color: @text;
+  color: @secondary;
 }
 
 #network.disconnected {
-  color: @warning_color;
+  color: @error;
 }
 
 #bluetooth {
-  color: @accent3;
+  color: @secondary;
 }
 
 #bluetooth.off,
 #bluetooth.disabled {
-  color: @subtext;
+  color: @on_surface_variant;
   opacity: 0.5;
 }
 
@@ -177,41 +177,41 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: @text;
+  color: @primary;
 }
 
 #pulseaudio.muted {
-  color: @subtext;
+  color: @on_surface_variant;
 }
 
 #pulseaudio-microphone {
-  color: @subtext;
+  color: @on_surface_variant;
 }
 
 #backlight {
-  color: @subtext;
+  color: @primary;
 }
 
 #battery {
-  color: @text;
+  color: @primary;
 }
 
 #battery.charging {
-  color: @accent3;
+  color: @tertiary;
 }
 
 #battery.warning:not(.charging) {
-  color: @warning_color;
+  color: @error;
 }
 
 #battery.critical:not(.charging) {
-  color: @warning_color;
+  color: @error;
   animation: blink 1s linear infinite;
 }
 
 #custom-night-mode {
-  background-color: @accent;
-  color: @accent_on;
+  background-color: @primary;
+  color: @on_primary;
   border: none;
 }
 
@@ -220,13 +220,13 @@ window#waybar {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 tooltip {
-  background-color: alpha(@base, 0.9);
-  border: 1px solid alpha(@accent, 0.3);
+  background-color: alpha(@surface, 0.9);
+  border: 1px solid alpha(@primary, 0.3);
   border-radius: 6px;
 }
 
 tooltip label {
-  color: @text;
+  color: @on_surface;
   padding: 4px 8px;
 }
 
