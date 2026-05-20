@@ -9,6 +9,10 @@ output_path = '~/.config/waybar/colors.css'
 # SIGUSR2 tells waybar to reload CSS styles (not restart the whole bar)
 post_hook   = 'pkill -SIGUSR2 waybar'
 
+[templates.gtk]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
 [templates.hyprland]
 input_path  = '~/.config/matugen/templates/hyprland-colors-template.lua'
 output_path = '~/.config/hypr/colors.lua'
