@@ -1,1 +1,84 @@
-@import "color.css";
+@import "colors.css";
+
+/* window*/
+.thunar {
+  background-color: @surface_bright;
+}
+
+/* sidebar and main file */
+.thunar .sidebar .view,
+.thunar .sidebar .iconview,
+.thunar .standard-view .view {
+  background-color: @surface_bright;
+  color: @secondary;
+}
+
+/* toolbar*/
+.thunar > grid > toolbar,
+.thunar toolbar {
+  background-color: @surface_bright;
+  border-bottom: 1px solid @outline;
+}
+
+.thunar toolbar button {
+  color: @on_surface;
+}
+
+.thunar toolbar button:hover {
+  background-color: @primary_container;
+  color: @on_primary_color;
+}
+
+.thunar toolbar button:active {
+  background-color: @primary;
+  color: @on_primary;
+}
+
+/* path*/
+.thunar .path-bar,
+.thunar entry {
+  background-color: @surface_container_low;
+  color: @on_surface;
+  border: 1px solid @secondary;
+  border-radius: 4px;
+}
+
+.thunar entry:focus {
+  border-color: @primary;
+  box-shadow: 0 0 0 2px @secondary_container;
+}
+
+/* sidebar  */
+.thunar .sidebar .view,
+.thunar .sidebar .iconview {
+  padding: 8px 0 8px;
+}
+
+.thunar .sidebar .view:selected,
+.thunar .sidebar iconview:selected,
+.thunar .sidebar .view:active,
+.thunar .sidebar iconview:active {
+  background-color: @primary_container;
+  color: @on_primary_container;
+}
+
+.thunar .sidebar .view:hover,
+.thunar .sidebar iconview:hover {
+  background-color: @secondary;
+  color: @on_secondary;
+}
+
+.thunar scrollbar trough {
+  background-color: @secondary;
+}
+
+.thunar scrollbar slider {
+  background-color: @outline;
+  border-radius: 4px;
+  min-width: 6px;
+  min-height: 6px;
+}
+
+.thunar scrollbar slider:hover {
+  background-color: @primary;
+}
