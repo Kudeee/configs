@@ -155,7 +155,7 @@
       "warning":  30,
       "critical": 15
     },
-    "on-click": "tlpui",
+    "on-click": "",
     "format-icons": [
       "󰂎",
       "󰁺",
