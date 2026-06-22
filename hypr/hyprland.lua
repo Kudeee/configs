@@ -350,8 +350,7 @@ hl.window_rule({
 -- Float common utility apps
 hl.window_rule({
   name         = "float-utilities",
-  match        = { class = "^(org%.pulseaudio%.pavucontrol|bluetui|clipse|blueman-manager|tlpui|nmtui|lxappearance|qt5ct|nwg%-look)$" },
-
+  match        = { title = "^(Volume Control|bluetui|clipse|nmtui|btop|lxappearance|qt5ct|nwg%-look)$" },
   float        = true,
   size         = { 800, 652 },
   center       = true,
@@ -369,7 +368,7 @@ hl.window_rule({
 -- Picture-in-picture
 hl.window_rule({
   name  = "pip",
-  match = { title = "^(Picture in picture)$" },
+  match = { title = "^(Picture-in-Picture)$" },
   float = true,
   pin   = false,
   size  = { 480, 270 },
