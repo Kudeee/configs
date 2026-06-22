@@ -29,7 +29,7 @@ hl.monitor({
 local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "rofi"
-local browser     = "brave"
+local browser     = "app.zen_browser.zen"
 local mainMod     = "SUPER"
 
 
