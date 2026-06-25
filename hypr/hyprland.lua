@@ -43,7 +43,8 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("waybar")
   hl.exec_cmd("swaync")
   hl.exec_cmd("~/.config/hypr/scripts/wallpaper-init.sh")
-  hl.exec_cmd("clipse -listen")
+  hl.exec_cmd("wl-paste --type text --watch cliphist store")
+  hl.exec_cmd("wl-paste --type image --watch cliphist store")
 end)
 
 
@@ -243,7 +244,7 @@ hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
 
 -- Clipboard
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy"))
 
 -- Power menu
 hl.bind(mainMod .. " + escape", hl.dsp.exec_cmd("~/.config/rofi/powermenu.sh"))
