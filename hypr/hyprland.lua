@@ -371,7 +371,7 @@ hl.window_rule({
   name  = "pip",
   match = { title = "^(Picture-in-Picture)$" },
   float = true,
-  pin   = false,
+  pin   = true,
   size  = { 480, 270 },
   move  = { "100%-490", "100%-280" },
 })
