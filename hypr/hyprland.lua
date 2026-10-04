@@ -31,6 +31,7 @@ local fileManager = "thunar"
 local menu        = "rofi"
 local browser     = "app.zen_browser.zen"
 local mainMod     = "SUPER"
+local code        = "code"
 
 
 -------------------
@@ -224,6 +225,7 @@ hl.device({
 -- Applications
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd(code))
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + R",
   hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
@@ -241,7 +243,7 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0 }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 
 -- Wallpaper picker
-hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.config/rofi/wallpaper.sh"))
 
 -- Clipboard
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy"))
@@ -257,13 +259,18 @@ hl.bind(mainMod .. " + CTRL + Print",
     'grim -g "$(slurp)" ~/Pictures/screenshots/$(date +%Y%m%d_%H%M%S).png && notify-send "Screenshot saved"'))
 
 -- Reload waybar
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("pkill waybar && waybar &"))
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("pkill waybar && waybar &"))
 
 -- Focus movement
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+
+hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
 -- Move windows
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "l" }))
@@ -351,7 +358,8 @@ hl.window_rule({
 -- Float common utility apps
 hl.window_rule({
   name         = "float-utilities",
-  match        = { title = "^(Volume Control|bluetui|clipse|nmtui|btop|lxappearance|qt5ct|nwg%-look)$" },
+  match        = { title = "^(bluetui|clipse|nmtui|btop|lxappearance|qt5ct|nwg%-look)$" },
+  match        = { class = "^(org.pulseaudio.pavucontrol)$" },
   float        = true,
   size         = { 800, 652 },
   center       = true,
