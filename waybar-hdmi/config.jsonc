@@ -1,0 +1,17 @@
+// ~/.config/waybar-hdmi/config.jsonc
+
+{
+  "include": ["~/.config/waybar-hdmi/layout.jsonc"],
+
+  /*-------------
+      Options
+  -------------*/
+  "layer": "top",
+  "height": 0,
+  "width": 0,
+  "margin": 0,
+  "spacing": 0,
+  "mode": "dock",
+  "reload_style_on_change": true,
+  "output": "HDMI-A-1",
+}

@@ -1,0 +1,81 @@
+@import "colors.rasi"
+
+configuration {
+    font: "Silkscreen 10";
+}
+
+/* ── WINDOW ───────────────────────────────────────────────────────────────── */
+window {
+    width:            340px;
+    background-color: @bg0;
+    border:           1px;
+    border-color:     @accent;
+    border-radius:    16px;
+    padding:          12px;
+}
+
+/* ── LAYOUT ───────────────────────────────────────────────────────────────── */
+mainbox {
+    background-color: transparent;
+    spacing:          0px;
+    children:         [ inputbar, listview ];
+}
+
+/* ── HEADER (prompt only, nothing to type) ────────────────────────────────── */
+inputbar {
+    background-color: transparent;
+    padding:          4px 8px 10px 8px;
+    spacing:          8px;
+    children:         [ prompt ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    vertical-align:   0.5;
+}
+
+/* ── MONITOR LIST ─────────────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    padding:          4px 0px 0px 0px;
+    spacing:          6px;
+    columns:          1;
+    lines:            4;
+    fixed-height:     false;
+    scrollbar:        false;
+    cycle:            true;
+}
+
+/* ── EACH ROW ─────────────────────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    10px;
+    padding:          10px 14px;
+    orientation:      horizontal;
+    children:         [ element-text ];
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       @fg1;
+    horizontal-align: 0.0;
+    vertical-align:   0.5;
+    highlight:        bold;
+}
+
+/* ── STATES ───────────────────────────────────────────────────────────────── */
+element.normal.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element.alternate.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element.selected.normal {
+    background-color: @bg3;
+    text-color:       @fg0;
+}

@@ -26,7 +26,7 @@ inputbar {
     background-color: transparent;
     padding:          4px 8px 10px 8px;
     spacing:          8px;
-    children:         [ prompt, entry ];
+    children:         [ prompt ];
 }
 
 prompt {
@@ -35,15 +35,45 @@ prompt {
     vertical-align:   0.5;
 }
 
-entry {
-    background-color:  transparent;
-    text-color:        @fg0;
-    vertical-align:    0.5;
-    placeholder:       "Search...";
-    placeholder-color: @fg2;
+// entry {
+//     background-color:  transparent;
+//     text-color:        @fg0;
+//     vertical-align:    0.5;
+//     placeholder:       "Search...";
+//     placeholder-color: @fg2;
+// }
+//
+case-indicator { enabled: false; }
+
+/* ── MONITOR LIST ─────────────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    padding:          4px 0px 0px 0px;
+    spacing:          6px;
+    columns:          1;
+    lines:            4;
+    fixed-height:     false;
+    scrollbar:        false;
+    cycle:            true;
 }
 
-case-indicator { enabled: false; }
+/* ── EACH ROW ─────────────────────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    border-radius:    10px;
+    padding:          10px 14px;
+    orientation:      horizontal;
+    children:         [ element-text ];
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       @fg1;
+    horizontal-align: 0.0;
+    vertical-align:   0.5;
+    highlight:        bold;
+}
+
 
 /* ── THUMBNAIL GRID ───────────────────────────────────────────────────────── */
 listview {

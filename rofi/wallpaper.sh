@@ -1,10 +1,19 @@
 #!/bin/bash
-# Rofi wallpaper picker — sets via awww, regenerates matugen colors
+# Rofi wallpaper picker — sets via awww (per monitor), regenerates matugen colors
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 CACHE_DIR="$HOME/.cache/wallpaper-picker"
 ENTRIES_FILE=$(mktemp /tmp/rofi-wallpaper-XXXXXX)
 trap 'rm -f "$ENTRIES_FILE"' EXIT
+
+# Main screen: drives the global theme (default matugen config).
+# Second screen: gets its own colors via a separate matugen config, which only
+# themes things that exist per monitor (e.g. a second waybar instance).
+THEME_MONITOR="eDP-1"
+SECOND_MONITOR="HDMI-A-1"
+SECOND_MATUGEN_CONFIG="$HOME/.config/matugen/config-hdmi.toml"
+SECOND_BAR_PATTERN="waybar.*waybar-hdmi" # matches the second bar's command line
+ALL_LABEL="All monitors"
 
 mkdir -p "$CACHE_DIR"
 
@@ -16,6 +25,17 @@ for i in $(seq 1 10); do
   awww query &>/dev/null && break
   sleep 0.5
 done
+
+# ── Pick monitor ──────────────────────────────────────────────────────────────
+# "Monitor eDP-1 (ID 0):" -> eDP-1
+readarray -t MONITORS < <(hyprctl monitors | awk '/^Monitor /{print $2}')
+
+TARGET="$ALL_LABEL"
+if [ ${#MONITORS[@]} -gt 1 ]; then
+  TARGET=$(printf '%s\n' "$ALL_LABEL" "${MONITORS[@]}" |
+    rofi -dmenu -i -no-custom -p "Monitor" -theme ~/.config/rofi/monitor.rasi)
+  [ -z "$TARGET" ] && exit 0
+fi
 
 # ── Find images ───────────────────────────────────────────────────────────────
 readarray -t IMAGES < <(find "$WALLPAPER_DIR" -type f \( \
@@ -68,7 +88,7 @@ fi
 # ── Show picker ───────────────────────────────────────────────────────────────
 CHOSEN=$(rofi \
   -dmenu \
-  -p "Wallpaper" \
+  -p "Wallpaper ($TARGET)" \
   -show-icons \
   -theme ~/.config/rofi/wallpaper.rasi \
   <"$ENTRIES_FILE")
@@ -79,13 +99,22 @@ SELECTED=$(find "$WALLPAPER_DIR" -type f -name "$CHOSEN" | head -1)
 [ -z "$SELECTED" ] && exit 0
 
 # ── Set wallpaper ─────────────────────────────────────────────────────────────
-awww img "$SELECTED" \
-  --transition-type grow \
-  --transition-pos center \
-  --transition-duration 1.5 \
+AWWW_ARGS=(
+  --transition-type grow
+  --transition-pos center
+  --transition-duration 1.5
   --transition-fps 60
+)
+
+if [ "$TARGET" = "$ALL_LABEL" ]; then
+  awww img "$SELECTED" "${AWWW_ARGS[@]}"
+else
+  awww img -o "$TARGET" "$SELECTED" "${AWWW_ARGS[@]}"
+fi
 
 # ── Regenerate colors ─────────────────────────────────────────────────────────
+# Main screen / "All monitors"   -> default matugen config (global theme)
+# Second screen / "All monitors" -> its own config (second bar only)
 if command -v matugen &>/dev/null; then
   BRIGHTNESS=$(magick identify -format '%[fx:mean*255]' "$SELECTED" 2>/dev/null | cut -d. -f1)
   if [ -z "$BRIGHTNESS" ] || [ "$BRIGHTNESS" -lt 128 ]; then
@@ -93,8 +122,27 @@ if command -v matugen &>/dev/null; then
   else
     MATUGEN_MODE="light"
   fi
-  matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE"
+
+  if [ "$TARGET" = "$ALL_LABEL" ] || [ "$TARGET" = "$THEME_MONITOR" ]; then
+    matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE"
+  fi
+
+  if [ "$TARGET" = "$ALL_LABEL" ] || [ "$TARGET" = "$SECOND_MONITOR" ]; then
+    if [ -f "$SECOND_MATUGEN_CONFIG" ]; then
+      matugen image "$SELECTED" --source-color-index 0 -m "$MATUGEN_MODE" \
+        --config "$SECOND_MATUGEN_CONFIG"
+      # Reload only the second bar (SIGUSR2 = reload config + style)
+      pkill -SIGUSR2 -f "$SECOND_BAR_PATTERN"
+    fi
+  fi
 fi
 
-echo "$SELECTED" >"$HOME/.cache/current_wallpaper"
-notify-send "Wallpaper" "$(basename "$SELECTED")" --icon="$SELECTED"
+# Remember what's on each screen
+if [ "$TARGET" = "$ALL_LABEL" ] || [ "$TARGET" = "$THEME_MONITOR" ]; then
+  echo "$SELECTED" >"$HOME/.cache/current_wallpaper"
+fi
+if [ "$TARGET" = "$ALL_LABEL" ] || [ "$TARGET" = "$SECOND_MONITOR" ]; then
+  echo "$SELECTED" >"$HOME/.cache/current_wallpaper_second"
+fi
+
+notify-send "Wallpaper ($TARGET)" "$(basename "$SELECTED")" --icon="$SELECTED"

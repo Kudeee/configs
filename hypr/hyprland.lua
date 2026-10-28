@@ -1,4 +1,5 @@
 require("colors")
+require("workspaces")
 
 --------------------
 ---- MONITORS ----
@@ -18,7 +19,6 @@ hl.monitor({
   mode     = "1882x1080@60",
   position = "auto",
   scale    = 1,
-  mirror   = "eDP-1",
 })
 
 
@@ -41,7 +41,8 @@ local code        = "code"
 hl.on("hyprland.start", function()
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
-  hl.exec_cmd("waybar")
+  hl.exec_cmd("waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css")
+  hl.exec_cmd("waybar -c ~/.config/waybar-hdmi/config.jsonc -s ~/.config/waybar-hdmi/style.css")
   hl.exec_cmd("swaync")
   hl.exec_cmd("~/.config/hypr/scripts/wallpaper-init.sh")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")

@@ -1,0 +1,181 @@
+{
+  // ── LEFT ──────────────────────────────────────────────────────────
+  "custom/launcher": {
+    "format": "󰀻",
+    "tooltip": false,
+    "on-click": "rofi -show drun",
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": false,
+    "show-special": false,
+    "format": "{icon}",
+    "format-icons": {
+      "active":  "❖",
+      "default": "◇",
+      "urgent":  "▲"
+    },
+    "on-scroll-up":   "hyprctl dispatch workspace m+1 > /dev/null",
+    "on-scroll-down": "hyprctl dispatch workspace m-1 > /dev/null",
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": true,
+    "rewrite": {
+      "^$": "Desktop"
+    }
+  },
+
+  // ── CENTER ────────────────────────────────────────────────────────
+  
+  "custom/powerMenu": {
+    "format": "❉",
+    "tooltip-format": "Power Menu",
+    "on-click": ".config/rofi/powermenu.sh",
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "on-click": "hyprctl switchxkblayout all next"
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "critical-threshold": 85,
+    "format": "{icon} {temperatureC}°C",
+    "format-critical": "! {temperatureC}°C",
+    "interval": 3,
+    "format-icons": ["","","","",""]
+  },
+
+  "memory": {
+    "format": "󰘚 {used}G",
+    "interval": 3,
+    "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
+  },
+
+  "cpu": {
+    "format": "󰍛 {usage}%",
+    "interval": 3,
+    "on-click": "kitty --title=btop btop"
+  },
+
+  "clock#time": {
+    "format": "󱑊 {:%I:%M %p}",
+    "tooltip": false
+  },
+
+  "clock#date": {
+    "format": "󰃭 {:%a %d-%m}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi":"{icon} {signalStrength}%",
+    "format-icons":["󰤭","󰤟","󰤢","󰤥","󰤨"], 
+    "format-ethernet":     "󰈀 ETH",
+    "format-disconnected": "󰤭",
+    "tooltip-format-wifi": "{essid}\n↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
+    "on-click": "kitty --title=nmtui nmtui"
+  },
+
+  "bluetooth": {
+    "format-on":        "β",
+    "format-off":       "β",
+    "format-disabled":  "β",
+    "format-connected": "β",
+    "tooltip-format":   "{controller_alias}\n{num_connections} connected",
+    "on-click": "bluetoothctl power on",
+    "on-click-release": "bluetoothctl power off",
+    "on-click-right": "kitty --title=bluetui bluetui"
+  },
+
+  // ── RIGHT ─────────────────────────────────────────────────────────
+
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "pulseaudio#microphone"
+    ]
+  },
+
+  "pulseaudio#microphone": {
+    "format":              "󰍬 {format_source}",
+    "format-source":       "{volume}%",
+    "format-source-muted": "󰝟",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "scroll-step": 2
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "format-muted": "<span size='12pt'>󰝟</span>",
+    "scroll-step": 2,
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [
+       "<span size='9pt'>♪</span>",
+      ]
+    }
+  },
+ 
+  "backlight": {
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃝",
+      "󰃠"
+    ],
+    "format": "{icon} {percent}%",
+    "scroll-step": 5,
+    "on-scroll-up":   "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+
+  "battery": {
+    "interval": 30,
+    "states": {
+      "warning":  30,
+      "critical": 15
+    },
+    "tooltip": true,
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁽",
+      "󰂁"
+    ],
+    "format":          "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged":  "󰂄 {capacity}%",
+    "format-full":     "󰁹 FULL",
+    "tooltip-format":  "{timeTo} — {power:.1f}W",
+    "on-click": "~/.config/scripts/cycle-power-profile.sh"
+  },
+
+  "custom/night-mode": {
+    "exec": "bash -c 'pgrep -x hyprsunset > /dev/null && echo ● || echo ○'",
+    "format": "{}",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "bash -c 'pgrep -x hyprsunset > /dev/null && pkill hyprsunset || hyprsunset -t 3500 &'"
+  }
+
+}

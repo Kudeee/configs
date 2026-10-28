@@ -1,0 +1,6 @@
+[config]
+
+[templates.waybar-hdmi]
+input_path  = '~/.config/matugen/templates/waybar-colors-template.css'
+output_path = '~/.config/waybar-hdmi/colors.css'
+post_hook   = 'pkill -SIGUSR2 waybar'

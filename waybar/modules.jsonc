@@ -120,7 +120,7 @@
     "format": "{icon} {volume}%",
     "format-bluetooth": "{icon} {volume}%",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "'pavucontrol -t 4'",
+    "on-click-right": "pavucontrol",
     "format-muted": "<span size='12pt'>󰝟</span>",
     "scroll-step": 2,
     "format-icons": {
