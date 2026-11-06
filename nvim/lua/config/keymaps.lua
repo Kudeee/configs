@@ -74,3 +74,14 @@ end, { desc = "Next diagnostic" })
 map("n", "<leader>dk", function()
   vim.diagnostic.jump({ count = -1, float = true })
 end, { desc = "Prev diagnostic" })
+
+-- ─── Live preview (brianhuster/live-preview.nvim) ──────────────────────────
+-- Defined here (in lua/config/keymaps.lua) instead of the plugin's own
+-- `keys` spec in lua/plugins/web.lua, since keymaps.lua loads on VeryLazy
+-- and takes priority over anything plugins try to claim — this sidesteps
+-- any lazy-loading/registration weirdness with the plugin spec's `keys`.
+-- The plugin spec still declares `cmd = "LivePreview"`, which is what
+-- actually creates the :LivePreview command stub at startup; these just
+-- call that command.
+map("n", "<leader>vp", "<cmd>LivePreview start<cr>", { desc = "Live Preview: start" })
+map("n", "<leader>vq", "<cmd>LivePreview close<cr>", { desc = "Live Preview: stop" })

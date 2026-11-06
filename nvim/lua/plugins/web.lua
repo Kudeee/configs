@@ -69,17 +69,17 @@ return {
 
         -- CSS / SCSS
         cssls = {
-          -- filetypes = { "scss", "less" },
-          -- settings = {
-          --   css = {
-          --     validate = true,
-          --     lint = {
-          --       unknownAtRules = "ignore",
-          --     },
-          --   },
-          --   scss = { validate = true },
-          --   less = { validate = true },
-          -- },
+          filetypes = { "scss", "less" },
+          settings = {
+            css = {
+              validate = true,
+              lint = {
+                unknownAtRules = "ignore",
+              },
+            },
+            scss = { validate = true },
+            less = { validate = true },
+          },
         },
 
         -- Tailwind CSS
@@ -99,6 +99,28 @@ return {
         eslint = {
           settings = {
             workingDirectories = { mode = "auto" },
+          },
+        },
+
+        -- Emmet — gives you the VSCode-style "!" → full HTML5 boilerplate
+        -- expansion (and tag/CSS abbreviation expansion in general).
+        -- Type "!" in an html buffer, then accept the completion item
+        -- (Tab/Enter) from blink.cmp, exactly like VSCode.
+        emmet_language_server = {
+          filetypes = {
+            "css",
+            "eruby",
+            "html",
+            "htmldjango",
+            "jinja.html",
+            "javascript",
+            "javascriptreact",
+            "less",
+            "sass",
+            "scss",
+            "pug",
+            "typescriptreact",
+            "vue",
           },
         },
       },
@@ -131,6 +153,34 @@ return {
     },
   },
 
+  -- ─── Live preview: reload HTML/CSS/JS in the browser on save ─────────────
+  -- Pure Lua, no Node/Python runtime needed.
+  -- Keymaps (<leader>vp / <leader>vq) live in lua/config/keymaps.lua, not
+  -- here — see that file for why. `cmd` below is what actually registers
+  -- the :LivePreview command at startup; that's all this spec needs to do.
+  -- NOTE: unlike Markdown, HTML only refreshes on :w (not as you type), so
+  -- we autosave on InsertLeave to approximate live typing.
+  {
+    "brianhuster/live-preview.nvim",
+    cmd = "LivePreview",
+    ft = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
+    config = function()
+      require("livepreview.config").set({
+        port = 5500,
+        browser = "default", -- set e.g. "brave" to force a specific browser
+        sync_scroll = true,
+      })
+      vim.api.nvim_create_autocmd("InsertLeavePre", {
+        pattern = { "*.html", "*.css", "*.js", "*.jsx", "*.ts", "*.tsx" },
+        callback = function()
+          if vim.bo.modifiable then
+            vim.cmd("silent! write")
+          end
+        end,
+      })
+    end,
+  },
+
   -- ─── Mason v2: use new org name, correct package names ───────────────────
   -- LazyVim already declares mason-org/mason.nvim internally.
   -- We extend its ensure_installed via the opts function — do NOT redeclare
@@ -145,6 +195,7 @@ return {
         "css-lsp",
         "tailwindcss-language-server",
         "eslint-lsp",
+        "emmet-language-server",
         "prettierd",
         "prettier",
       })
